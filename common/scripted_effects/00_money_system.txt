@@ -4578,12 +4578,14 @@ update_display = {
 	}
 
 	set_variable = { treasury_rate = { value = display_income subtract = display_expense } }
+	# AI fiscal checks count interest waived by the IMF loan, like its pass test.
+	set_variable = { treasury_rate_with_interest = { value = display_income subtract = potential_expense } }
 
 	# Lets AI deficit checks scale with the size of the economy.
 	if = { limit = { check_variable = { display_income > 0 } }
-		set_variable = { budget_balance_ratio = { value = treasury_rate divide = display_income } }
+		set_variable = { budget_balance_ratio = { value = treasury_rate_with_interest divide = display_income } }
 	}
-	else_if = { limit = { check_variable = { treasury_rate < 0 } }
+	else_if = { limit = { check_variable = { treasury_rate_with_interest < 0 } }
 		set_variable = { budget_balance_ratio = -1 }
 	}
 	else = {
@@ -6245,13 +6247,13 @@ calculate_tax_adjustments = {
 	if = {
 		limit = {
 			OR = {
-				check_variable = { treasury_rate < -1 }
+				check_variable = { treasury_rate_with_interest < -1 }
 				check_variable = { budget_balance_ratio < -0.03 }
 			}
 			check_variable = { population_tax_rate < 40 }
 			OR = {
 				has_stability > 0.24
-				check_variable = { treasury_rate < -5 }
+				check_variable = { treasury_rate_with_interest < -5 }
 				check_variable = { budget_balance_ratio < -0.15 }
 			}
 		}
@@ -6263,13 +6265,13 @@ calculate_tax_adjustments = {
 	if = {
 		limit = {
 			OR = {
-				check_variable = { treasury_rate < -2 }
+				check_variable = { treasury_rate_with_interest < -2 }
 				check_variable = { budget_balance_ratio < -0.06 }
 			}
 			check_variable = { corporate_tax_rate < 50 }
 			OR = {
 				check_variable = { population_tax_rate > 24 }
-				check_variable = { treasury_rate < -5 }
+				check_variable = { treasury_rate_with_interest < -5 }
 				check_variable = { budget_balance_ratio < -0.15 }
 			}
 		}
@@ -6284,7 +6286,7 @@ calculate_tax_adjustments = {
 				check_variable = { interest_rate > 8 }
 				check_variable = { debt_ratio > 1.0 }
 			}
-			check_variable = { treasury_rate < 0 }
+			check_variable = { treasury_rate_with_interest < 0 }
 		}
 		if = {
 			limit = {
@@ -6309,7 +6311,7 @@ calculate_tax_adjustments = {
 	if = {
 		limit = {
 			OR = {
-				check_variable = { treasury_rate > 2 }
+				check_variable = { treasury_rate_with_interest > 2 }
 				check_variable = { budget_balance_ratio > 0.10 }
 			}
 			check_variable = { debt_ratio < 0.30 }
@@ -6332,7 +6334,7 @@ calculate_tax_adjustments = {
 		limit = {
 			has_stability < 0.30
 			check_variable = { population_tax_rate > 20 }
-			check_variable = { treasury_rate > 0 }
+			check_variable = { treasury_rate_with_interest > 0 }
 			check_variable = { pop_tax_change = 0 }
 		}
 		set_temp_variable = { pop_tax_change = -1 }
@@ -6343,7 +6345,7 @@ calculate_tax_adjustments = {
 		limit = {
 			num_of_available_civilian_factories < 10
 			check_variable = { corporate_tax_rate > 15 }
-			check_variable = { treasury_rate > 0 }
+			check_variable = { treasury_rate_with_interest > 0 }
 			check_variable = { corp_tax_change = 0 }
 		}
 		set_temp_variable = { corp_tax_change = -1 }

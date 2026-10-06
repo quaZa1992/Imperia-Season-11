@@ -40,6 +40,7 @@ Content:
 
 AI:
  - An AI in a peacetime deficit now trims a civil spending law each month and lowers what its people expect with it, instead of waiting for a deep crisis, and restores spending once its surplus returns
+ - The AI now counts the interest waived by the IMF cheap loan when setting taxes and spending, and the loan needs a deficit of at least 3% of income
 
 Balance:
  - Reduced the starting inflation to 12.6% and increased the starting policy rate of Iran to 8
