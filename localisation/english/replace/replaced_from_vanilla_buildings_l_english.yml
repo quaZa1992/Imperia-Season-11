@@ -2,19 +2,19 @@
  # 0
  industrial_complex: "Civilian Industry"
  industrial_complex_plural: "Civilian Industries"
- industrial_complex_desc: "This building provides the state with industry for production of civilian goods or construction of new buildings. Can be converted to military industry if needed.\n\nProvides the state with:\nBase Number of Required Workers: §Y206K§!\nBase GDP Output per §YCivilian Industry§!: $§Y17.5 Billion§!\nBase Energy Consumption: §R-0.5§! GW\n"
+ industrial_complex_desc: "This building provides the state with industry for production of civilian goods or construction of new buildings. Can be converted to military industry if needed.\n\nProvides the state with:\nBase Number of Required Workers: §Y345K§!\nBase GDP Output per §YCivilian Industry§!: $§Y10 Billion§!\nBase Energy Consumption: §R-0.4§! GW\n"
  # 1
  arms_factory: "Military Industry"
  arms_factory_plural: "Military Industries"
- arms_factory_desc: "This building provides the state with industry for production of new military equipment. Can be converted to civilian industry if needed.\n\nProvides the state with:\nBase Number of Required Workers: §Y18.8K§!\nBase GDP Output per §YMilitary Industry§!: $§Y1.5 Billion§!\nBase Energy Consumption: §R-0.5§! GW"
+ arms_factory_desc: "This building provides the state with industry for production of new military equipment. Can be converted to civilian industry if needed.\n\nProvides the state with:\nBase Number of Required Workers: §Y25K§!\nBase GDP Output per §YMilitary Industry§!: $§Y1 Billion§!\nBase Energy Consumption: §R-0.4§! GW"
  # 3
  internet_station: "Network Infrastructure"
  internet_station_plural: "Network Infrastructure"
- internet_station_desc: "§YNetwork Infrastructure§! are tall structures used in the telecommunication and radio communication fields in order to push transmissions across great distances or underground fiber optic cables and cloud computing systems.\n\nProvides the state with:\nBase Number of Required Workers: §Y12K§!\nBase GDP Output per §YNetwork Infrastructure§!: $§Y3.5 Billion§!\n\nEach level of §YNetwork Infrastructure§! improves local productivity growth speed by §G+5.00%§!.\nEach level of §YNetwork Infrastructure§! reduces the duration of §YInternational Investments§! by §G-5.00%§!."
+ internet_station_desc: "§YNetwork Infrastructure§! are tall structures used in the telecommunication and radio communication fields in order to push transmissions across great distances or underground fiber optic cables and cloud computing systems.\n\nEach level of §YNetwork Infrastructure§! improves local productivity growth speed by §G+5.00%§!.\nEach level of §YNetwork Infrastructure§! reduces the duration of §YInternational Investments§! by §G-5.00%§!."
  # 4
  dockyard: "Naval Yard"
  dockyard_plural: "Naval Yards"
- dockyard_desc: "§YNaval Yards§! are representative of a state's ability to produce military vessels of all sorts ranging from §YPatrol Boats§!, §YConvoys§!, §YDestroyers§!, §YCarriers§! and more.\n\nProvides the state with:\nBase Number of Required Workers: §Y18.8K§!\nBase GDP Output per §YNaval Yard§!: $§Y1.5 Billion§!\nBase Energy Consumption: §R-0.5§! GW"
+ dockyard_desc: "§YNaval Yards§! are representative of a state's ability to produce military vessels of all sorts ranging from §YPatrol Boats§!, §YConvoys§!, §YDestroyers§!, §YCarriers§! and more.\n\nProvides the state with:\nBase Number of Required Workers: §Y25K§!\nBase GDP Output per §YNaval Yard§!: $§Y1 Billion§!\nBase Energy Consumption: §R-0.4§! GW"
  # 5
  air_base_desc: "An §YAir Base§! is a storage facility and a military compound for the deployment and preparation of your air forces. It can be stacked to level ten adding additional capacity of §Y50§! Planes per level."
  # 6
@@ -24,7 +24,7 @@
  anti_air_building_plural: "SHORAD Sites"
  anti_air_building_desc: "§YSHORAD Sites§! (Short Range Air Defense) are complexes and groups of anti-aircraft weapons and tactics that handle air defence against low-altitude air threats. These sites work together to divide airspace into defensible areas providing local military targets and infrastructure air coverage from everything ranging from helicopters to low-flying aircraft to jets."
  # 8
- nuclear_reactor_desc: "This building converts nuclear energy into electrical energy, consuming moderately enriched uranium in the process.\n\nProvides the state with:\nBase Number of Required Workers: §Y115K§!\nBase GDP Output per §YNuclear Reactor§!: $§Y4 Billion§!\nBase Power Gain: §G+5§! GW\n"
+ nuclear_reactor_desc: "This building converts nuclear energy into electrical energy, consuming moderately enriched uranium in the process.\n\nProvides the state with:\nBase Number of Required Workers: §Y115K§!\nBase GDP Output per §YNuclear Reactor§!: $§Y4 Billion§!\nBase Power Gain: §G+2§! GW\n"
  # 9
  renewable_energy_infra: "Renewable Energy Infrastructure"
  renewable_energy_infra_plural: "Renewable Energy Infrastructure"
@@ -38,7 +38,7 @@
  # 11
  offices: "Office Sector"
  offices_plural: "Office Sectors"
- offices_desc: "The §YOffice Sectors§! represents all the other industries of the economy beyond the extraction and heavy industries. These includes financial, customer, information technology, retail services and so much more.\n\nProvides the state with:\nBase Number of Required Workers: §Y473K§!\nBase GDP Output per §YOffice Sector§!: $§Y50 Billion§!\nBase Energy Consumption: §R-0.25§! GW" #\n\nFuel per day (K): §R-240.00§!
+ offices_desc: "The §YOffice Sectors§! represents all the other industries of the economy beyond the extraction and heavy industries. These includes financial, customer, information technology, retail services and so much more.\n\nProvides the state with:\nBase Number of Required Workers: §Y630K§!\nBase GDP Output per §YOffice Sector§!: $§Y35 Billion§!\nBase Energy Consumption: §R-0.25§! GW"
  # 16 - Railways
  rail_way_plural: "Railways"
  # 17 - Fossil Fuel Powerplant
@@ -50,7 +50,7 @@
  # 18 - Commercialized Agriculture District
  agriculture_district: "Commercialized Agriculture District"
  agriculture_district_plural: "Commercialized Agriculture Districts"
- agriculture_district_desc: "§YCommercialized Agriculture Districts§! represents a catch-all for all non-subsistence Agriculture within our nation. It includes Agro-Industry, arable land, grain silos, butcherhouses and more.\n\nProvides the state with:\nBase Number of Required Workers: §Y188K§!\nBase GDP Output per §YCommercialized Agriculture District§!: $§Y25 Billion§!\nBase Energy Consumption: §R-0.10§! GW\n§YFuel Gain§! from States: 8\n§YLocal Supplies§!: 1.5%\n"
+ agriculture_district_desc: "§YCommercialized Agriculture Districts§! represents a catch-all for all non-subsistence Agriculture within our nation. It includes Agro-Industry, arable land, grain silos, butcherhouses and more.\n\nProvides the state with:\nBase Number of Required Workers: §Y250K§!\nBase GDP Output per §YCommercialized Agriculture District§!: $§Y15 Billion§!\nBase Energy Consumption: §R-0.10§! GW\n§YFuel Gain§! from States: 8\n§YLocal Supplies§!: 1.5%\n"
  agriculture_district_amount: "$VALUE|Y0=$"
  # 19 - Missile Launch Sites
  rocket_site: "Missile Launch Site"
@@ -69,7 +69,7 @@
 
  microchip_plant: "Microchip Plant"
  microchip_plant_plural: "Microchip Plants"
- microchip_plant_desc: "Production plant that converts Technology Metals and Precious Metals into Microchips, for use by both industrial and military needs.\n\nProvides the state with:\nBase Number of Required Workers: §Y37.5K§!\nBase GDP Output per §YMicrochip Plant§!: $§Y32 Billion§!\nBase Energy Consumption: §R-0.75§! GW\n20 §YMicrochip§! Production\n\n§YMicrochips§! command the highest per-unit market price, generating significant cash income on surplus exports.\n\nCosts:\n3 §YTechnology Metals§!\n2 §YPrecious Metals§!"
+ microchip_plant_desc: "Production plant that converts Technology Metals and Precious Metals into Microchips, for use by both industrial and military needs.\n\nProvides the state with:\nBase Number of Required Workers: §Y37.5K§!\nBase GDP Output per §YMicrochip Plant§!: $§Y32 Billion§!\nBase Energy Consumption: §R-0.75§! GW\n6 §YMicrochip§! Production\n\n§YMicrochips§! command the highest per-unit market price, generating significant cash income on surplus exports.\n\nCosts:\n3 §YTechnology Metals§!\n2 §YPrecious Metals§!"
  composite_plant: "Composite Plant"
  composite_plant_plural: "Composite Plants"
  composite_plant_desc: "Production plant that combines Oil, Rubber, and Precious Metals into Composites, for use in both scientific, military, and industrial workers.\n\nProvides the state with:\nBase Number of Required Workers: §Y37.5K§!\nBase GDP Output per §YComposite Plant§!: $§Y28 Billion§!\nBase Energy Consumption: §R-0.8§! GW\n20 §YAdvanced Composite§! Production\n\n§YComposites§! sell at one of the highest per-unit market prices, generating strong cash income on surplus exports.\n\nCosts:\n1 §YOil§!\n1 §YRubber§!\n1 §YPrecious Metals§!"
@@ -164,3 +164,45 @@
  landmark_hofburg_palace_desc: "The Hofburg, in the heart of Vienna, served for centuries as the principal imperial palace of the Habsburg dynasty. Today its halls house the offices of the Austrian Federal President, the Spanish Riding School, the Imperial Treasury, and several major museums. It remains one of Vienna's defining landmarks and a centerpiece of Austrian cultural tourism."
 
  landmark_berlin_reichstag_desc: "The Reichstag building on Platz der Republik has stood at the political center of Berlin for over a century. Heavily damaged in 1933 and again during the Second World War, it was restored after reunification under Norman Foster's redesign and reopened in 1999 as the seat of the Bundestag, the German federal parliament. Its glass dome has become a defining symbol of modern German democracy and a major attraction in central Berlin."
+
+ # Imperia
+ infrastructure:0 "Infrastructure"
+ infrastructure_plural:0 "Infrastructure"
+ infrastructure_desc:0 "This building provides the state with improvement of infrastructure. It increases your supply power in strategic regions and increases your divisions' speed, as well as increasing your raw resource extraction."
+ air_base:0 "Air Base"
+ air_base_plural:0 "Air Bases"
+ radar_station:0 "Radar Station"
+ radar_station_plural:0 "Radar Stations"
+ RADAR_ONMAP_TOOLTIP:0 "§HRadar station§! level: $LVL|G$/$TOT|H$\nBelongs to: $WHO|H$"
+ RADAR_ONMAP_DAMAGED_TOOLTIP:0 "§HRadar station§! level: $LVL|R$/$TOT|H$\nBelongs to: $WHO|H$"
+ nuclear_reactor:0 "Nuclear Reactor"
+ nuclear_reactor_plural:0 "Nuclear Reactors"
+ naval_base:0 "Naval Base"
+ naval_base_plural:0 "Naval Bases"
+ naval_base_desc:0 "Extends the range of your fleet and provides repair services for it. Allows overseas supply and export of resources. Higher levels increases the supply throughput."
+ bunker:0 "Land Fort"
+ bunker_plural:0 "Land Forts"
+ bunker_desc:0 "This building inflicts an attack penalty of $VALUE|+%0$ for each fort level on the attacker in combat. Attacking from multiple directions will reduce forts effect."
+ coastal_bunker:0 "Coastal Fort"
+ coastal_bunker_plural:0 "Coastal Forts"
+ coastal_bunker_desc:0 "This building inflicts an attack penalty of $VALUE|+%0$ for each fort level on the attacker in naval invasion combat."
+ supply_node:0 "Supply Hub"
+ supply_node_desc:0 "A Supply Hub is a point along a railway, outside of existing cities, where supply can be drawn."
+ rail_way:0 "Railways"
+ rail_way_desc:0 "Railways are used to connect Supply Hubs together to allow drawing of supply far from your capital."
+ air_facility_plural:0 "Aerodynamics and Avionics Facilities"
+ naval_facility:0 "Naval Engineering Facility"
+ naval_facility_plural:0 "Naval Engineering Facilities"
+ mega_gun_emplacement:0 "Multi-Charge Large Caliber Gun"
+ mega_gun_emplacement_plural:0 "Multi-Charge Caliber Guns"
+ mega_gun_emplacement_desc:0 "Operating on the principle of multi-charge propulsion, this large caliber gun is designed to achieve unparalleled ranges in bombardment. Utilizing a series of underground tunnels, it accelerates shells to supersonic speeds before launching them towards distant targets."
+ land_facility:0 "Land Warfare Facility"
+ land_facility_plural:0 "Land Warfare Facilities"
+ land_facility_desc:0 "Experimental Facilities for Land Warfare  allow you to start research projects related to various aspects of land warfare, such as special tanks, or artillery."
+ BUILDING_GROUP_TOOLTIP:0 "\nYou can have up to $LEVEL|R$ of these buildings per state. This cap is shared with:"
+ BUILDING_GROUP_SHARED_NAME_ENTRY:0 " - $NAME$"
+ energy_infrastructure:0 "Reinforced Electrical Grid"
+ energy_infrastructure_desc:0 "Reinforced electrical supply lines and power infrastructure with a system of multiple redundancy ensures that our factories keep producing no matter what."
+ industrial_infrastructure:0 "High Capacity Electrical Grid"
+ industrial_infrastructure_desc:0 "Augmentations to the existing civilian power infrastructure give us higher capabilities for high-intensity industrial operations."
+ synthetic_refinery:0 "Synthetic Refinery"

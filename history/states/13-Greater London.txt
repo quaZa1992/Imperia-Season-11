@@ -6,6 +6,7 @@ state = {
 
 	resources = {
 		aluminium = 18.000
+		microchips = 15
 	}
 
 	history = {
@@ -21,7 +22,7 @@ state = {
 			offices = 12
 			air_base = 10
 			anti_air_building = 1
-			microchip_plant = 2
+			microchip_plant = 1
 			11333 = {
 				naval_base = 2
 				# BAE land

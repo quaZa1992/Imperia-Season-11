@@ -1,0 +1,47 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_imp_may_ketuanan_melayu_banner"
+		texturefile = "gfx/interface/textbanners/imp_may_ketuanan_melayu_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_imp_lost_generation_banner"
+		texturefile = "gfx/interface/textbanners/imp_lost_generation_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_imp_italian_companies_banner"
+		texturefile = "gfx/interface/textbanners/imp_italian_companies_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_imp_developing_economy_banner"
+		texturefile = "gfx/interface/textbanners/imp_developing_economy_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_imp_emerging_economy_banner"
+		texturefile = "gfx/interface/textbanners/imp_emerging_economy_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_imp_developed_economy_banner"
+		texturefile = "gfx/interface/textbanners/imp_developed_economy_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_imp_oil_price_banner"
+		texturefile = "gfx/interface/textbanners/imp_oil_price_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_imp_oil_price_decision_banner"
+		texturefile = "gfx/interface/textbanners/imp_oil_price_decision_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_imp_sov_stagnant_electronics_banner"
+		texturefile = "gfx/interface/textbanners/imp_sov_stagnant_electronics_banner.png"
+		legacy_lazy_load = no
+	}	
+}

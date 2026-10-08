@@ -405,6 +405,7 @@ energy_calc_generation = {
 	}
 	add_to_variable = { energy_sum = fossil_pp_energy_generation }
 
+
 	# Nuclear Energy Section
 	# weekly_production = (sum of nuclear_reactor_fuel_production) * (undamaged facilities / total facilities) * (1 + sum of nuclear_reactor_fuel_production_factor)
 	# The building modifier counts every built facility regardless of damage, so scale by the undamaged fraction to make raids cut production

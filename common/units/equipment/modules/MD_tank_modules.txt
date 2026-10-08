@@ -5301,7 +5301,7 @@ equipment_modules = {
 		add_stats = {
 			defense = 1
 			breakthrough = 1
-			build_cost_ic = 2.1
+			build_cost_ic = 2.9
 			maximum_speed = -0.25
 			reliability = -0.08
 		}
@@ -5349,13 +5349,13 @@ equipment_modules = {
 		add_stats = {
 			defense = 3
 			breakthrough = 3
-			build_cost_ic = 4.2
+			build_cost_ic = 4.9
 			maximum_speed = -0.25
 			reliability = -0.06
 		}
 		can_convert_from = {
 			module_category = tank_battlestation_module
-			convert_cost_ic = 5.25
+			convert_cost_ic = 4.25
 		}
 
 		build_cost_resources = {
@@ -5378,13 +5378,13 @@ equipment_modules = {
 		add_stats = {
 			defense = 3
 			breakthrough = 3
-			build_cost_ic = 5.8
+			build_cost_ic = 5.9
 			maximum_speed = -0.5
 			reliability = -0.05
 		}
 		can_convert_from = {
 			module_category = tank_battlestation_module
-			convert_cost_ic = 6
+			convert_cost_ic = 5
 		}
 
 		build_cost_resources = {
@@ -5407,13 +5407,13 @@ equipment_modules = {
 		add_stats = {
 			defense = 4
 			breakthrough = 4
-			build_cost_ic = 7.3
+			build_cost_ic = 6.9
 			maximum_speed = -0.5
 			reliability = -0.04
 		}
 		can_convert_from = {
 			module_category = tank_battlestation_module
-			convert_cost_ic = 7.5
+			convert_cost_ic = 6.5
 		}
 
 		build_cost_resources = {
@@ -5436,13 +5436,13 @@ equipment_modules = {
 		add_stats = {
 			defense = 4
 			breakthrough = 4
-			build_cost_ic = 8.7
+			build_cost_ic = 7.9
 			maximum_speed = -0.5
 			reliability = -0.03
 		}
 		can_convert_from = {
 			module_category = tank_battlestation_module
-			convert_cost_ic = 9
+			convert_cost_ic = 7
 		}
 
 		build_cost_resources = {
@@ -5465,13 +5465,13 @@ equipment_modules = {
 		add_stats = {
 			defense = 5
 			breakthrough = 5
-			build_cost_ic = 10.2
+			build_cost_ic = 8.9
 			maximum_speed = -0.5
 			reliability = -0.02
 		}
 		can_convert_from = {
 			module_category = tank_battlestation_module
-			convert_cost_ic = 10.5
+			convert_cost_ic = 8
 		}
 
 		build_cost_resources = {
@@ -5494,12 +5494,12 @@ equipment_modules = {
 		add_stats = {
 			defense = 5
 			breakthrough = 5
-			build_cost_ic = 11.7
+			build_cost_ic = 9.9
 			maximum_speed = -0.5
 		}
 		can_convert_from = {
 			module_category = tank_battlestation_module
-			convert_cost_ic = 12
+			convert_cost_ic = 9
 		}
 
 		build_cost_resources = {

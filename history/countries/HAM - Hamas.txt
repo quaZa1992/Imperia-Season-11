@@ -21,11 +21,7 @@ capital = 209
 		lacks_international_recognition
 		large_refugee_population
 		defence_06
-		edu_02
-		health_04
 		social_01
-		bureau_05
-		police_05
 		conservative_society
 		youth_radicalization
 		al_jazeera_allowed
@@ -37,6 +33,10 @@ capital = 209
 		iranian_quds_force
 		officer_basic_training
 		no_currency_backing
+		edu_01
+		health_01
+		bureau_01
+		police_01
 	}
 
 	if = {
@@ -87,7 +87,7 @@ capital = 209
 		}
 	}
 
-	set_variable = { var = treasury value = 3 }
+	set_variable = { var = treasury value = 12 }
 	set_variable = { var = corporate_tax_rate value = 20 }
 	set_variable = { var = population_tax_rate value = 20 }
 
@@ -163,7 +163,7 @@ capital = 209
 
 	set_variable = { var = corporate_tax_rate value = 15 }
 	set_variable = { var = population_tax_rate value = 15 }
-	set_variable = { overall_productivity = 643 }
+	set_variable = { overall_productivity = 465 }
 
 	recruit_character = HAM_khaled_mashal
 	recruit_character = HAM_wafai_sultan
@@ -211,4 +211,17 @@ capital = 209
 	add_opinion_modifier = { target = YEM modifier = arab_league_relations }
 
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = { set_variable = { productivity_state_var = 465 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

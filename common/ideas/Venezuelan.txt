@@ -923,16 +923,16 @@ ideas = {
 
 			picture = petrol_state
 			modifier = {
-				local_resources_oil_factor = 0.15
-				local_resources_aluminium_factor = 0.15
-				local_resources_rubber_factor = 0.15
-				local_resources_tungsten_factor = 0.15
-				local_resources_steel_factor = 0.15
-				local_resources_chromium_factor = 0.15
-				resource_export_multiplier_modifier = 0.20
+				local_resources_oil_factor = 0.05
+				local_resources_aluminium_factor = 0.05
+				local_resources_rubber_factor = 0.05
+				local_resources_tungsten_factor = 0.05
+				local_resources_steel_factor = 0.05
+				local_resources_chromium_factor = 0.05
+				resource_export_multiplier_modifier = 0.1
 				fossil_pp_energy_generation_modifier = 0.05
 				resource_sector_workers_modifier = 0.04
-				gdp_from_resource_sector_modifier = 0.40
+				gdp_from_resource_sector_modifier = 0.05
 			}
 		}
 		VEN_the_people = {

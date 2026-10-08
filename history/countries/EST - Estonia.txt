@@ -57,17 +57,11 @@ capital = 105
 		international_bankers
 
 		#Bureacracy
-		bureau_03
 		#Military Spending
-		defence_02
 		#Internal Security
-		police_03
 		#Education budget
-		edu_04
 		#Health budget
-		health_04
 		#Social spending
-		social_04
 
 		#Trade Law
 		mixed_economy
@@ -86,6 +80,12 @@ capital = 105
 		EST_crippling_unemployment
 		POL_intolerance_of_communism_idea # TODO: Replace this with something more custom for the Baltics + Finland
 		no_currency_backing
+		bureau_01
+		defence_01
+		police_01
+		edu_01
+		health_01
+		social_01
 	}
 
 	#Influence system
@@ -109,9 +109,9 @@ capital = 105
 	set_variable = { landowners_opinion = 60 }
 
 	set_variable = { var = debt value = 0.829 }
-	set_variable = { var = treasury value = 1 }
-	set_variable = { var = corporate_tax_rate value = 20 }
-	set_variable = { var = population_tax_rate value = 19 }
+	set_variable = { var = treasury value = 2 }
+	set_variable = { var = corporate_tax_rate value = 44 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { var = int_investments value = 1 }
 	set_variable = { inflation_rate_var = 0.03296 }
 	set_variable = { cb_policy_rate = 3 }
@@ -231,7 +231,7 @@ capital = 105
 	set_variable = { term_limit = 2 }
 	set_variable = { current_term = 2 }
 
-	set_variable = { overall_productivity = 682 }
+	set_variable = { overall_productivity = 919 }
 
 	recruit_character = EST_johannes_kert
 	recruit_character = EST_tarmo_kouts
@@ -267,4 +267,19 @@ capital = 105
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	reverse_add_opinion_modifier = { target = SOV modifier = RUS_OIL }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 919 }
+	}
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

@@ -244,9 +244,6 @@ capital = 750
 		fast_growth
 		defence_02
 		edu_05
-		health_05
-		social_05
-		bureau_01
 		police_02
 		volunteer_army
 		volunteer_women
@@ -267,6 +264,9 @@ capital = 750
 
 		antarctica_small_treaty_admin_cost_1
 		no_currency_backing
+		health_03
+		social_03
+		bureau_02
 	}
 	add_dynamic_modifier = { modifier = Commonwealth_member_modifier }
 	add_to_array = { global.commonwealth_member = THIS }
@@ -289,7 +289,7 @@ capital = 750
 	add_to_array = { influence_array_val = 21 }
 	sort_influence = yes
 
-	set_variable = { var = debt value = 38.104 }
+	set_variable = { var = debt value = 24.104 }
 	set_variable = { var = treasury value = 6 }
 	set_variable = { var = corporate_tax_rate value = 28 }
 	set_variable = { var = population_tax_rate value = 25 }
@@ -297,7 +297,7 @@ capital = 750
 	set_variable = { inflation_rate_var = -0.00114 }
 	set_variable = { cb_policy_rate = 5 }
 	set_variable = { gdp_per_capita = 32.728 }
-	set_variable = { overall_productivity = 823 }
+	set_variable = { overall_productivity = 1333 }
 
 	set_popularities = {
 		democratic = 74.0
@@ -379,4 +379,17 @@ capital = 750
 	add_opinion_modifier = { target = NZL modifier = Major_Non_NATO_Ally }
 	add_opinion_modifier = { target = ARG modifier = Major_Non_NATO_Ally }
 	add_opinion_modifier = { target = USA modifier = Major_Non_NATO_Ally }
+	every_controlled_state = { set_variable = { productivity_state_var = 1333 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

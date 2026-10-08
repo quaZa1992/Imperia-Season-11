@@ -3919,3 +3919,9 @@
  BOS_gov_old_name_ADJ: "Bosnian"
  bos_workers_republic_DEF: "the Workers' Republic of Bosnia and Herzegovina"
  bos_workers_republic_ADJ: "Bosnian"
+
+ # Imperia
+ CHI_AUTH_S:0 "People's Republic of China"
+ USA_AMERICA_democratic:0 "United States of America"
+ NKO_AUTH_S:0 "Democratic People's Republic of Korea"
+ SOV_RUSSIA_putin:0 "Russian Federation"

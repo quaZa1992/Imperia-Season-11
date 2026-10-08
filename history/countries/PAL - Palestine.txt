@@ -66,7 +66,7 @@ capital = 208
 	#Economy
 	set_variable = { var = corporate_tax_rate value = 15 }
 	set_variable = { var = population_tax_rate value = 17 }
-	set_variable = { overall_productivity = 590 }
+	set_variable = { overall_productivity = 355 }
 
 	set_technology = {
 
@@ -374,4 +374,17 @@ capital = 208
 	add_opinion_modifier = { target = YEM modifier = arab_league_relations }
 	set_variable = { inflation_rate_var = 0.05544 }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = { set_variable = { productivity_state_var = 355 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

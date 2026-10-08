@@ -1,0 +1,294 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_imp_ni_1"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_2"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_3"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_4"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_5"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_6"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_6.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_7"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_7.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_8"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_8.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_9"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_9.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_10"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_10.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_11"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_11.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_12"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_12.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_13"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_13.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_14"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_14.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_15"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_15.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_16"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_16.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_17"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_17.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_18"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_18.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_19"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_19.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_20"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_20.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_21"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_21.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_22"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_22.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_23"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_23.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_24"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_24.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_25"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_25.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_26"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_26.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_27"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_27.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_28"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_28.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_29"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_29.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_30"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_30.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_31"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_31.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_32"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_32.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_33"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_33.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_34"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_34.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_35"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_35.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_36"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_36.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_37"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_37.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_38"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_38.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_39"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_39.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_40"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_40.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_41"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_41.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_42"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_42.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_43"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_43.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_44"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_44.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_45"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_45.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_46"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_46.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_47"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_47.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_48"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_48.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_49"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_49.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_50"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_50.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_51"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_51.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_52"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_52.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_53"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_53.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_54"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_54.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_55"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_55.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_56"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_56.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_57"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_57.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_58"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_58.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_59"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_59.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_60"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_60.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_semiconductor_hub"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_semiconductor_hub.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_contraceptive_ban"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_contraceptive_ban.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_resource_extraction_mandate"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_s89.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_slush_fund_eco"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_s86.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_offshore_development"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_s84.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_national_research_committee"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_s87.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_fear_is_the_weapon"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_s81.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_hidden_arsenal"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_s83.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_foreign_fighters"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_s811.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_contraceptive_ban"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_contraceptive_ban.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_every_citizen_a_rifleman"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_every_citizen_a_rifleman.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_no_child_tax"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_no_child_tax.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imp_ni_do_it_for_denmark"
+		texturefile = "gfx/interface/ideas/nat_ideas/imp_ni_do_it_for_denmark.dds"
+	}
+}

@@ -18,8 +18,8 @@ units = {
 			#Barbaros-Class
 			ship = { name = "TCG Barbaros (F-244)" definition = frigate start_experience_factor = 0.30 equipment = { frigate_hull_3 = { amount = 1 owner = TUR version_name = "Barbaros Class" } } }
 			#D'Estienne d'Orves Class
-			ship = { name = "TCG Bozcaada (F-500)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } }
-			ship = { name = "TCG Bodrum (F-501)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } }
+			# ship = { name = "TCG Bozcaada (F-500)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } } # Imperia: disabled
+			# ship = { name = "TCG Bodrum (F-501)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } } # Imperia: disabled
 		}
 		task_force = {
 			name = "3. Muhrip Filotillası"
@@ -32,7 +32,7 @@ units = {
 			#Salihreis-Class
 			ship = { name = "TCG Salihreis (F-246)" definition = frigate start_experience_factor = 0.30 equipment = { frigate_hull_3 = { amount = 1 owner = TUR version_name = "Barbaros Class - Salihreis Subclass" } } }
 
-			ship = { name = "TCG Bartın (F-504)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } }
+			# ship = { name = "TCG Bartın (F-504)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } } # Imperia: disabled
 		}
 		task_force = {
 			name = "1. Hücumbot Filotillası"
@@ -62,8 +62,8 @@ units = {
 			ship = { name = "TCG Turgutreis (F-241)" definition = frigate start_experience_factor = 0.30 equipment = { frigate_hull_2 = { amount = 1 owner = TUR creator = GER version_name = "Yavuz Class" } } }
 			ship = { name = "TCG Oruçreis (F-245)" definition = frigate start_experience_factor = 0.30 equipment = { frigate_hull_3 = { amount = 1 owner = TUR version_name = "Barbaros Class" } } }
 
-			ship = { name = "TCG Bandırma (F-502)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } }
-			ship = { name = "TCG Beykoz (F-503)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } }
+			# ship = { name = "TCG Bandırma (F-502)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } } # Imperia: disabled
+			# ship = { name = "TCG Beykoz (F-503)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } } # Imperia: disabled
 		}
 		task_force = {
 			name = "4. Muhrip Filotillası"
@@ -75,7 +75,7 @@ units = {
 			ship = { name = "TCG Yıldırım (F-243)" definition = frigate start_experience_factor = 0.30 equipment = { frigate_hull_2 = { amount = 1 owner = TUR creator = GER version_name = "Yavuz Class" } } }
 			ship = { name = "TCG Kemalreis (F-247)" definition = frigate start_experience_factor = 0.30 equipment = { frigate_hull_3 = { amount = 1 owner = TUR version_name = "Barbaros Class - Salihreis Subclass" } } }
 
-			ship = { name = "TCG Bafra (F-505)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } }
+			# ship = { name = "TCG Bafra (F-505)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_2 = { amount = 1 owner = TUR creator = FRA version_name = "D'Estienne d'Orves Class" } } } # Imperia: disabled
 		}
 		task_force = {
 			name = "2. Hücumbot Filotillası"
@@ -106,6 +106,17 @@ units = {
 			ship = { name = "TCG Sakarya (S-354)" definition = attack_submarine start_experience_factor = 0.60 equipment = { attack_submarine_hull_2 = { amount = 1 owner = TUR creator = GER version_name = "Type 209 Class - Preveze Variant" } } }
 			ship = { name = "TCG 18 Mart (S-355)" definition = attack_submarine start_experience_factor = 0.60 equipment = { attack_submarine_hull_2 = { amount = 1 owner = TUR creator = GER version_name = "Type 209 Class - Preveze Variant" } } }
 			ship = { name = "TCG Anafartalar (S-356)" definition = attack_submarine start_experience_factor = 0.60 equipment = { attack_submarine_hull_2 = { amount = 1 owner = TUR creator = GER version_name = "Type 209 Class - Preveze Variant" } } }
+		}
+	}
+	 fleet = {
+	   name = "Bakım-Onarım Filosu"
+	   naval_base = 11829
+		task_force = {
+			name = "Servis Dışı Gemiler"
+			location = 11829
+			# Imperia - Berk-Class
+			ship = { name = "TCG Berk (D-358)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Claud Jones Class" } } }
+			ship = { name = "TCG Peyk (D-359)" definition = corvette start_experience_factor = 0.60 equipment = { corvette_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Claud Jones Class" } } }
 		}
 	}
 }

@@ -24,11 +24,11 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 				political_power_gain = -0.1
 				local_resources_oil_factor = -0.20
-local_resources_aluminium_factor = -0.20
-local_resources_rubber_factor = -0.20
-local_resources_tungsten_factor = -0.20
-local_resources_steel_factor = -0.20
-local_resources_chromium_factor = -0.20
+				local_resources_aluminium_factor = -0.20
+				local_resources_rubber_factor = -0.20
+				local_resources_tungsten_factor = -0.20
+				local_resources_steel_factor = -0.20
+				local_resources_chromium_factor = -0.20
 			}
 		}
 
@@ -120,11 +120,7 @@ local_resources_chromium_factor = -0.20
 			picture = budapest_memorandum
 
 			modifier = {
-				stability_factor = -0.02
-				political_power_gain = -0.1
-				trade_opinion_factor = -0.50
 				production_speed_buildings_factor = -0.4
-				resource_export_multiplier_modifier = -0.50
 			}
 		}
 
@@ -134,11 +130,7 @@ local_resources_chromium_factor = -0.20
 			picture = international_treaty2
 
 			modifier = {
-				stability_factor = -0.01
-				political_power_gain = -0.05
 				production_speed_buildings_factor = -0.20
-				trade_opinion_factor = -0.10
-				resource_export_multiplier_modifier = -0.20
 			}
 		}
 
@@ -148,11 +140,7 @@ local_resources_chromium_factor = -0.20
 			picture = international_treaty
 
 			modifier = {
-				stability_factor = -0.10
-				political_power_gain = -0.25
 				production_speed_buildings_factor = -0.6
-				trade_opinion_factor = -0.75
-				resource_export_multiplier_modifier = -0.75
 			}
 		}
 
@@ -285,11 +273,11 @@ local_resources_chromium_factor = -0.20
 				max_dig_in = 0.25
 				production_speed_buildings_factor = 0.25
 				local_resources_oil_factor = 0.25
-local_resources_aluminium_factor = 0.25
-local_resources_rubber_factor = 0.25
-local_resources_tungsten_factor = 0.25
-local_resources_steel_factor = 0.25
-local_resources_chromium_factor = 0.25
+				local_resources_aluminium_factor = 0.25
+				local_resources_rubber_factor = 0.25
+				local_resources_tungsten_factor = 0.25
+				local_resources_steel_factor = 0.25
+				local_resources_chromium_factor = 0.25
 			}
 		}
 
@@ -302,11 +290,11 @@ local_resources_chromium_factor = 0.25
 				max_dig_in = 0.1
 				production_speed_buildings_factor = 0.1
 				local_resources_oil_factor = 0.10
-local_resources_aluminium_factor = 0.10
-local_resources_rubber_factor = 0.10
-local_resources_tungsten_factor = 0.10
-local_resources_steel_factor = 0.10
-local_resources_chromium_factor = 0.10
+				local_resources_aluminium_factor = 0.10
+				local_resources_rubber_factor = 0.10
+				local_resources_tungsten_factor = 0.10
+				local_resources_steel_factor = 0.10
+				local_resources_chromium_factor = 0.10
 			}
 		}
 
@@ -319,11 +307,11 @@ local_resources_chromium_factor = 0.10
 				max_dig_in = 0.05
 				production_speed_buildings_factor = 0.05
 				local_resources_oil_factor = 0.05
-local_resources_aluminium_factor = 0.05
-local_resources_rubber_factor = 0.05
-local_resources_tungsten_factor = 0.05
-local_resources_steel_factor = 0.05
-local_resources_chromium_factor = 0.05
+				local_resources_aluminium_factor = 0.05
+				local_resources_rubber_factor = 0.05
+				local_resources_tungsten_factor = 0.05
+				local_resources_steel_factor = 0.05
+				local_resources_chromium_factor = 0.05
 			}
 		}
 

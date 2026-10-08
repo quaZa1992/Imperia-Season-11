@@ -1459,12 +1459,12 @@ capital = 56
 		labour_unions
 		defense_industry
 		maritime_industry
-		bureau_03
-		defence_03
+		bureau_02
+		defence_02
 		police_03
-		edu_04
+		edu_05
 		health_05
-		social_06
+		social_05
 		consumption_economy
 		intervention_regional_interventionism
 		officer_international_education
@@ -1559,8 +1559,8 @@ capital = 56
 	complete_special_project = sp:sp_microchip_production
 
 	set_technology = {
-		microchip_production_2 = 1
-		microchip_production_3 = 1
+		#microchip_production_2 = 1 # Imperia: microchip rework
+		#microchip_production_3 = 1 # Imperia: microchip rework
 
 		GNSS1 = 1
 		GNSS2 = 1
@@ -2386,10 +2386,10 @@ capital = 56
 	set_variable = { defense_industry_opinion = 60 }
 
 	# Economic Values
-	set_variable = { var = debt value = 1179.5 }
-	set_variable = { var = treasury value = 93 }
-	set_variable = { var = corporate_tax_rate value = 28 }
-	set_variable = { var = population_tax_rate value = 39 }
+	set_variable = { var = debt value = 880.5 }
+	set_variable = { var = treasury value = 33 }
+	set_variable = { var = corporate_tax_rate value = 36 }
+	set_variable = { var = population_tax_rate value = 38 }
 	set_variable = { var = int_investments value = 637 }
 	set_variable = { inflation_rate_var = 0.00537 }
 	set_variable = { cb_policy_rate = 3 }
@@ -2398,7 +2398,7 @@ capital = 56
 	set_variable = { var_reactor_material_stockpile = 45000 }
 	set_country_flag = enabled_nuclear_reactor_fuel_production
 
-	set_variable = { overall_productivity = 1084 }
+	set_variable = { overall_productivity = 1286 }
 
 	# French Space
 	set_variable = { var = FRA_peoples_support value = 50 }
@@ -2748,4 +2748,21 @@ capital = 56
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	reverse_add_opinion_modifier = { target = SOV modifier = RUS_OIL }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 1286 }
+	}
+	67 = { set_variable = { productivity_state_var = 552 } }
+	56 = { set_variable = { productivity_state_var = 1599 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

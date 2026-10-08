@@ -1,0 +1,23 @@
+guiTypes = {
+	containerWindowType = { 
+		name = "imp_state_remove_buildings_gui"
+		position = { x= 0 y= 0 }
+		
+		buttonType = {
+			name ="imp_state_remove_shelters"
+			spriteType = "GFX_closebutton_16"
+			position = { x= 200 y= 198 }
+			scale = 0.8
+			pdx_tooltip = "imp_state_remove_building_tt"
+		}
+		
+		buttonType = {
+			name ="imp_state_remove_reactor"
+			spriteType = "GFX_closebutton_16"
+			position = { x= 340 y= 100 }
+			scale = 0.8
+			pdx_tooltip = "imp_state_remove_building_tt"
+		}
+
+	}
+}

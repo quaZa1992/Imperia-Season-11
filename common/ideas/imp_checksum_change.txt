@@ -1,0 +1,12 @@
+ideas = {
+	country = {
+		imp_checksum_vary = {
+			picture = imp_old_people
+			allowed_civil_war = { always = yes }
+			modifier = { 
+				monthly_population = -0.5
+				country_productivity_growth_modifier = -0.1
+			}
+		}
+	}
+}

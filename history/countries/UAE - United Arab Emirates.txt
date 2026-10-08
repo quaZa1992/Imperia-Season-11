@@ -270,7 +270,7 @@ capital = 180
 	sort_influence = yes
 
 	### Economy
-	set_variable = { var = debt value = 9.926 }
+	set_variable = { var = debt value = 35.926 }
 	set_variable = { var = treasury value = 20 }
 	set_variable = { var = corporate_tax_rate value = 0 }
 	set_variable = { var = population_tax_rate value = 1 }
@@ -319,7 +319,7 @@ capital = 180
 			father_of_the_nation
 		}
 	}
-	set_variable = { overall_productivity = 1365 }
+	set_variable = { overall_productivity = 935 }
 
 	recruit_character = UAE_hamad_rumaithi
 	recruit_character = UAE_ibrahim_alawi
@@ -363,4 +363,19 @@ capital = 180
 	add_opinion_modifier = { target = YEM modifier = arab_league_relations }
 
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 935 }
+	}
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

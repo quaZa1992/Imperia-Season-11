@@ -1,0 +1,105 @@
+﻿l_english:
+ # IDEAS
+ imp_food_shortage: "Ongoing food shortage"
+ 
+ # DECISIONS
+ imp_famine_category: "Food Supply of [ROOT.GetNameWithFlag]"
+ imp_famine_category_desc: "Currently there is an ongoing shortage of food in the market. this system provides information about [ROOT.GetNameWithFlag]'s supply of food and options to mitigate any issues.\n\n\nWe can §Ychange national consumption by modifying the implemented rationing policy, increasing or decreasing food quotas per person.§!"
+ # GUI STUFF
+ 
+ # MAIN TITLE #
+ famine_main_title: ""
+ # REFRESH BUTTON #
+ famine_refresh: "Refresh"
+ famine_refresh_TT: "Clicking this button will update your statistics and refresh this window."
+ # BANKED CHANGES #
+ imp_famine_market_text: "§YMarket State:§!\n Total World Production: [?world_production]\n Total World Consumption: [?world_consumption]"
+ 
+ IMP_FOOD_TRANSFER_ACCEPT_TITLE: "Accept"
+ IMP_FOOD_TRANSFER_TITLE: "Send Food"
+ 
+ # ALLOCATION BUTTONS #
+ ALLOCATE_FOOD_RATION: "§CClick§! to decrease quota level:\n §YFood Rations§! Change by 1 level, decreasing food consumption per person. \n"
+ ALLOCATE_FOOD_RATION_DELAYED: "§0Right Click§! to increase quota level:\n §YFood Rations§! Change by 1 level, increasing food consumption per person. \n"
+ ALLOCATE_FOOD_MARKET: "Unavailable in the current situation"
+ ALLOCATE_FOOD_MARKET_DELAYED: ""
+ # DRIFT CHANGING ALLOCATION/PRICES
+ basic_price_drift_active: "§CBasic Crops§! §Gare currently being increased in price!§!"
+ basic_price_drift_active_tooltip: "Readjusting market value of §CBasic Crops§! by [?ROOT.AGRI_monthly_changes_basic_price|%G2] per §Ymonth§!\nDays Remaining: [?agriculture_price_drift_basic:days_left|Y0]"
+ cash_price_drift_active: "§CCash Crops§! §Gare currently being increased in price!§!"
+ cash_price_drift_active_tooltip: "Readjusting market value of §CCash Crops§! by [?ROOT.AGRI_monthly_changes_cash_price|%G2] per §Ymonth§!\nDays Remaining: [?agriculture_price_drift_cash:days_left|Y0]"
+ # TITLES
+ # BASIC CROPS
+ RATION_basic_title: "§CFood Rationing§!"
+ RATION_basic_stats: "Quotas :[?ROOT.famine_stats^4|Y0]/5"
+ # CASH CROPS
+ RATION_cash_title: "§CFood Market§!"
+ RATION_cash_stats: "[?agri_crop_allocation^1|%Y2]"
+ # HARVEST VALUES
+ famine_food_production_title: "§YFood Stockpile:§!\n§YMonthly Production:§!\n§YMonthly Consumption:§!"
+ famine_food_production_stats: "[?ROOT.famine_stats^1|G] §YMillion Tonnes§!\n[?ROOT.famine_stats^3|G] §YMillion Tonnes§!\n[?ROOT.famine_stats^2|R] §YMillion Tonnes§!"
+ # TRIGGER TOOLTIPS
+ AGRI_not_experiencing_drought: "Is §Rnot§! currently experiencing a §YDrought§!"
+
+
+ d_imp_check_famine_to: "Display Nations we Send Food to"
+ d_imp_check_famine_from: "Display Nations we Receive Food from"
+ imp_famine.2.t: "Food Report"
+ imp_famine.2.d: "We are sending food to the following nations:\n\n[imp_dip_sanc_by_us_0] [imp_dip_sanc_by_us_1] [imp_dip_sanc_by_us_2] [imp_dip_sanc_by_us_3] [imp_dip_sanc_by_us_4] [imp_dip_sanc_by_us_5] [imp_dip_sanc_by_us_6] [imp_dip_sanc_by_us_7] [imp_dip_sanc_by_us_8] [imp_dip_sanc_by_us_9] [imp_dip_sanc_by_us_10] [imp_dip_sanc_by_us_11] [imp_dip_sanc_by_us_12] [imp_dip_sanc_by_us_13] [imp_dip_sanc_by_us_14] [imp_dip_sanc_by_us_15]\n\nFinancial Sanctions:\n[imp_fin_sanc_by_us_0] [imp_fin_sanc_by_us_1] [imp_fin_sanc_by_us_2] [imp_fin_sanc_by_us_3] [imp_fin_sanc_by_us_4] [imp_fin_sanc_by_us_5] [imp_fin_sanc_by_us_6] [imp_fin_sanc_by_us_7] [imp_fin_sanc_by_us_8] [imp_fin_sanc_by_us_9] [imp_fin_sanc_by_us_10] [imp_fin_sanc_by_us_11] [imp_fin_sanc_by_us_12] [imp_fin_sanc_by_us_13] [imp_fin_sanc_by_us_14]\n\nEconomic Sanctions:\n[imp_eco_sanc_by_us_0] [imp_eco_sanc_by_us_1] [imp_eco_sanc_by_us_2] [imp_eco_sanc_by_us_3] [imp_eco_sanc_by_us_4] [imp_eco_sanc_by_us_5] [imp_eco_sanc_by_us_6] [imp_eco_sanc_by_us_7] [imp_eco_sanc_by_us_8] [imp_eco_sanc_by_us_9] [imp_eco_sanc_by_us_10] [imp_eco_sanc_by_us_11] [imp_eco_sanc_by_us_12] [imp_eco_sanc_by_us_13] [imp_eco_sanc_by_us_14]\n\nMilitary Sanctions:\n[imp_mil_sanc_by_us_0] [imp_mil_sanc_by_us_1] [imp_mil_sanc_by_us_2] [imp_mil_sanc_by_us_3] [imp_mil_sanc_by_us_4] [imp_mil_sanc_by_us_5] [imp_mil_sanc_by_us_6] [imp_mil_sanc_by_us_7] [imp_mil_sanc_by_us_8] [imp_mil_sanc_by_us_9] [imp_mil_sanc_by_us_10] [imp_mil_sanc_by_us_11] [imp_mil_sanc_by_us_12] [imp_mil_sanc_by_us_13] [imp_mil_sanc_by_us_14]"
+ imp_famine.2.o1: "Let them eat cake"
+
+ imp_famine.3.t: "Food Report"
+ imp_famine.3.d: "The following nations are sending food to us:\n\n[imp_dip_sanc_on_us_0] [imp_dip_sanc_on_us_1] [imp_dip_sanc_on_us_2] [imp_dip_sanc_on_us_3] [imp_dip_sanc_on_us_4] [imp_dip_sanc_on_us_5] [imp_dip_sanc_on_us_6] [imp_dip_sanc_on_us_7] [imp_dip_sanc_on_us_8] [imp_dip_sanc_on_us_9] [imp_dip_sanc_on_us_10] [imp_dip_sanc_on_us_11] [imp_dip_sanc_on_us_12] [imp_dip_sanc_on_us_13] [imp_dip_sanc_on_us_14] [imp_dip_sanc_on_us_15]\n\nFinancial Sanctions:\n[imp_fin_sanc_on_us_0] [imp_fin_sanc_on_us_1] [imp_fin_sanc_on_us_2] [imp_fin_sanc_on_us_3] [imp_fin_sanc_on_us_4] [imp_fin_sanc_on_us_5] [imp_fin_sanc_on_us_6] [imp_fin_sanc_on_us_7] [imp_fin_sanc_on_us_8] [imp_fin_sanc_on_us_9] [imp_fin_sanc_on_us_10] [imp_fin_sanc_on_us_11] [imp_fin_sanc_on_us_12] [imp_fin_sanc_on_us_13] [imp_fin_sanc_on_us_14]\n\nEconomic Sanctions:\n[imp_eco_sanc_on_us_0] [imp_eco_sanc_on_us_1] [imp_eco_sanc_on_us_2] [imp_eco_sanc_on_us_3] [imp_eco_sanc_on_us_4] [imp_eco_sanc_on_us_5] [imp_eco_sanc_on_us_6] [imp_eco_sanc_on_us_7] [imp_eco_sanc_on_us_8] [imp_eco_sanc_on_us_9] [imp_eco_sanc_on_us_10] [imp_eco_sanc_on_us_11] [imp_eco_sanc_on_us_12] [imp_eco_sanc_on_us_13] [imp_eco_sanc_on_us_14]\n\nMilitary Sanctions:\n[imp_mil_sanc_on_us_0] [imp_mil_sanc_on_us_1] [imp_mil_sanc_on_us_2] [imp_mil_sanc_on_us_3] [imp_mil_sanc_on_us_4] [imp_mil_sanc_on_us_5] [imp_mil_sanc_on_us_6] [imp_mil_sanc_on_us_7] [imp_mil_sanc_on_us_8] [imp_mil_sanc_on_us_9] [imp_mil_sanc_on_us_10] [imp_mil_sanc_on_us_11] [imp_mil_sanc_on_us_12] [imp_mil_sanc_on_us_13] [imp_mil_sanc_on_us_14]"
+ imp_famine.3.o1: "Guess we'll eat cake"
+
+ # EVENTS
+
+
+
+
+
+ # NEIGHBOUR EVENTS
+
+
+
+
+
+
+
+
+
+ # INFLUENCER EVENTS
+
+
+
+
+
+
+
+
+
+ # RANDOM EVENTS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+#########################################################################################
+# Original Script by: Moveably - Please don't touch. Unless I'm gone. Then can touch :) #
+#########################################################################################
+
+add_namespace = imp_wto_exclusion
+
+# Bond Crisis
+news_event = {
+	id = imp_wto_exclusion.1
+	picture = GFX_news_event_bond_crisis_1
+
+	title = imp_wto_exclusion.1.t
+	desc = imp_wto_exclusion.1.d
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = imp_wto_exclusion.1.o1
+	}
+}

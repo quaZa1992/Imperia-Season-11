@@ -118,12 +118,8 @@ ideas = {
 			}
 
 			modifier = {
-				foreign_influence_modifier = -0.25
 				production_speed_buildings_factor = -0.25
-				resource_export_multiplier_modifier = -0.35
-				social_cost_multiplier_modifier = 0.15
 				democratic_drift = 0.02
-				interest_rate_multiplier_modifier = 0.50
 			}
 		}
 		IRQ_international_sanctions2 = {
@@ -137,12 +133,8 @@ ideas = {
 			}
 
 			modifier = {
-				foreign_influence_modifier = -0.15
 				production_speed_buildings_factor = -0.15
-				resource_export_multiplier_modifier = -0.25
-				social_cost_multiplier_modifier = 0.10
 				democratic_drift = 0.02
-				interest_rate_multiplier_modifier = 0.50
 			}
 		}
 		IRQ_international_sanctions3 = {
@@ -156,12 +148,8 @@ ideas = {
 			}
 
 			modifier = {
-				foreign_influence_modifier = -0.05
 				production_speed_buildings_factor = -0.10
-				resource_export_multiplier_modifier = -0.15
-				social_cost_multiplier_modifier = 0.05
 				democratic_drift = 0.01
-				interest_rate_multiplier_modifier = 0.50
 			}
 		}
 		IRQ_international_sanctions4 = {
@@ -176,7 +164,6 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = -0.05
-				resource_export_multiplier_modifier = -0.05
 			}
 		}
 		IRQ_nuclear_experts = {
@@ -428,11 +415,11 @@ ideas = {
 			modifier = {
 				interest_rate_multiplier_modifier = -1.00
 				local_resources_oil_factor = 0.15
-local_resources_aluminium_factor = 0.15
-local_resources_rubber_factor = 0.15
-local_resources_tungsten_factor = 0.15
-local_resources_steel_factor = 0.15
-local_resources_chromium_factor = 0.15
+				local_resources_aluminium_factor = 0.15
+				local_resources_rubber_factor = 0.15
+				local_resources_tungsten_factor = 0.15
+				local_resources_steel_factor = 0.15
+				local_resources_chromium_factor = 0.15
 				consumer_goods_factor = -0.05
 				oil_export_multiplier_modifier = 0.15
 			}

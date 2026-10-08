@@ -54,12 +54,7 @@ SOV_western_sanctions_modifier = {
 	icon = "GFX_idea_sov_western_sanctions_idea"
 
 	production_speed_buildings_factor = SOV_sanctions_construction_speed
-	receiving_investment_cost_modifier = SOV_sanctions_invest_cost
-	return_on_investment_modifier = SOV_sanctions_roi
-	opinion_gain_monthly_same_ideology_factor = SOV_sanctions_opinion_gain
-	research_speed_factor = SOV_sanctions_research_speed
-	consumer_goods_factor = SOV_sanctions_tax_cost
-	office_park_income_tax_modifier = SOV_sanctions_office_tax_gain
+	# Imperia: remaining scripted Western-sanctions effects disabled (Imperia uses its own sanctions system)
 }
 
 SOV_russian_oligarchs_modifier = {

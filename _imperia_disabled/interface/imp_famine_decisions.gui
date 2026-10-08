@@ -1,0 +1,132 @@
+# @AGRI_TITLES_Y = 0
+# @AGRI_COMMON_Y = 20
+#Whats that above
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "famine_statistics_GUI"
+		position = { x = 10 y= 0 }
+		size = { width = 100% height = 320 }
+
+		instantTextBoxType = {
+			name = famine_main_title
+			position = { x = 145 y = 10 }
+			font = "hoi_18mbs"
+			text = famine_main_title
+			format = center
+			maxWidth = 355
+			fixedsize = yes
+		}
+
+		# REFRESH BUTTON #
+			buttonType = {
+				name = "famine_refresh"
+				spriteType = "GFX_generic_button_wide"
+				position = { x = 10 y = 0 }
+				text = famine_refresh
+				pdx_tooltip = famine_refresh_TT
+			}
+			iconType = {
+				name = "agriculture_refresh_icon"
+				spriteType = "GFX_refresh_tax_rate"
+				position = { x = 16 y = 2 }
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name = "famine_refresh_text"
+				position = { x = 10 y = 0 }
+				font = "hoi_18mbs"
+				text = famine_refresh
+				format = center
+				maxWidth = 145
+				maxHeight = 24
+				fixedsize = yes
+				pdx_tooltip = famine_refresh_TT
+			}
+			# STATS #
+				instantTextBoxType = {
+					name = "imp_famine_changes_variable_title"
+					position = { x = 180 y = 55 }
+					font = "hoi_18mbs"
+					text = "imp_famine_market_text"
+					format = center
+					maxWidth = 305
+					maxHeight = 60
+					fixedsize = yes
+				}
+		# RATIONING #
+			instantTextBoxType = {
+				name = "imp_famine_rationing_title"
+				position = { x = 100 y = 120 }
+				font = "hoi_18mbs"
+				text = RATION_basic_title
+				format = center
+				maxWidth = 156
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name = "imp_famine_rationing_stats"
+				position = { x = 100 y = 220 }
+				font = "hoi_18mbs"
+				text = RATION_basic_stats
+				format = center
+				maxWidth = 156
+				fixedsize = yes
+			}
+			# BASIC CROP ALLOCATION BUTTON #
+				buttonType = {
+					name = "imp_famine_rationing_allocation_button"
+					spriteType = "GFX_basic_crops"
+					position = { x = 148 y = 155 }
+					pdx_tooltip = "ALLOCATE_FOOD_RATION"
+					pdx_tooltip_delayed = "ALLOCATE_FOOD_RATION_DELAYED"
+				}
+		# MARKET #
+			instantTextBoxType = {
+				name = "imp_famine_market_title"
+				position = { x = 310 y = 120 }
+				font = "hoi_18mbs"
+				text = RATION_cash_title
+				format = center
+				maxWidth = 156
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name = "imp_famine_market_stats"
+				position = { x = 310 y = 220 }
+				font = "hoi_18mbs"
+				text = RATION_cash_stats
+				format = center
+				maxWidth = 156
+				fixedsize = yes
+			}
+			# CASH CROP ALLOCATION BUTTON #
+				buttonType = {
+					name = "imp_famine_market_allocation_button"
+					spriteType = "GFX_cash_crops"
+					position = { x = 355 y = 155 }
+					pdx_tooltip = "ALLOCATE_FOOD_MARKET"
+					pdx_tooltip_delayed = "ALLOCATE_FOOD_MARKET_DELAYED"
+				}
+		# INCOME
+			instantTextBoxType = {
+				name = "imp_famine_prod_title"
+				position = { x = 10 y = 270 }
+				font = "hoi_18mbs"
+				text = famine_food_production_title
+				format = center
+				maxWidth = 250
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name = "harvest_stats"
+				position = { x = 250 y = 270 }
+				font = "hoi_18mbs"
+				text = famine_food_production_stats
+				format = center
+				maxWidth = 250
+				fixedsize = yes
+			}
+	}
+}

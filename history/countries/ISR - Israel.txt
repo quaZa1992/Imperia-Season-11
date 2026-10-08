@@ -63,12 +63,7 @@ capital = 207
 		kirya_glilot_tensions
 		alice_miller_v_ministry_of_defence
 		stagnation
-		defence_04
-		edu_04
 		health_03
-		social_04
-		bureau_03
-		police_01
 		draft_army
 		drafted_women
 		Major_Non_NATO_Ally
@@ -91,6 +86,12 @@ capital = 207
 		un_aid_ido_member
 		un_aid_cdf_member
 		no_currency_backing
+		defence_03
+		edu_03
+		social_03
+		bureau_02
+		police_03
+		semi_consumption_economy
 	}
 	add_to_array = { global.un_aid_esco_contributor = THIS }
 	add_to_array = { global.un_aid_ido_contributor = THIS }
@@ -1764,15 +1765,14 @@ capital = 207
 	sort_influence = yes
 
 	### Economy
-	set_variable = { var = debt value = 149.499 }
+	set_variable = { var = debt value = 80.499 }
 	set_variable = { var = treasury value = 34 }
-	set_variable = { var = corporate_tax_rate value = 23 }
-	set_variable = { var = population_tax_rate value = 38 }
-	set_variable = { var = int_investments value = 34 }
+	set_variable = { var = corporate_tax_rate value = 41 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { inflation_rate_var = 0.05190 }
 	set_variable = { cb_policy_rate = 11 }
 	set_variable = { gdp_per_capita = 30.476 }
-	set_variable = { overall_productivity = 935 }
+	set_variable = { overall_productivity = 1335 }
 
 	set_popularities = {
 		democratic = 53.4
@@ -1878,4 +1878,17 @@ capital = 207
 	add_opinion_modifier = { target = NZL modifier = Major_Non_NATO_Ally }
 	add_opinion_modifier = { target = ARG modifier = Major_Non_NATO_Ally }
 	add_opinion_modifier = { target = USA modifier = Major_Non_NATO_Ally }
+	every_controlled_state = { set_variable = { productivity_state_var = 1335 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

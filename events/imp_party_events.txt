@@ -1,0 +1,21 @@
+
+country_event = { #Creation of Die Linke
+	id = germany_party.100
+	title = germany_party.100.t
+	desc = germany_party.100.d
+	picture = GFX_die_linke_stage
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany_party.1.a
+		log = "[GetDateText]: [This.GetName]: germany_party.100.a executed"
+		set_country_flag = GER_die_cum
+		update_party_name = yes
+		add_stability = -0.03
+		set_temp_variable = { party_index = 5 }
+		set_temp_variable = { party_popularity_increase = 0.05 }
+		set_temp_variable = { temp_outlook_increase = 0.04 }
+		change_relative_party_popularity = yes
+	}
+}

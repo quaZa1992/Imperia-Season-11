@@ -22,13 +22,13 @@ capital = 240
 		sunni
 		youth_radicalization
 		child_soldiers
-		defence_07
+		defence_04
 		LoAS_member
 		stagnation
 		edu_01
 		health_01
-		social_02
-		bureau_03
+		social_01
+		bureau_01
 		police_01
 		draft_army
 		volunteer_women
@@ -43,13 +43,13 @@ capital = 240
 		sunni
 		youth_radicalization
 		child_soldiers
-		defence_07
+		defence_04
 		LoAS_member
 		stagnation
 		edu_01
 		health_01
-		social_02
-		bureau_03
+		social_01
+		bureau_01
 		police_01
 		draft_army
 		volunteer_women
@@ -156,13 +156,13 @@ capital = 240
 	set_variable = { var = child_soldiers value = 2000 }
 	set_variable = { var = child_soldiers_recruitment value = 10 }
 
-	set_variable = { var = debt value = 3 }
+	set_variable = { var = debt value = 0 }
 	set_variable = { var = treasury value = 0.5 }
 	set_variable = { var = int_investments value = 0 }
-	set_variable = { var = corporate_tax_rate value = 10 }
-	set_variable = { var = population_tax_rate value = 10 }
+	set_variable = { var = corporate_tax_rate value = 15 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { literacy_rate = 0.378 }
-	set_variable = { overall_productivity = 491 }
+	set_variable = { overall_productivity = 317 }
 
 	set_popularities = {
 		democratic = 20.0
@@ -293,4 +293,17 @@ capital = 240
 	add_opinion_modifier = { target = LBA modifier = African_Union_Relations }
 	add_opinion_modifier = { target = EGY modifier = African_Union_Relations }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = { set_variable = { productivity_state_var = 317 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

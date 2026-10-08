@@ -947,6 +947,7 @@ technologies = {
 		special_project_specialization = { specialization_air }
 
 		path = { research_cost_coeff = 1 leads_to_tech = GLCM7 }
+		path = { research_cost_coeff = 1 leads_to_tech = imp_burestnevik } # Imperia
 		folder = { name = cruise_missiles_folder position = { x = 12 y = @2015 } }
 
 		categories = {
@@ -1231,6 +1232,64 @@ technologies = {
 			modifier = {
 				factor = 0
 				date < 2073.1.1
+			}
+		}
+	}
+	imp_burestnevik = {
+
+		allow_branch = {
+			tag = SOV
+		}
+		allow = {
+			ROOT = {
+				is_special_project_completed = sp:sp_imp_9M730_burevestnik
+			}
+		}
+		is_special_project_tech = yes
+
+		research_cost = 6
+		start_year = 2025
+		show_equipment_icon = yes
+		enable_equipments = {
+			imp_sov_burestnevik_GLCM
+			imp_sov_burestnevik_NIRBM
+		}
+		folder = {
+			name = cruise_missiles_folder
+			position = { x = 10 y = @2025 }
+		}
+		path ={
+			research_cost_coeff = 1
+		}
+		categories = {
+			CAT_missiles
+			CAT_cruise_missiles
+			CAT_ground_launched_cruise_missiles
+			CAT_military
+		}
+		special_project_specialization = { specialization_air }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				date < 2015.01.01
+			}
+			modifier = {
+				factor = 0.2
+				date < 2010.01.01
+			}
+			modifier = {
+				factor = 2
+				check_variable = { gdp_per_capita > 19.999 }
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					NOT = {
+						unique_missile_model_names = yes
+					}
+					check_variable = { gdp_per_capita < 20 }
+				}
 			}
 		}
 	}

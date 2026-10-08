@@ -133,7 +133,7 @@ capital = 875
 	set_variable = { var = corporate_tax_rate value = 28 }
 	set_variable = { var = population_tax_rate value = 34 }
 	set_variable = { var = int_investments value = 17 }
-	set_variable = { var = overall_productivity value = 531 }
+	set_variable = {    overall_productivity = 531 }
 
 	add_opinion_modifier = { target = CHL modifier = spanish_speaking }
 	reverse_add_opinion_modifier = { target = CHL modifier = spanish_speaking }
@@ -346,4 +346,23 @@ capital = 875
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = { set_variable = { productivity_state_var = 531 } }
+	875 = { set_variable = { productivity_state_var = 591 } }
+	874 = { set_variable = { productivity_state_var = 561 } }
+	915 = { set_variable = { productivity_state_var = 511 } }
+	916 = { set_variable = { productivity_state_var = 561 } }
+	876 = { set_variable = { productivity_state_var = 501 } }
+	917 = { set_variable = { productivity_state_var = 471 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

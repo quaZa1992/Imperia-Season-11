@@ -17,12 +17,7 @@ satellite_system = {
 	### GNSS_civ_system
 	production_speed_buildings_factor = var_GNSS_civ_production_speed_buildings_factor
 	production_speed_infrastructure_factor = var_GNSS_civ_production_speed_infrastructure_factor
-	local_resources_oil_factor = var_GNSS_civ_local_resources_factor
-	local_resources_aluminium_factor = var_GNSS_civ_local_resources_factor
-	local_resources_rubber_factor = var_GNSS_civ_local_resources_factor
-	local_resources_tungsten_factor = var_GNSS_civ_local_resources_factor
-	local_resources_steel_factor = var_GNSS_civ_local_resources_factor
-	local_resources_chromium_factor = var_GNSS_civ_local_resources_factor
+	# Imperia: civilian GNSS resource-extraction bonus removed
 	### COM_mil_system
 	max_command_power = var_COM_mil_max_command_power
 	army_org_factor = var_COM_mil_army_org_factor

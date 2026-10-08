@@ -27,7 +27,7 @@ guiTypes = {
 
             buttonType ={
                 name ="topbar_debt_bg"
-                spriteType = "GFX_generic_box_wider"
+                spriteType = "GFX_generic_box_extra_wider" # Imperia
                 position = { x=0 y=0 }
                 pdx_tooltip = "DEBT_TOOLTIP"
                 pdx_tooltip_delayed = "DEBT_TOOLTIP_DELAYED"
@@ -42,11 +42,11 @@ guiTypes = {
 
             instantTextBoxType = {
                 name ="topbar_debt_text"
-                position = { x= 22 y = 4 }
+                position = { x= 26 y = 4 }
                 font = "hoi_18mbs"
-                text = "[debt_display]"
-                format = right
-                maxWidth = 55
+                text = "[debt_display]b / [?imp_total_bonds_owed]b" # Imperia: debt / bonds owed
+                format = left
+                maxWidth = 110
                 maxHeight = 24
                 fixedsize = yes
                 alwaystransparent = yes
@@ -54,7 +54,7 @@ guiTypes = {
         }
         containerWindowType = {
             name = "topbar_treasury_container"
-            position = { x = 102 y = 0 }
+            position = { x = 183 y = 0 } # Imperia (MD 102)
 
             buttonType ={
                 name ="topbar_treasury_bg"
@@ -84,11 +84,11 @@ guiTypes = {
         }
         containerWindowType = {
             name = "topbar_int_investments_container"
-            position = { x = 184 y = 0 }
+            position = { x = 265 y = 0 } # Imperia (MD 184)
 
             buttonType ={
                 name ="topbar_int_investments_bg"
-                spriteType = "GFX_generic_box_wider"
+                spriteType = "GFX_generic_box_extra_wider" # Imperia
                 position = { x=0 y=0 }
                 pdx_tooltip = "INT_INVESTMENTS_TOOLTIP"
                 pdx_tooltip_delayed = "INT_INVESTMENTS_TOOLTIP_DELAYED"
@@ -103,44 +103,47 @@ guiTypes = {
 
             instantTextBoxType = {
                 name ="topbar_int_investments_text"
-                position = { x= 22 y = 4 }
+                position = { x= 26 y = 4 }
                 font = "hoi_18mbs"
-                text = "[?int_investments|2]"
-                format = right
-                maxWidth = 55
+                text = "[?int_investments|2]b / [?imp_total_bonds_held]b" # Imperia: investments / bonds held
+                format = left
+                maxWidth = 110
                 maxHeight = 24
                 fixedsize = yes
                 alwaystransparent = yes
             }
         }
 
+        # Imperia: electricity widget replaced by the Imperia globalism counter
         containerWindowType = {
-            name = "topbar_electricity_container"
-            position = { x = 266 y = 0 }
+            name = "globalism_container"
+            position = { x = 425 y = 0 }
 
-            iconType ={
-                name ="topbar_electricity_bg"
+            buttonType ={
+                name ="globalism_bg"
                 spriteType = "GFX_generic_box_wider"
                 position = { x=0 y=0 }
+                pdx_tooltip = "GLOBALISM_TOOLTIP"
+                pdx_tooltip_delayed = "GLOBALISM_TOOLTIP_DELAYED"
             }
 
             iconType = {
-                name ="topbar_electricity_icon"
-                spriteType = "GFX_topbar_energy_balance"
-                position = { x= 1 y = 2 }
+                name ="globalism_icon"
+                spriteType = "GFX_globalism"
+                position = { x= -2 y = -1 }
+                alwaystransparent = yes
             }
 
             instantTextBoxType = {
-                name ="topbar_electricity_text"
-                position = { x= 21 y = 4 }
+                name ="globalism_text"
+                position = { x= 26 y = 4 }
                 font = "hoi_18mbs"
-                text = "[energy_total_net_energy_balance]"
-                format = right
+                text = "[?globalism_value|.2]"
+                format = left
                 maxWidth = 55
                 maxHeight = 24
                 fixedsize = yes
-
-                pdx_tooltip = "UNFULFILLED_ENERGY_TOOLTIP"
+                alwaystransparent = yes
             }
         }
 	}

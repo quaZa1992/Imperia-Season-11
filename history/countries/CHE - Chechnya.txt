@@ -82,11 +82,7 @@ capital = 672
 		farmers
 		intelligence_community
 		foreign_jihadis
-		bureau_03
-		defence_09
-		police_03
 		edu_01
-		health_02
 		social_01
 		export_economy
 		draft_army
@@ -101,6 +97,10 @@ capital = 672
 		youth_radicalization
 		child_soldiers
 		no_currency_backing
+		bureau_01
+		defence_07
+		police_01
+		health_01
 	}
 
 	init_influence = yes
@@ -124,7 +124,7 @@ capital = 672
 	set_variable = { var = treasury value = 1 }
 	set_variable = { var = corporate_tax_rate value = 10 }
 	set_variable = { var = population_tax_rate value = 15 }
-	set_variable = { overall_productivity = 788 }
+	set_variable = { overall_productivity = 451 }
 
 	set_popularities = {
 		democratic = 0.0
@@ -175,4 +175,19 @@ capital = 672
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 451 }
+	}
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

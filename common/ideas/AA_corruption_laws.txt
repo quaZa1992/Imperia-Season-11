@@ -30,23 +30,23 @@ ideas = {
 			}
 
 			modifier = {
-				country_productivity_growth_modifier = -0.20
 				drift_defence_factor = -0.2 					#Easier for other Countries to influence you
 				foreign_subversive_activites = 0.2 				#Easier for other countries to do stuff to you
 				industrial_capacity_factory = -0.2 				#Decreases equipment prod efficiency
-				research_speed_factor = -0.15 					#Research is more inefficient
+				research_speed_factor = -0.25 					#Research is more inefficient
 				encryption = -1 								#Lowers encryption
 				army_morale_factor = -0.2
 				army_speed_factor = -0.025
 				intelligence_agency_defense = -1
 				foreign_influence_defense_modifier = -0.50
-				tax_gain_multiplier_modifier = -0.35
+				tax_gain_multiplier_modifier = -0.20
 				receiving_investment_cost_modifier = 0.45
 				international_market_income_modifier = 0.50
 				international_market_purchase_modifier = 0.50
 				migration_rate_value_factor = -0.15
 				terror_threat_base_detect_modifier = -9
 				literacy_rate_education_modifier = -0.06
+				political_power_factor = 0.6
 			}
 
 			cancel_if_invalid = no
@@ -90,17 +90,16 @@ ideas = {
 			}
 
 			modifier = {
-				country_productivity_growth_modifier = -0.18
 				drift_defence_factor = -0.16 					#Easier for other Countries to influence you
 				foreign_subversive_activites = 0.16 		#Easier for other countries to do stuff to you
 				industrial_capacity_factory = -0.18 		#Decreases equipment prod efficiency
-				research_speed_factor = -0.13 				#Research is more inefficient
+				research_speed_factor = -0.22 				#Research is more inefficient
 				encryption = -1 							#Lowers encryption
 				army_morale_factor = -0.15
 				army_speed_factor = -0.010
 				intelligence_agency_defense = -0.9
 				foreign_influence_defense_modifier = -0.45
-				tax_gain_multiplier_modifier = -0.30
+				tax_gain_multiplier_modifier = -0.17
 				receiving_investment_cost_modifier = 0.40
 				international_market_income_modifier = 0.40
 				international_market_purchase_modifier = 0.40
@@ -108,6 +107,7 @@ ideas = {
 				terror_threat_base_detect_modifier = -7
 				literacy_rate_education_modifier = -0.04
 				political_manipulation_corruption_factor = 0.07
+				political_power_factor = 0.5
 			}
 
 			cancel_if_invalid = no
@@ -153,16 +153,15 @@ ideas = {
 			}
 
 			modifier = {
-				country_productivity_growth_modifier = -0.16
 				drift_defence_factor = -0.12 					#Easier for other Countries to influence you
 				foreign_subversive_activites = 0.12 			#Easier for other countries to do stuff to you
 				industrial_capacity_factory = -0.16 			#Decreases equipment prod efficiency
-				research_speed_factor = -0.13 					#Research is more inefficient
+				research_speed_factor = -0.19 					#Research is more inefficient
 				encryption = -1 								#Lowers encryption
 				army_morale_factor = -0.10
 				intelligence_agency_defense = -0.8
 				foreign_influence_defense_modifier = -0.40
-				tax_gain_multiplier_modifier = -0.25
+				tax_gain_multiplier_modifier = -0.14
 				receiving_investment_cost_modifier = 0.35
 				international_market_income_modifier = 0.35
 				international_market_purchase_modifier = 0.35
@@ -170,6 +169,7 @@ ideas = {
 				literacy_rate_education_modifier = -0.02
 				terror_threat_base_detect_modifier = -6
 				political_manipulation_corruption_factor = 0.06
+				political_power_factor = 0.4
 			}
 
 			cancel_if_invalid = no
@@ -213,21 +213,21 @@ ideas = {
 			}
 
 			modifier = {
-				country_productivity_growth_modifier = -0.14
 				drift_defence_factor = -0.08 					#Easier for other Countries to influence you
 				foreign_subversive_activites = 0.08 		#Easier for other countries to do stuff to you
 				industrial_capacity_factory = -0.14 		#Decreases equipment prod efficiency
-				research_speed_factor = -0.11 				#Research is more inefficient
+				research_speed_factor = -0.16 				#Research is more inefficient
 				army_morale_factor = -0.05
 				intelligence_agency_defense = -0.7
 				foreign_influence_defense_modifier = -0.35
-				tax_gain_multiplier_modifier = -0.20
+				tax_gain_multiplier_modifier = -0.12
 				receiving_investment_cost_modifier = 0.30
 				international_market_income_modifier = 0.30
 				international_market_purchase_modifier = 0.30
 				migration_rate_value_factor = -0.08
 				terror_threat_base_detect_modifier = -5
 				political_manipulation_corruption_factor = 0.05
+				political_power_factor = 0.3
 			}
 
 			cancel_if_invalid = no
@@ -271,20 +271,20 @@ ideas = {
 			}
 
 			modifier = {
-				country_productivity_growth_modifier = -0.12
 				drift_defence_factor = -0.04 					#Easier for other Countries to influence you
 				foreign_subversive_activites = 0.04 		#Easier for other countries to do stuff to you
 				industrial_capacity_factory = -0.12 		#Decreases equipment prod efficiency
-				research_speed_factor = -0.08 				#Research is more inefficient
+				research_speed_factor = -0.13 				#Research is more inefficient
 				intelligence_agency_defense = -0.6
 				foreign_influence_defense_modifier = -0.30
-				tax_gain_multiplier_modifier = -0.15
+				tax_gain_multiplier_modifier = -0.10
 				receiving_investment_cost_modifier = 0.25
 				international_market_income_modifier = 0.25
 				international_market_purchase_modifier = 0.25
 				migration_rate_value_factor = -0.05
 				terror_threat_base_detect_modifier = -4
 				political_manipulation_corruption_factor = 0.04
+				political_power_factor = 0.2
 			}
 
 			cancel_if_invalid = no
@@ -328,18 +328,18 @@ ideas = {
 			}
 
 			modifier = {
-				country_productivity_growth_modifier = -0.10
 				industrial_capacity_factory = -0.10 		#Decreases equipment prod efficiency
-				research_speed_factor = -0.06 				#Research is more inefficient
+				research_speed_factor = -0.10 				#Research is more inefficient
 				intelligence_agency_defense = -0.5
 				foreign_influence_defense_modifier = -0.25
-				tax_gain_multiplier_modifier = -0.10
+				tax_gain_multiplier_modifier = -0.08
 				receiving_investment_cost_modifier = 0.20
 				international_market_income_modifier = 0.20
 				international_market_purchase_modifier = 0.20
 				migration_rate_value_factor = -0.03
 				terror_threat_base_detect_modifier = -3
 				political_manipulation_corruption_factor = 0.03
+				political_power_factor = 0.1
 			}
 
 			cancel_if_invalid = no
@@ -391,12 +391,11 @@ ideas = {
 			}
 
 			modifier = {
-				country_productivity_growth_modifier = -0.08
 				industrial_capacity_factory = -0.08 		#Decreases equipment prod efficiency
-				research_speed_factor = -0.04 				#Research is more inefficient
+				research_speed_factor = -0.07 				#Research is more inefficient
 				intelligence_agency_defense = -0.4
 				foreign_influence_defense_modifier = -0.20
-				tax_gain_multiplier_modifier = -0.05
+				tax_gain_multiplier_modifier = -0.06
 				receiving_investment_cost_modifier = 0.15
 				international_market_income_modifier = 0.15
 				international_market_purchase_modifier = 0.15
@@ -441,18 +440,18 @@ ideas = {
 			}
 
 			modifier = {
-				country_productivity_growth_modifier = -0.06
 				industrial_capacity_factory = -0.06 		#Decreases equipment prod efficiency
-				research_speed_factor = -0.02 				#Research is more inefficient
+				research_speed_factor = -0.04 				#Research is more inefficient
 				intelligence_agency_defense = -0.3
 				foreign_influence_defense_modifier = -0.15
-				tax_gain_multiplier_modifier = -0.03
+				tax_gain_multiplier_modifier = -0.04
 				receiving_investment_cost_modifier = 0.10
 				international_market_income_modifier = 0.1
 				international_market_purchase_modifier = 0.1
 				migration_rate_value_factor = 0.05
 				terror_threat_base_detect_modifier = -1
 				political_manipulation_corruption_factor = 0.017
+				political_power_factor = -0.1
 			}
 
 			cancel_if_invalid = no
@@ -504,15 +503,15 @@ ideas = {
 			}
 
 			modifier = {
-				country_productivity_growth_modifier = -0.04
 				research_speed_factor = -0.01 				#Research is more inefficient
 				intelligence_agency_defense = -0.2
 				foreign_influence_defense_modifier = -0.10
-				tax_gain_multiplier_modifier = -0.01
+				tax_gain_multiplier_modifier = -0.02
 				receiving_investment_cost_modifier = 0.05
 				international_market_purchase_modifier = 0.05
 				migration_rate_value_factor = 0.10
 				political_manipulation_corruption_factor = 0.015
+				political_power_factor = -0.2
 			}
 
 			cancel_if_invalid = no
@@ -559,6 +558,7 @@ ideas = {
 			modifier = {
 				migration_rate_value_factor = 0.15
 				political_manipulation_corruption_factor = 0.01
+				political_power_factor = -0.3
 			}
 
 			on_add = {

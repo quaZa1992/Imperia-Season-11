@@ -502,15 +502,10 @@ capital = 4
 		#Faction 3
 		industrial_conglomerates
 
-		bureau_02
 		defence_01
-		police_01
 		edu_05
-		health_05
-		social_05
 
 		#Trade Law
-		consumption_economy
 		#Conscription Law
 		partial_draft_army
 		#Women in the military
@@ -536,6 +531,11 @@ capital = 4
 		un_aid_ido_member
 		un_aid_cdf_member
 		no_currency_backing
+		bureau_03
+		police_02
+		health_06
+		social_06
+		mixed_economy
 	}
 	add_to_array = { global.un_aid_esco_contributor = THIS }
 	add_to_array = { global.un_aid_ido_contributor = THIS }
@@ -564,16 +564,16 @@ capital = 4
 	set_variable = { industrial_conglomerates_opinion = 50 }
 
 	# Economic System
-	set_variable = { var = debt value = 140.416 }
+	set_variable = { var = debt value = 120.416 }
 	set_variable = { var = treasury value = 23 }
-	set_variable = { var = corporate_tax_rate value = 22 }
-	set_variable = { var = population_tax_rate value = 44 }
+	set_variable = { var = corporate_tax_rate value = 41 }
+	set_variable = { var = population_tax_rate value = 50 }
 	set_variable = { var = int_investments value = 77.4 }
 	set_variable = { inflation_rate_var = 0.02498 }
 	set_variable = { cb_policy_rate = 3 }
 	set_variable = { gdp_per_capita = 48.907 }
 
-	set_variable = { overall_productivity = 1308 }
+	set_variable = { overall_productivity = 1749 }
 
 	# Custom content
 	set_country_flag = DEN_The_Defence_Dental_Plan
@@ -741,4 +741,19 @@ capital = 4
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	reverse_add_opinion_modifier = { target = SOV modifier = RUS_OIL }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 1749 }
+	}
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

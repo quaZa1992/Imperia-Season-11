@@ -1,0 +1,11 @@
+# Imperia: raids may only be launched while at war with the target
+# (or when MD's "promised retaliation" flag is set). Replaces MD's
+# raid_can_launch for the raid types Imperia restricted; the
+# political-power alternative of MD's trigger is intentionally omitted.
+imp_raid_can_launch_war_only = {
+	set_temp_variable = { raid_required_pp = { value = cost  multiply = { value = 1  add = modifier@raid_cost_factor } } }
+	OR = {
+		has_war_with = FROM
+		hidden_trigger = { has_country_flag = promised_retaliation_against@FROM }
+	}
+}

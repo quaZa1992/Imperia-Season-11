@@ -1,0 +1,5 @@
+
+imp_earthquake_resources = {
+	icon = poor_economy
+	state_resources_tungsten_factor = -0.5
+}

@@ -2177,7 +2177,7 @@ technologies = {
 	}
 
 	computing_6 = {
-		productivity_growth_modifier = 1.25
+		productivity_growth_modifier = 0.2
 		research_speed_factor = 0.1
 
 		research_cost = 1.5
@@ -3343,10 +3343,6 @@ technologies = {
 	microchip_production_2 = {
 		energy_use_modifier_microchip_plant = 0.05
 
-		enable_building = {
-			building = microchip_plant
-			level = 2
-		}
 
 		on_research_complete = { md_tech_microchip_production_2_effect = yes }
 
@@ -3379,10 +3375,6 @@ technologies = {
 	microchip_production_3 = {
 		energy_use_modifier_microchip_plant = 0.05
 
-		enable_building = {
-			building = microchip_plant
-			level = 3
-		}
 
 		on_research_complete = { md_tech_microchip_production_3_effect = yes }
 
@@ -3457,6 +3449,10 @@ technologies = {
 				factor = 0
 				date < 2013.1.1
 			}
+		}
+		enable_building = {
+			building = microchip_plant
+			level = 2
 		}
 	}
 

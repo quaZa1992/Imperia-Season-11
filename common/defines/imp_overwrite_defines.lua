@@ -1,0 +1,3 @@
+-- Imperia raised MAX_SHARED_SLOTS from MD 2.0.x 56 to 72.
+-- MD 2.0.2 itself now uses 80 (MD_defines.lua), so the Imperia override (72) would LOWER it -> disabled, MD value 80 applies.
+-- NDefines.NBuildings.MAX_SHARED_SLOTS = 72

@@ -45,11 +45,8 @@ capital = 485
 		NEP_National_Unity_Campaign
 
 		recession
-		defence_02
-		edu_02
 		health_01
 		social_01
-		bureau_02
 		police_01
 		volunteer_army
 		volunteer_women
@@ -60,6 +57,9 @@ capital = 485
 		multi_ethnic_state_idea
 		officer_advanced_training
 		no_currency_backing
+		defence_01
+		edu_01
+		bureau_01
 	}
 	#Influence system
 	init_influence = yes
@@ -82,14 +82,14 @@ capital = 485
 	set_variable = { small_medium_business_owners_opinion = 40 }
 
 	#Economy
-	set_variable = { var = debt value = 11.022 }
+	set_variable = { var = debt value = 0.022 }
 	set_variable = { var = treasury value = 1 }
-	set_variable = { var = corporate_tax_rate value = 22 }
-	set_variable = { var = population_tax_rate value = 14 }
+	set_variable = { var = corporate_tax_rate value = 50 }
+	set_variable = { var = population_tax_rate value = 27 }
 	set_variable = { var = int_investments value = 0 }
 	set_variable = { inflation_rate_var = 0.07451 }
 	set_variable = { cb_policy_rate = 3 }
-	set_variable = { overall_productivity = 1095 }
+	set_variable = { overall_productivity = 356 }
 
 	add_opinion_modifier = { target = RAJ modifier = large_commercial_relations }
 
@@ -193,4 +193,17 @@ capital = 485
 	add_opinion_modifier = { target = TTP modifier = AlQaida_Are_Terrorists_Trade }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
+	every_controlled_state = { set_variable = { productivity_state_var = 356 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

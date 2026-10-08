@@ -28,13 +28,14 @@ units = {
 	task_force = {
 			name = "Groupe Aéronaval"
 			location = 911
-			ship = { name = "Charles de Gaulle (R91)" definition = carrier start_experience_factor = 0.65 equipment = { carrier_hull_2 = { amount = 1 owner = FRA version_name = "Charles de Gaulle Class" } } } #normaly in service only in 2001
+			ship = { name = "Charles de Gaulle (R91)" definition = carrier start_experience_factor = 0.5 equipment = { carrier_hull_2 = { amount = 1 owner = FRA version_name = "Charles de Gaulle Class" } } } # experience reduced to represent crew was still in training at 2000
 			ship = { name = "Dupleix (D641)" definition = destroyer start_experience_factor = 0.65 equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Georges Leygues Class" } } }
 			ship = { name = "Montcalm (D642)" definition = destroyer start_experience_factor = 0.65 equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Georges Leygues Class" } } }
 			ship = { name = "Cassard (D614)" definition = destroyer start_experience_factor = 0.65 equipment = { destroyer_hull_2 = { amount = 1 owner = FRA version_name = "Cassard Class" } } }
 			ship = { name = "Jean Bart (D615)" definition = destroyer start_experience_factor = 0.65 equipment = { destroyer_hull_2 = { amount = 1 owner = FRA version_name = "Cassard Class" } } }
 			ship = { name = "Guépratte (F714)" definition = frigate start_experience_factor = 0.65 equipment = { frigate_hull_3 = { amount = 1 owner = FRA version_name = "La Fayette Class" } } }
 			ship = { name = "Perle (S606)" definition = attack_submarine start_experience_factor = 0.65 equipment = { attack_submarine_hull_2 = { amount = 1 owner = FRA version_name = "Rubis Class" } } }
+			ship = { name = "Foch (R99)" definition = carrier start_experience_factor = 0.65 equipment = { carrier_hull_1 = { amount = 1 owner = FRA version_name = "Clemenceau Class" } } }
 		}
 	task_force = {
 			name = "Force d'action navale Atlantique"
@@ -146,6 +147,21 @@ units = {
 			ship = { name = "Verseau (M651)" definition = corvette start_experience_factor = 0.65 equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "Tripartite Class" } } }
 			ship = { name = "Céphée (M652)" definition = corvette start_experience_factor = 0.65 equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "Tripartite Class" } } }
 			ship = { name = "Capricorne (M652)" definition = corvette start_experience_factor = 0.65 equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "Tripartite Class" } } }
+			ship = { name = "Agosta (S620)" definition = attack_submarine start_experience_factor = 0.15 equipment = { attack_submarine_hull_2 = { amount = 1 owner = FRA creator = SPR version_name = "Agosta Class" } } }
+			ship = { name = "Amyot d'Inville (F782)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Bévéziers (S621)" definition = attack_submarine start_experience_factor = 0.15 equipment = { attack_submarine_hull_2 = { amount = 1 owner = FRA creator = SPR version_name = "Agosta Class" } } }
+			ship = { name = "Clemenceau (R98)" definition = carrier start_experience_factor = 0.15 equipment = { carrier_hull_1 = { amount = 1 owner = FRA version_name = "Clemenceau Class" } } }
+			ship = { name = "Commandant de Pimodan (F787)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "D'Estienne d'Orves (F781)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Drogou (F783)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Duguay-Trouin (D611)" definition = destroyer start_experience_factor = 0.15 equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Tourville Class" } } }
+			ship = { name = "Détroyat (F784)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Jean Moulin (F785)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "La Praya (S622)" definition = attack_submarine start_experience_factor = 0.65 equipment = { attack_submarine_hull_2 = { amount = 1 owner = FRA creator = SPR version_name = "Agosta Class" } } }
+			ship = { name = "Le Foudroyant (S610)" definition = missile_submarine start_experience_factor = 0.15 equipment = { missile_submarine_hull_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Ouessant (S623)" definition = attack_submarine start_experience_factor = 0.65 equipment = { attack_submarine_hull_2 = { amount = 1 owner = FRA creator = SPR version_name = "Agosta Class" } } }
+			ship = { name = "Quartier-Maître Anquetil (F786)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Second-Maître Le Bihan (F788)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
 		}
 		task_force = {
 			name = "Bâtiment Hydrographique"
@@ -155,6 +171,7 @@ units = {
 			ship = { name = "Thetis (A785)" definition = corvette start_experience_factor = 0.65 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "Lapérouse Class" } } }
 			ship = { name = "Laplace (A793)" definition = corvette start_experience_factor = 0.65 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "Lapérouse Class" } } }
 			ship = { name = "Arago (A794)" definition = corvette start_experience_factor = 0.65 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "Lapérouse Class" } } }
+			ship = { name = "Thetis (785)" definition = corvette start_experience_factor = 0.65 equipment = { corvette_hull_2 = { amount = 1 owner = FRA version_name = "Lapérouse Class" } } }
 		}
 	}
 }

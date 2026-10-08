@@ -85,7 +85,7 @@ ideas = {
 				economic_cycles_cost_factor = 0.25
 				political_power_gain = 0.25
 				drift_defence_factor = 0.25
-				productivity_growth_modifier = -1.5
+				country_productivity_growth_modifier = -0.25
 				local_resources_oil_factor = 0.25
 				local_resources_aluminium_factor = 0.25
 				local_resources_rubber_factor = 0.25
@@ -885,16 +885,18 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			modifier = {
+				globalism_equilibrium = 10
 				stability_factor = -0.15
 				min_export = 0.10
 				oil_export_multiplier_modifier = 0.25
 				local_resources_oil_factor = 0.10
-local_resources_aluminium_factor = 0.10
-local_resources_rubber_factor = 0.10
-local_resources_tungsten_factor = 0.10
-local_resources_steel_factor = 0.10
-local_resources_chromium_factor = 0.10
+				local_resources_aluminium_factor = 0.10
+				local_resources_rubber_factor = 0.10
+				local_resources_tungsten_factor = 0.10
+				local_resources_steel_factor = 0.10
+				local_resources_chromium_factor = 0.10
 				fuel_gain_factor = 0.10
+				country_productivity_growth_modifier = -0.20
 			}
 		}
 		gulf_exploitation = {
@@ -1744,11 +1746,11 @@ local_resources_chromium_factor = 0.10
 			modifier = {
 				research_speed_factor = 0.05
 				local_resources_oil_factor = 0.05
-local_resources_aluminium_factor = 0.05
-local_resources_rubber_factor = 0.05
-local_resources_tungsten_factor = 0.05
-local_resources_steel_factor = 0.05
-local_resources_chromium_factor = 0.05
+				local_resources_aluminium_factor = 0.05
+				local_resources_rubber_factor = 0.05
+				local_resources_tungsten_factor = 0.05
+				local_resources_steel_factor = 0.05
+				local_resources_chromium_factor = 0.05
 			}
 		}
 

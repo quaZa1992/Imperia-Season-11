@@ -7,6 +7,7 @@ state = {
 	resources = {
 		steel = 17
 		oil = 24
+		microchips = 35
 	}
 
 	history = {
@@ -44,7 +45,7 @@ state = {
 			fuel_silo = 5
 			nuclear_reactor = 2
 			agriculture_district = 2
-			microchip_plant = 2
+			microchip_plant = 1
 			241 = {
 				naval_base = 8
 				naval_supply_hub = {

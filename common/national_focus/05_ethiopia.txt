@@ -3062,7 +3062,9 @@ focus_tree = {
 
 		cost = 10
 
-		allow_branch = { has_country_flag = ETH_eth_vic }
+		available = { 
+			NOT = { country_exists = ERI }
+		}
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 

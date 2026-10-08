@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_imp_seismograph_news"
+		texturefile = "gfx/event_pictures/disasters/imp_seismograph.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_seismograph_small"
+		texturefile = "gfx/event_pictures/disasters/imp_seismograph_2.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_tsunami_wave"
+		texturefile = "gfx/event_pictures/disasters/imp_tsunami_wave.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_seismic_analysis"
+		texturefile = "gfx/event_pictures/disasters/imp_seismic_analysis.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_earthquake_1"
+		texturefile = "gfx/event_pictures/disasters/imp_earthquake_1.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_earthquake_2"
+		texturefile = "gfx/event_pictures/disasters/imp_earthquake_2.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_earthquake_3"
+		texturefile = "gfx/event_pictures/disasters/imp_earthquake_3.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_famine_1"
+		texturefile = "gfx/event_pictures/disasters/imp_famine_1.dds"
+	}
+}

@@ -728,11 +728,7 @@ capital = 159
 		liberal_society
 		stagnation
 		defence_03
-		edu_02
-		health_03
 		social_03
-		bureau_02
-		police_04
 		draft_army
 		intervention_limited_interventionism
 		volunteer_women
@@ -752,6 +748,10 @@ capital = 159
 		at_member
 		un_aid_esco_member
 		no_currency_backing
+		edu_03
+		health_02
+		bureau_01
+		police_01
 	}
 	add_to_array = { global.un_aid_esco_contributor = THIS }
 
@@ -798,13 +798,13 @@ capital = 159
 	sort_influence = yes
 
 	### Economy
-	set_variable = { var = debt value = 364.076 }
-	set_variable = { var = treasury value = 34 }
+	set_variable = { var = debt value = 120.076 }
+	set_variable = { var = treasury value = 14 }
 	set_variable = { var = int_investments value = 1 }
 	set_variable = { inflation_rate_var = 0.35 }
 	set_variable = { cb_policy_rate = 20 }
-	set_variable = { var = corporate_tax_rate value = 33 }
-	set_variable = { var = population_tax_rate value = 40 }
+	set_variable = { var = corporate_tax_rate value = 48 }
+	set_variable = { var = population_tax_rate value = 38 }
 
 	set_popularities = {
 		democratic = 29.7
@@ -868,7 +868,7 @@ capital = 159
 	recruit_character = TUR_ercument_tatlioglu
 
 
-	set_variable = { overall_productivity = 603 }
+	set_variable = { overall_productivity = 894 }
 
 	if = {
 		limit = {
@@ -910,4 +910,25 @@ capital = 159
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 894 }
+	}
+	934 = { set_variable = { productivity_state_var = 950 } }
+	159 = { set_variable = { productivity_state_var = 919 } }
+	156 = { set_variable = { productivity_state_var = 919 } }
+	158 = { set_variable = { productivity_state_var = 850 } }
+	162 = { set_variable = { productivity_state_var = 722 } }
+	935 = { set_variable = { productivity_state_var = 722 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

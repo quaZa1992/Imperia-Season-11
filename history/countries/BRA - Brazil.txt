@@ -736,7 +736,6 @@ capital = 885
 		police_02
 		edu_03
 		health_02
-		social_03
 
 		export_economy
 		volunteer_army
@@ -757,6 +756,7 @@ capital = 885
 
 		antarctica_small_treaty_admin_cost_2
 		no_currency_backing
+		social_02
 	}
 	add_to_array = { global.un_aid_esco_contributor = THIS }
 	add_to_array = { global.un_aid_cdf_contributor = THIS }
@@ -799,14 +799,13 @@ capital = 885
 	reverse_add_opinion_modifier = { target = SOV modifier = military_cooperation }
 
 	# Economy
-	set_variable = { var = debt value = 1053 }
+	set_variable = { var = debt value = 365 }
 	set_variable = { var = int_investments value = 124.8 }
-	set_variable = { var = treasury value = 48 }
+	set_variable = { var = treasury value = 18 }
 	set_variable = { inflation_rate_var = 0.04858 }
 	set_variable = { cb_policy_rate = 19 }
-	set_variable = { var = corporate_tax_rate value = 34 }
-	set_variable = { var = population_tax_rate value = 26 }
-	set_variable = { gdp_per_capita = 11.529 }
+	set_variable = { var = corporate_tax_rate value = 33 }
+	set_variable = { var = population_tax_rate value = 31 }
 	set_variable = { mio_catalog_tokens = 2 }
 
 	# Amazon Rainforest Conservation
@@ -833,7 +832,7 @@ capital = 885
 	1023 = { add_dynamic_modifier = { modifier = BRA_amazon_modifier } }
 	1024 = { add_dynamic_modifier = { modifier = BRA_amazon_modifier } }
 
-	set_variable = { overall_productivity = 591 }
+	set_variable = { overall_productivity = 700 }
 	set_variable = { var_reactor_material_stockpile = 2500 }
 
 	# Internal Faction
@@ -1007,4 +1006,27 @@ capital = 885
 	add_opinion_modifier = { target = TTP modifier = AlQaida_Are_Terrorists_Trade }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 573 }
+		if = { limit = { has_dynamic_modifier = { modifier = BRA_amazon_modifier } }
+			add_to_array = { BRA.amazon_states = THIS.id }
+		}
+	}
+	879 = { set_variable = { productivity_state_var = 853 } }
+	953 = { set_variable = { productivity_state_var = 886 } }
+	880 = { set_variable = { productivity_state_var = 846 } }
+	882 = { set_variable = { productivity_state_var = 901 } }
+	883 = { set_variable = { productivity_state_var = 801 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

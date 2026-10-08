@@ -37,7 +37,6 @@ state = {
 			industrial_complex = 2
 			offices = 4
 			agriculture_district = 2
-			microchip_plant = 1
 			fossil_powerplant = 2
 			composite_plant = 1
 		}

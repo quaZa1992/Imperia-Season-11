@@ -1,0 +1,74 @@
+ideas = {
+	country = {
+		imp_energy_problems = {
+			picture = imp_energy_problems
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				production_speed_buildings_factor = -0.20
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+				country_productivity_growth_modifier = -0.20
+			}
+		}
+
+		imp_terror_bombing = {
+			picture = imp_bombing
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				monthly_population = -0.05
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				country_productivity_growth_modifier = -0.05
+				war_support_weekly = 0.01
+			}
+		}
+
+		imp_statistics = { 
+			picture = imp_statistics
+			allowed_civil_war = { always = yes }
+		}
+
+		imp_oligarch_bonus_1 = {
+			picture = oligarchboy
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				foreign_influence_defense_modifier = 0.25
+				foreign_influence_modifier = 0.25
+			}
+		}
+
+		imp_oligarch_bonus_2 = {
+			picture = oligarchboy
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				tax_gain_multiplier_modifier = 0.1
+			}
+		}
+
+		imp_oligarch_bonus_3 = {
+			picture = oligarchboy
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.2	
+			}
+		}
+
+		imp_oligarch_bonus_4 = {
+			picture = oligarchboy
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				production_speed_buildings_factor = 0.20
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+	}
+}

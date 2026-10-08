@@ -31,8 +31,8 @@ capital = 267
 		edu_01
 		health_01
 		social_01
-		bureau_02
-		police_02
+		bureau_01
+		police_01
 		volunteer_army
 		volunteer_women
 		international_bankers
@@ -48,8 +48,8 @@ capital = 267
 		edu_01
 		health_01
 		social_01
-		bureau_02
-		police_02
+		bureau_01
+		police_01
 		international_bankers
 		small_medium_business_owners
 		landowners
@@ -83,10 +83,10 @@ capital = 267
 	set_variable = { small_medium_business_owners_opinion = 40 }
 	set_variable = { landowners_opinion = 40 }
 
-	set_variable = { var = debt value = 23 }
+	set_variable = { var = debt value = 0 }
 	set_variable = { var = treasury value = 3 }
-	set_variable = { var = corporate_tax_rate value = 20 }
-	set_variable = { var = population_tax_rate value = 14 }
+	set_variable = { var = corporate_tax_rate value = 18 }
+	set_variable = { var = population_tax_rate value = 28 }
 	set_variable = { var = int_investments value = 0 }
 	set_variable = { inflation_rate_var = 0.09930 }
 	set_variable = { cb_policy_rate = 3 }
@@ -241,7 +241,7 @@ capital = 267
 
 	set_variable = { literacy_rate = 0.707 }
 
-	set_variable = { overall_productivity = 667 }
+	set_variable = { overall_productivity = 288 }
 
 
 	# Relation Starting Configuration (moved from on_startup)
@@ -317,4 +317,17 @@ capital = 267
 	add_opinion_modifier = { target = SAF modifier = African_Union_Relations }
 	add_opinion_modifier = { target = LBA modifier = African_Union_Relations }
 	add_opinion_modifier = { target = EGY modifier = African_Union_Relations }
+	every_controlled_state = { set_variable = { productivity_state_var = 288 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

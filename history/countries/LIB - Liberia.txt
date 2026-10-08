@@ -22,11 +22,8 @@ capital = 355
 		christian
 		stagnation
 		ecowas_member_state
-		defence_07
 		edu_01
-		health_02
 		social_01
-		bureau_03
 		police_01
 		OAU_member
 		volunteer_army
@@ -38,6 +35,9 @@ capital = 355
 		multi_ethnic_state_idea
 		officer_basic_training
 		no_currency_backing
+		defence_02
+		health_01
+		bureau_01
 	}
 
 	# Starting tech
@@ -95,12 +95,12 @@ capital = 355
 	add_to_array = { influence_array_val = 25 }
 	sort_influence = yes
 
-	set_variable = { var = debt value = 19 }
-	set_variable = { var = treasury value = 15 }
-	set_variable = { var = corporate_tax_rate value = 20 }
-	set_variable = { var = population_tax_rate value = 25 }
+	set_variable = { var = debt value = 0 }
+	set_variable = { var = treasury value = 3 }
+	set_variable = { var = corporate_tax_rate value = 31 }
+	set_variable = { var = population_tax_rate value = 31 }
 	set_variable = { var = int_investments value = 0 }
-	set_variable = { overall_productivity = 471 }
+	set_variable = { overall_productivity = 260 }
 
 	set_country_flag = Conscripting_Child_Soldiers
 	set_variable = { var = child_soldiers value = 10000 }
@@ -250,4 +250,17 @@ capital = 355
 	add_opinion_modifier = { target = LBA modifier = African_Union_Relations }
 	add_opinion_modifier = { target = EGY modifier = African_Union_Relations }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = { set_variable = { productivity_state_var = 260 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

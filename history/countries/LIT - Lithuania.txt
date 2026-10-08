@@ -52,11 +52,6 @@ capital = 110
 
 		christian
 		defence_01
-		edu_03
-		health_03
-		social_04
-		bureau_02
-		police_03
 		small_medium_business_owners
 		landowners
 		industrial_conglomerates
@@ -64,6 +59,11 @@ capital = 110
 		nuclear_energy
 		POL_intolerance_of_communism_idea
 		no_currency_backing
+		edu_01
+		health_01
+		social_01
+		bureau_01
+		police_01
 	}
 
 	#Influence system
@@ -84,10 +84,10 @@ capital = 110
 	set_variable = { small_medium_business_owners = 75 }
 	set_variable = { landowners_opinion = 60 }
 
-	set_variable = { var = debt value = 10.790 }
+	set_variable = { var = debt value = 4.790 }
 	set_variable = { var = treasury value = 3 }
-	set_variable = { var = corporate_tax_rate value = 15 }
-	set_variable = { var = population_tax_rate value = 20 }
+	set_variable = { var = corporate_tax_rate value = 42 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { var = int_investments value = 3 }
 	set_variable = { inflation_rate_var = 0.00728 }
 	set_variable = { cb_policy_rate = 3 }
@@ -238,4 +238,17 @@ capital = 110
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	reverse_add_opinion_modifier = { target = SOV modifier = RUS_OIL }
+	every_controlled_state = { set_variable = { productivity_state_var = 839 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

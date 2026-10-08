@@ -1,0 +1,118 @@
+﻿l_english:
+ nuclear_devastation: "Nuclear Devastation"
+ nuclear_contamination: "Nuclear Contamination"
+ imp_nukes.1.t: "Tactical Nuclear Weapon Detonates in [?global.state_tact_first.GetName]"
+ imp_nukes.1.d: "Yesterday around noon, the world witnessed a terrifying new chapter in human history as a tactical nuclear weapon was detonated over [?global.state_tact_first.GetName]. A blinding flash of light, followed by a shockwave of unimaginable force tore through the landscape, leaving a deep scar in its wake. While the immediate destruction was not apocalyptic due to the warhead's limited yield, the surrounding countryside - once lush - is now tainted by radiation.\n\n In the aftermath of this horrible act, communities are reeling. Shock and confusion grip the population as they come to terms with this grim new reality. Hospitals, already strained, now struggle to care for the injured. Families search for loved ones, while rescue operations are underway."
+ imp_nukes.1.o1: "In this war, the line between victory and annihilation grows ever thinner"
+
+ imp_nukes.2.t: "Nuclear Explosion Devastates [?global.state_nuked_first.GetName]"
+ imp_nukes.2.d: "In the early morning, an unimaginable tragedy struck the heart of [?global.state_nuked_first.GetName]. Eyewitness accounts describe a massive flash of light followed by an earth-shaking blast, reducing entire neighbourhoods to rubble within seconds. Rescue efforts are underway, but are hampered by a scale of destruction never seen before. Hospitals in the region are overwhelmed, treating survivors suffering from burns and radiation sickness.\n\nThis catastrophic event serves as a grim reminder of the destructive power of nuclear weapons and the fragile nature of peace in the modern world. As the rest of the world watches in horror, the people of [?global.state_nuked_first.GetName] endure a nightmare that will haunt them for generations. These are not instruments of war, but of annihilation."
+ imp_nukes.2.o1: "And in its shadow there can be no victor, only silence"
+
+ imp_nukes.3.t: "Stock Markets Crash as Nuclear Fear Hits Markets"
+ imp_nukes.3.d: "As the world wakes up to the grim realities of a new age, the phychological shock of the nuclear attack on [?global.state_tact_first.GetName] reaches the markets. Global stock markets plumet as investors react to the fear of a new and unpredictable era of warfare. All major indices see sharp declines, with stocks in defense, technology and energy being hit hardest.\n\nAnalysts are warning of an extended period of market instability as the implications of this new reality sink in. Corporate boards and governments are scrambling to assess the long-term consequences, with many fearful that this event marks the beginning of a new arms race, or worse, further escalation."
+ imp_nukes.3.o1: "In chaos, uncertainty becomes the true currency"
+ 
+ imp_nukes.4.t: "Stock Markets Crumble in Wake of Nuclear Devastation"
+ imp_nukes.4.d: "The devastating nuclear attack on [?global.state_nuked_first.GetName] has triggered a complete collapse of market confidence. The explosion, which has wiped out vast areas of the region and has caused an incalculable loss of life, has left the entire world in complete shock. While the immediate devastation is unimaginable, the far-reaching consequences for the global economy are only just now beginning to unfold.\n\nStock markets worldwide are seeing historic declines, suffering their largest single-day losses ever recorded. The financial system, already fragile from years of global tension, is now teetering on the edge of collapse. Corporate leaders and world governments are scrambling to plan for economic stabilization, but the scale of destruction and the looming threat of further conflict have made any clear solutions seem unreachable."
+ imp_nukes.4.o1: "As the world crumbles, so too does the foundation of our economy"
+
+ imp_nukes.5.t: "Nuclear Attack Intercepted"
+ imp_nukes.5.d: "In the last hour a nuclear attack against [?global.state_tact_first.GetName] was launched. Fortunately local defences intercepted all warheads before hitting their targets, preventing a major disaster. Although this is good news it is a major escalation in tensions."
+ imp_nukes.5.o1: "What next?"
+
+ imp_nuke_financial_distress: "Nuclear Panic"
+ imp_nuke_financial_distress_desc: "The first use of a nuclear weapon in combat in a modern conflict has shocked global markets and societies. Investors flee in terror, trade routes falter, and economies across the world are gripped by uncertainty. Fear of further escalation has shattered confidence in the stability of international systems, leaving nations scrambling to stabilize their economies while bracing for an uncertain future."
+
+ imp_nuke_financial_collapse: "Doomsday Markets"
+ imp_nuke_financial_collapse_desc: "The fear of further nuclear strikes has deepened into a global economic crisis. Stock markets have collapsed, trade has ground to a halt, and supply chains are in disarray. Governments struggle to prevent total financial meltdown as public panic grows. The markets no longer operate on rationality, but on fear of annihilation."
+
+ imp_nukes.13.t: "Nuclear Fallout in [imp_contam_spreader.GetName]"
+ imp_nukes.13.d: "A radioactive plume from a recent nuclear explosion has drifted into our borders, contaminating [imp_contam_spreader.GetName] and possibly other states. The fallout poses a serious threat to public health, agriculture, and infrastructure in the affected areas. Immediate action is required to mitigate the consequences of this disaster."
+ imp_nukes.13.o1: "That's horrible"
+
+ imp_downwind_fallout: "Downwind Fallout"
+ imp_downwind_fallout_desc: "Downwind nuclear fallout refers to radioactive particles released into the atmosphere after a nuclear explosion, which are carried by wind currents to surrounding areas. These particles can contaminate air, water, and soil, posing serious long-term health risks to people, animals, and ecosystems in the affected regions."
+ IMP_INSULT_TITLE: "Issue Diplomatic Insult"
+ IMP_INSULT_ACTION_DESC: "Issue a diplomatic insult that will worsen relations between two nations."
+ IMP_INSULT_SEND: "We will broadcast an offensive message that will no doubt hurt their feelings. This will worsen relations between our two nations for around half a year, until things blow over and we all find something else to be upset about."
+ IMP_INSULT_ACCEPT: "A Diplomatic Insult!"
+ IMP_INSULT_ACCEPT_DESC: "They have insulted us!"
+ opinion_imp_insulted_us: "We just don't like 'em"
+ 
+ imp_casualties_decisions: "The Price of War"
+ imp_casualties_decisions_desc: "War comes at an immense human cost, and the toll on the nation’s resources is felt far beyond the battlefield. As casualties mount, the government faces soaring medical expenses to treat the wounded and support the families of the fallen. Rehabilitation programs, pensions, and disability support for veterans and civilians alike place additional strain on the national budget. The emotional and psychological scars of war also demand attention, with mental health services stretched thin and social unrest brewing.\n\n§YEvery month, a percentage of the casualties suffered in wars will be subtracted from our population and the societal cost associated with these losses will be reflected through a national spirit.§! §RThis national spirit is permanent.§!\n\n[root.GetNameWithFlag] has suffered §Y[?imp_total_casualties_k]k§! military casualties in our conflicts, with §R[?imp_total_dead_k]k§! of these being fatalities."
+
+ d_casualties_on: "Enable Monthly Casualty Report"
+ d_casualties_off: "Disable Monthly Casualty Report"
+ Imp_war_cas_event.1.t: "Casualty Report"
+ Imp_war_cas_event.1.d: "By order of Central Command, I present the latest casualty report for the past month of the ongoing conflicts. This war demands much of us all, but it is through unity and resolve that we will persevere. Let us honor those who have fallen, stand with those who continue to fight, and remain steadfast in our purpose.\n\nThis month we suffered [?imp_monthly_casualties_k]k casualties of which [?imp_monthly_dead] were declared killed in action."
+ Imp_war_cas_event.1.o1: "Such is the cost of war"
+
+ imp_casualties_dynamic_modifier: "The Price of War"
+ imp_casualties_dynamic_modifier_desc: "The weight of war bears heavily on our nation, not just on the battlefield but across all aspects of society. The loss of lives and the toll on the wounded leave lasting scars on our population, with families grieving and communities shattered."
+ imp_oooplanes: "Planes are Expensive"
+
+ IMP_VOLUNTEERS_TITLE: "Allow Volunteers"
+ IMP_VOLUNTEERS_ACTION_DESC: "Allow citizens to join a foreign conflict without facing legal consequences at home.\n\nEvery month a bit of manpower is taken from our available manpower and is converted into volunteer batallions that will fight for this nation. At the end of a conflict, those who survive, return home.\nWe expect roughly a few hundred to travel to this nation every month. This amount is affected by our population, opinion and ideology."
+ IMP_VOLUNTEERS_SEND: "Allow private citizens, ideologically motivated groups, or former military personnel to travel to this nation's conflict zones to aid them without legal repercussions or state interference. It may take several weeks before these volunteers start arriving."
+ IMP_VOLUNTEERS_RECEIVE_DESC: "This nation is offering to allow its citizens to travel and volunteer in our conflict, providing unofficial support without direct state involvement. It may take several weeks before these volunteers start arriving."
+ IMP_VOLUNTEERS_ACCEPT_TITLE: "Volunteers Welcomed"
+ IMP_VOLUNTEERS_ACCEPT_DESC: "Our offer has been accepted. Volunteers from our nation are now free to join the fight abroad."
+ IMP_VOLUNTEERS_REJECT_TITLE: "Volunteer Offer Denied"
+ IMP_VOLUNTEERS_REJECT_DESC: "Our offer was declined. Our citizens remain barred from aiding the foreign conflict."
+ 
+ IMP_VOLUNTEERS_STOP_TITLE: "Disallow Volunteers"
+ IMP_VOLUNTEERS_STOP_ACTION_DESC: "Disallow citizens to join a foreign conflict.\n\nThis will not repatriate those already actively fighting in combat zones."
+ IMP_VOLUNTEERS_STOP_SEND: "Disallow citizens to join a foreign conflict.\n\nThis will not repatriate those already actively fighting in combat zones."
+ IMP_VOLUNTEERS_STOP_RECEIVE_DESC: "This nation is offering to allow its citizens to travel and volunteer in our conflict, providing unofficial support without direct state involvement. It may take several weeks before these volunteers start arriving."
+ IMP_VOLUNTEERS_STOP_ACCEPT_TITLE: "Volunteers Disallowed!"
+ IMP_VOLUNTEERS_STOP_ACCEPT_DESC: "Volunteers will no longer travel to our nation to help our cause."
+
+ imp_intro_event.1.t: "Dear delegates,"
+ imp_intro_event.1.a: "Welcome to Season 7 of the MD RP!\n\nWe’re here to write roleplay history together and enjoy some geopolitical fun. A warm welcome to all the new players joining us. It is great to have you on board!\n Remember to reward quality RP posts with the Imperia Coin emoji and keep us updated on what’s happening both internally and in your country’s foreign affairs via RP Posts, because that’s how we bring this world to life.\n\nLET US WRITE HISTORY TOGETHER.\n\n– Enbo"
+ imp_intro_event.1.o1: "God Bless the GC"
+
+ imp_minis.2.t: "Huge Deposits of Rare Earth Minerals found in [target_state.OWNER.GetnameDef]"
+ imp_minis.2.d: "A team under [target_state.OWNER.GetnameDef]’s National Geological Authority has announced the discovery of an enormous deposit in [target_state.GetName]. The deposit is rich in gold and rare-earth elements like neodymium, praseodymium and dysprosium, with an overall value poised to transform the nation’s strategic position in the global supply of critical minerals.\n\nGeologists describe the site as one of the most significant in recent decades, with vein structures and pegmatite bodies so extensive that they could underpin decades of sustainable extraction and refinement."
+ imp_minis.2.o1: "Time to give them a call."
+ imp_minis.2.o2: "Ka-Ching!"
+
+ imp_minis.3.t: "Volunteers return from [From.GetnameDef]"
+ imp_minis.3.d: "With the signing of the peace treaty and the cessation of hostilities in [From.GetnameDef], the long and painful chapter of foreign conflict has come to an end. Our citizens who had volunteered to fight in the war—driven by duty, conviction, or the call to defend those in need—are now making their way back home. But their return is not marked by celebration alone. Many bear the physical and emotional scars of battle. The horrors they faced on the front lines have left deep wounds—some visible, others hidden. For many, the struggle to reintegrate into civilian life has just begun."
+ imp_minis.3.o1: "And so they return."
+
+ imp_minis.4.t: "Scientific Breakthrough!"
+ imp_minis.4.d: "Unburdened by bureaucratic oversight, our researchers from a leading private institute have announced a major technological advancement. The discovery is expected to accelerate progress across multiple fields. Industry leaders and think tanks are already adapting the new knowledge into real-world applications."
+ imp_minis.4.o1: "That's great to hear."
+
+ d_spawn_volunteer_division: "Spawn Volunteer Division"
+ d_spawn_volunteer_division_desc: "Spawns a division with the Volunteer Division template. Requires 7.70k volunteer manpower to spawn."
+ d_spawn_volunteer_militia: "Spawn Volunteer Militia"
+ d_spawn_volunteer_militia: "Spawns a division with the Volunteer Militia template. Requires 2.25k volunteer manpower to spawn."
+
+ imp_lost_generation: "Lost Generation"
+ imp_lost_generation_desc: "\n\n\n\n£GFX_imp_lost_generation_banner\n\n\n\n\n\nYears of economic stagnation, social pressure, and shifting cultural expectations have led to a demographic crisis. Birth rates have plummeted, and a Lost Generation of young people faces uncertain futures, delaying family life or forgoing it entirely. Without significant intervention, the long-term vitality of the nation remains at risk."
+ imp_italian_companies: "Nanismo industriale"
+ imp_italian_companies_desc: "\n\n\n\n£GFX_imp_italian_companies_banner\n\n\n\n\n\nDecades of economic tradition have locked Italy into a pattern of industrial dwarfism, where countless small, family-run firms resist expansion, modernization, and technological investment. While these businesses form the backbone of local economies, their inability to scale or compete globally severely hampers national productivity and leaves the economy vulnerable to stagnation."
+ imp_ai_imf_restructuring: "IMF Restructuring"
+ imp_ai_imf_restructuring_desc: "In exchange for a restructuring of the national debt, the IMF has imposed strict conditions."
+ imp_malay_supremacy: "Ketuanan Melayu"
+ imp_malay_supremacy_desc: "\n\n\n\n£GFX_imp_may_ketuanan_melayu_banner\n\n\n\n\n\nThe doctrine of Ketuanan Melayu (Malay Supremacy) holds that Malaysia's political, cultural, and national identity is inseparable from the primacy of the Malay people. As Islam and Malay identity have become increasingly intertwined, the ideology has evolved from a form of ethnic nationalism into a broader vision that places Malay-Muslim interests at the centre of the nation.\n\nThrough the New Economic Policy, political patronage, and the promotion of Malay cultural values, the state safeguards the existing social order. However, critics argue that these policies encourage corruption, endanger meritocracy and hinder long-term innovation."
+ imp_sov_stagnant_electronics: "Stagnant Electronics Sector"
+ imp_sov_stagnant_electronics_desc: "\n\n\n\n£GFX_imp_sov_stagnant_electronics_banner\n\n\n\n\n\nDecades of Cold War export controls denied Soviet industry access to cutting-edge Western semiconductor technologies, forcing domestic engineers to rely heavily on reverse engineered Western designs and fostered an industry culture focused on replication instead of pioneering new designs. Following the dissolution of the Soviet Union, economic turmoil left fabrication plants, production equipment, and manufacturing methods increasingly obsolete as the gap between Russia and its competitors grew. As a result, civilian manufacturers struggle to compete against foreign imports in performance, efficiency, and cost, while the defence sector faces growing challenges producing sophisticated electronics at scale for military use."
+
+ 4_total_gdp_tt: "More than $§Y4§!T GDP (Current: $§Y[?gdp_total]§!T)"
+ 
+ imp_wto_block_1: "WTO Exclusion"
+ imp_wto_block_1_desc: "This country has been excluded from the §YWorld Trade Organization§! despite its massive potential. \nThis will undoubtedly complicate things for the nation."
+ 
+ imp_wto_block_2: "WTO Exclusivity"
+ imp_wto_block_2_desc: "Despite the large push, and attempts; a country with massive potential was excluded from the §YWorld Trade Organization§!. \nThis might benefit, or not; the nations that dominate the global market."
+ 
+ imp_wto_exclusion.1.t: "[?global.wto_excluded_country.GetAdjective] WTO accession stalls!"
+ imp_wto_exclusion.1.d: "As the talks fail and [?global.wto_excluded_country.GetAdjective] accession drags out, many begin giving up on the possibility. Experts believe it might have unintended consequences and erode diplomatic relations beyond recovery if not handled carefully."
+ imp_wto_exclusion.1.o1: "What does the World Economic Forum think about this?"
+ 
+ imp_gold_based_currency: "Gold Based Currency"
+ imp_gold_based_currency_desc: "This nation uses gold as the base of its currency. While it is very stabile, the risk of deflation is high, and changes to the currency will be harder in future."

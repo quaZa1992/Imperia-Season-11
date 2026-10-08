@@ -1,0 +1,502 @@
+#########################################################################################
+# Original Script by: Moveably - Please don't touch. Unless I'm gone. Then can touch :) #
+#########################################################################################
+
+@spending_laws_gdp_scaling = 0.006
+
+update_infrastructure_rate = {
+    #gdp scaling
+	set_temp_variable = { gdp_infra_cost_modifier = gdp_per_capita }
+	multiply_temp_variable = { gdp_infra_cost_modifier = @spending_laws_gdp_scaling }
+	add_to_temp_variable = { gdp_infra_cost_modifier = 1 }
+
+	#Additional additive modifiers
+	set_temp_variable = { infra_cost_multiplier = 1 }
+	add_to_temp_variable = { infra_cost_multiplier = modifier@infra_cost_multiplier_modifier }
+	set_variable = { infra_cost_multiplier_display = infra_cost_multiplier }
+	subtract_from_variable = { infra_cost_multiplier_display = 1 }
+
+    set_variable = { infrastructure_gain = 0 }
+    set_variable = { infrastructure_cost_roads = 0 }
+    set_variable = { infrastructure_internet_station = 0 }
+    set_variable = { infrastructure_air_base = 0 }
+    set_variable = { infrastructure_radar_station = 0 }
+    set_variable = { infrastructure_anti_air_building = 0 }
+    set_variable = { infrastructure_fuel_silo = 0 }
+    set_variable = { infrastructure_rocket_site = 0 }
+    set_variable = { infrastructure_stronghold_network = 0 }
+    set_variable = { infrastructure_civilian_shelter = 0 }
+
+    every_owned_state = { 
+        set_temp_variable = { inf_cost_t = 0.005 }
+        multiply_temp_variable = { inf_cost_t = infrastructure_level }
+        add_to_variable = { PREV.infrastructure_cost_roads = inf_cost_t }
+
+        set_temp_variable = { inf_cost_t = 0.007 }
+        multiply_temp_variable = { inf_cost_t = non_damaged_building_level@internet_station }
+        add_to_variable = { PREV.infrastructure_internet_station = inf_cost_t }
+
+        set_temp_variable = { inf_cost_t = 0.005 }
+        multiply_temp_variable = { inf_cost_t = non_damaged_building_level@air_base }
+        add_to_variable = { PREV.infrastructure_air_base = inf_cost_t }
+
+        set_temp_variable = { inf_cost_t = 0.007 }
+        multiply_temp_variable = { inf_cost_t = non_damaged_building_level@radar_station }
+        add_to_variable = { PREV.infrastructure_radar_station = inf_cost_t }
+
+        set_temp_variable = { inf_cost_t = 0.007 }
+        multiply_temp_variable = { inf_cost_t = non_damaged_building_level@anti_air_building }
+        add_to_variable = { PREV.infrastructure_anti_air_building = inf_cost_t }
+
+        set_temp_variable = { inf_cost_t = 0.002 }
+        multiply_temp_variable = { inf_cost_t = non_damaged_building_level@fuel_silo }
+        add_to_variable = { PREV.infrastructure_fuel_silo = inf_cost_t }
+		
+		 # SHELTERS; Damaged means door/entrance is blocked; needs higher maintenance when entrance is blocked. Otherwise protective properties are still present.
+		
+		set_temp_variable = { inf_cost_t = 0.02 }
+        multiply_temp_variable = { inf_cost_t = damaged_building_level@civilian_shelter }
+        add_to_variable = { PREV.infrastructure_civilian_shelter = inf_cost_t }
+		set_temp_variable = { inf_cost_t = 0.008 }
+        multiply_temp_variable = { inf_cost_t = non_damaged_building_level@civilian_shelter }
+        add_to_variable = { PREV.infrastructure_civilian_shelter = inf_cost_t }
+
+        set_temp_variable = { inf_cost_t = 0.001 }
+        multiply_temp_variable = { inf_cost_t = non_damaged_building_level@rocket_site }
+        add_to_variable = { PREV.infrastructure_rocket_site = inf_cost_t }
+        
+        set_temp_variable = { inf_cost_t = 0.05 }
+        multiply_temp_variable = { inf_cost_t = non_damaged_building_level@stronghold_network }
+        add_to_variable = { PREV.infrastructure_stronghold_network = inf_cost_t }
+    }
+
+    multiply_variable = { PREV.infrastructure_cost_roads = infra_cost_multiplier }
+    multiply_variable = { PREV.infrastructure_internet_station = infra_cost_multiplier }
+    multiply_variable = { PREV.infrastructure_air_base = infra_cost_multiplier }
+    multiply_variable = { PREV.infrastructure_radar_station = infra_cost_multiplier }
+    multiply_variable = { PREV.infrastructure_anti_air_building = infra_cost_multiplier }
+    multiply_variable = { PREV.infrastructure_fuel_silo = infra_cost_multiplier }
+    multiply_variable = { PREV.infrastructure_rocket_site = infra_cost_multiplier }
+    multiply_variable = { PREV.infrastructure_stronghold_network = infra_cost_multiplier }
+    multiply_variable = { PREV.infrastructure_civilian_shelter = infra_cost_multiplier }
+
+    add_to_variable = { infrastructure_gain = infrastructure_cost_roads }
+    add_to_variable = { infrastructure_gain = infrastructure_internet_station }
+    add_to_variable = { infrastructure_gain = infrastructure_air_base }
+    add_to_variable = { infrastructure_gain = infrastructure_radar_station }
+    add_to_variable = { infrastructure_gain = infrastructure_anti_air_building }
+    add_to_variable = { infrastructure_gain = infrastructure_fuel_silo }
+    add_to_variable = { infrastructure_gain = infrastructure_rocket_site }
+    add_to_variable = { infrastructure_gain = infrastructure_stronghold_network }
+    add_to_variable = { infrastructure_gain = infrastructure_civilian_shelter }
+}
+
+imp_adjust_gdp_numbers = {
+    
+}
+
+imp_eco_progress_calc = {
+    ## Become Developed Nation
+    if = {
+        limit = { 
+            check_variable = { overall_productivity > 1250 }
+            NOT = { 
+                has_dynamic_modifier = { modifier = imp_eco_1_dynamic_modifier } 
+            }
+            has_dynamic_modifier = { modifier = imp_eco_2_dynamic_modifier }
+        }
+
+        remove_dynamic_modifier = { modifier = imp_eco_2_dynamic_modifier }
+        add_dynamic_modifier = { modifier = imp_eco_1_dynamic_modifier }
+        news_event = imp_economy.2
+    }
+    ## Become Emerging Nation
+    else_if = { 
+        limit = { 
+            check_variable = { overall_productivity > 750 }
+            NOT = { has_dynamic_modifier = { modifier = imp_eco_2_dynamic_modifier } }
+            has_dynamic_modifier = { modifier = imp_eco_3_dynamic_modifier } 
+        }
+
+        remove_dynamic_modifier = { modifier = imp_eco_3_dynamic_modifier }
+        add_dynamic_modifier = { modifier = imp_eco_2_dynamic_modifier }
+        news_event = imp_economy.1
+    }
+    ## Assigning (In case of new nations)
+    else_if = { 
+        limit = { 
+            check_variable = { overall_productivity > 1250 }
+            NOT = { 
+                has_dynamic_modifier = { modifier = imp_eco_1_dynamic_modifier }
+                has_dynamic_modifier = { modifier = imp_eco_2_dynamic_modifier } 
+                has_dynamic_modifier = { modifier = imp_eco_3_dynamic_modifier } 
+            }
+        }
+        add_dynamic_modifier = { modifier = imp_eco_1_dynamic_modifier }
+    }
+    else_if = { 
+        limit = { 
+            check_variable = { overall_productivity > 750 }
+            NOT = { 
+                has_dynamic_modifier = { modifier = imp_eco_1_dynamic_modifier }
+                has_dynamic_modifier = { modifier = imp_eco_2_dynamic_modifier } 
+                has_dynamic_modifier = { modifier = imp_eco_3_dynamic_modifier } 
+            }
+        }
+        add_dynamic_modifier = { modifier = imp_eco_2_dynamic_modifier }
+    }
+    else_if = { 
+        limit = { 
+            NOT = { 
+                has_dynamic_modifier = { modifier = imp_eco_1_dynamic_modifier }
+                has_dynamic_modifier = { modifier = imp_eco_2_dynamic_modifier } 
+                has_dynamic_modifier = { modifier = imp_eco_3_dynamic_modifier } 
+            }
+        }
+        add_dynamic_modifier = { modifier = imp_eco_3_dynamic_modifier }
+    }
+
+    ## Set Modifiers
+    if = {
+        limit = { 
+            has_dynamic_modifier = { modifier = imp_eco_1_dynamic_modifier } 
+        }
+        set_temp_variable = { imp_eco_p_t = overall_productivity }
+        subtract_from_temp_variable = { imp_eco_p_t = 1250 }
+        divide_temp_variable = { imp_eco_p_t = 1750 }
+        clamp_temp_variable = { var = imp_eco_p_t min = 0 max = 1 }
+
+        ## War Support -40% at 3000
+        set_variable = { imp_eco_war_sup = -0.4 }
+        multiply_variable = { imp_eco_war_sup = imp_eco_p_t }
+
+        ## Workforce Offices -15% at 3000
+        set_variable = { imp_eco_wf_o = -0.15 }
+        multiply_variable = { imp_eco_wf_o = imp_eco_p_t }
+
+        ## Factory Workforce -7.5% at 3000
+        set_variable = { imp_eco_wf_f = -0.075 }
+        multiply_variable = { imp_eco_wf_f = imp_eco_p_t }
+
+        ## Return On Investments 4% at 3000
+        set_variable = { imp_eco_wf_investment = 0.04 }
+        multiply_variable = { imp_eco_wf_investment = imp_eco_p_t }
+
+        ## Eco Upgrade +60% at 3000
+        set_variable = { imp_eco_upgrade_cost = 0.60 }
+        multiply_variable = { imp_eco_upgrade_cost = imp_eco_p_t }
+
+        set_temp_variable = { imp_eco_p_t = overall_productivity }
+        subtract_from_temp_variable = { imp_eco_p_t = 750 }
+        divide_temp_variable = { imp_eco_p_t = 2250 }
+        clamp_temp_variable = { var = imp_eco_p_t min = 0 max = 1 }
+
+        ## Pop Growth -200% at 3000
+        set_variable = { imp_eco_pop_growth = -2 }
+        multiply_variable = { imp_eco_pop_growth = imp_eco_p_t }
+    }
+    else_if = {
+        limit = { 
+            OR = { 
+                has_dynamic_modifier = { modifier = imp_eco_2_dynamic_modifier } 
+            }
+        }
+
+        ## Shared with Developing
+        set_temp_variable = { imp_eco_p_t_2 = overall_productivity }
+        divide_temp_variable = { imp_eco_p_t_2 = 1250 }
+        set_temp_variable = { imp_eco_p_t = 1 }
+        subtract_from_temp_variable = { imp_eco_p_t = imp_eco_p_t_2 }
+        clamp_temp_variable = { var = imp_eco_p_t min = 0 max = 1 }
+
+        ## Corruption Cost +100% at 0
+        set_variable = { imp_eco_cor = 1 }
+        multiply_variable = { imp_eco_cor = imp_eco_p_t }
+
+        ## Eco Upgrade -40% at 0
+        set_variable = { imp_eco_upgrade_cost = -0.4 }
+        multiply_variable = { imp_eco_upgrade_cost = imp_eco_p_t }
+
+        ## Interest Rate +5% at 0
+        set_variable = { imp_eco_interest_rates = 5 }
+        multiply_variable = { imp_eco_interest_rates = imp_eco_p_t }
+
+        ## Pop Growth is shared with Developed
+        set_temp_variable = { imp_eco_p_t = overall_productivity }
+        subtract_from_temp_variable = { imp_eco_p_t = 750 }
+        divide_temp_variable = { imp_eco_p_t = 2250 }
+        clamp_temp_variable = { var = imp_eco_p_t min = 0 max = 1 }
+
+        ## Pop Growth -200% at 3000
+        set_variable = { imp_eco_pop_growth = -2 }
+        multiply_variable = { imp_eco_pop_growth = imp_eco_p_t }
+
+        # Let's not be extra cruel to super tiny countries. Their extra worker spirit is reduced by 75% or 50% And interest rates a bit too.
+        if = { limit = { check_variable = { max_manpower_k < 10000 } } 
+            multiply_variable = { imp_eco_wf_o = 0.25 }
+            multiply_variable = { imp_eco_wf_f = 0.25 }
+            multiply_variable = { imp_eco_interest_rates = 0.5 }
+        }
+        else_if = { limit = { check_variable = { max_manpower_k < 20000 } } 
+            multiply_variable = { imp_eco_wf_o = 0.5 }
+            multiply_variable = { imp_eco_wf_f = 0.5 }
+            multiply_variable = { imp_eco_interest_rates = 0.5 }
+        }
+        # But let's also not be too permissable with the pop growth buff for super big countries.
+        else_if = { limit = { check_variable = { max_manpower_k > 300000 } } 
+            multiply_variable = { imp_eco_pop_growth = 0.25 }
+        }
+        else_if = { limit = { check_variable = { max_manpower_k > 100000 } } 
+            multiply_variable = { imp_eco_pop_growth = 0.5 }
+        }
+        else_if = { limit = { check_variable = { max_manpower_k > 75000 } } 
+            multiply_variable = { imp_eco_pop_growth = 0.75 }
+        }
+    }
+    else_if = {
+        limit = { 
+            OR = { 
+                has_dynamic_modifier = { modifier = imp_eco_3_dynamic_modifier } 
+            }
+        }
+
+        ## Shared with Developing
+        set_temp_variable = { imp_eco_p_t_2 = overall_productivity }
+        divide_temp_variable = { imp_eco_p_t_2 = 1250 }
+        set_temp_variable = { imp_eco_p_t = 1 }
+        subtract_from_temp_variable = { imp_eco_p_t = imp_eco_p_t_2 }
+        clamp_temp_variable = { var = imp_eco_p_t min = 0 max = 1 }
+
+        ## Corruption Cost +100% at 0
+        set_variable = { imp_eco_cor = 1 }
+        multiply_variable = { imp_eco_cor = imp_eco_p_t }
+
+        ## Eco Upgrade -40% at 0
+        set_variable = { imp_eco_upgrade_cost = -0.4 }
+        multiply_variable = { imp_eco_upgrade_cost = imp_eco_p_t }
+
+        ## Interest Rate +5% at 0
+        set_variable = { imp_eco_interest_rates = 5 }
+        multiply_variable = { imp_eco_interest_rates = imp_eco_p_t }
+
+        set_temp_variable = { imp_eco_p_t_2 = overall_productivity }
+        divide_temp_variable = { imp_eco_p_t_2 = 750 }
+        set_temp_variable = { imp_eco_p_t = 1 }
+        subtract_from_temp_variable = { imp_eco_p_t = imp_eco_p_t_2 }
+        clamp_temp_variable = { var = imp_eco_p_t min = 0 max = 1 }
+
+        ## Pop Growth +100% at 0
+        set_variable = { imp_eco_pop_growth = 1 }
+        multiply_variable = { imp_eco_pop_growth = imp_eco_p_t }
+
+        # Let's not be extra cruel to super tiny countries. Their extra worker spirit is reduced by 75% or 50% And interest rates a bit too.
+        if = { limit = { check_variable = { max_manpower_k < 10000 } } 
+            multiply_variable = { imp_eco_interest_rates = 0.5 }
+        }
+        else_if = { limit = { check_variable = { max_manpower_k < 20000 } } 
+            multiply_variable = { imp_eco_interest_rates = 0.5 }
+        }
+        # But let's also not be too permissable with the pop growth buff for super big countries.
+        else_if = { limit = { check_variable = { max_manpower_k > 300000 } } 
+            multiply_variable = { imp_eco_pop_growth = 0.25 }
+        }
+        else_if = { limit = { check_variable = { max_manpower_k > 100000 } } 
+            multiply_variable = { imp_eco_pop_growth = 0.5 }
+        }
+        else_if = { limit = { check_variable = { max_manpower_k > 75000 } } 
+            multiply_variable = { imp_eco_pop_growth = 0.75 }
+        }
+    }
+}
+
+imp_eco_globalism_tick = { 
+    # First decide the equilibrium point.
+    set_variable = { globalism_value_eq = modifier@globalism_equilibrium }
+    clamp_variable = { var = globalism_value_eq min = 0 max = 100 }
+
+    # Then decide how much it changes
+    set_temp_variable = { glob_rate_multiplier = 1 }
+    add_to_temp_variable = { glob_rate_multiplier = modifier@globalism_rate_multiplier }
+    set_variable = { globalism_value_rate = 0.2 }
+    multiply_variable = { globalism_value_rate = glob_rate_multiplier }
+
+    set_temp_variable = { globalism_rvr_t = globalism_value_rate }
+
+    # Then change it.
+    if =  {
+        # It either needs to go down...
+        limit = { 
+            check_variable = { globalism_value > globalism_value_eq }
+        }
+        set_temp_variable = { glob_diff = globalism_value }
+        subtract_from_temp_variable = { glob_diff = globalism_value_eq }
+        clamp_temp_variable = { var = globalism_rvr_t min = 0 max = glob_diff }
+        subtract_from_variable = { globalism_value = globalism_rvr_t }
+    }
+    else_if = {
+        # Or it needs to go up...
+        limit = { 
+            check_variable = { globalism_value < globalism_value_eq }
+        }
+        set_temp_variable = { glob_diff = globalism_value_eq }
+        subtract_from_temp_variable = { glob_diff = globalism_value }
+        clamp_temp_variable = { var = globalism_rvr_t min = 0 max = glob_diff }
+        add_to_variable = { globalism_value = globalism_rvr_t }
+    }
+
+    imp_eco_globalism_modifier = yes
+}
+
+imp_eco_globalism_modifier = 
+{
+    if = { 
+        limit = { 
+            NOT = {
+                has_dynamic_modifier = { modifier = imp_globalism_modifier }
+            }
+        }
+        add_dynamic_modifier = { modifier = imp_globalism_modifier }
+        set_variable = { globalism_value = globalism_value_eq }
+    }
+
+    set_temp_variable = { glob_scaled = globalism_value }
+    divide_temp_variable = { glob_scaled = 100 }
+
+    ## War support factor = -20% at 100 Globalism. +20% at 0 Globalism.
+    set_variable = { imp_globalism_mod_warsup = 0.2 }
+    set_temp_variable = { ws_mod_t = -0.4 }
+    multiply_temp_variable = { ws_mod_t = glob_scaled }
+    add_to_variable = { imp_globalism_mod_warsup = ws_mod_t }
+    clamp_variable = { var = imp_globalism_mod_warsup min = -0.2 max = 0.2 }
+
+    ## Sanction Resistance. 80% at 0 Globalism. 0% at 100 Globalism.
+    set_variable = { imp_globalism_mod_sancres = 0.8 }
+    subtract_from_variable = { imp_globalism_mod_sancres = glob_scaled }
+    clamp_variable = { var = imp_globalism_mod_sancres min = 0 max = 1 }
+
+    ## Sanction Effectiveness. -80% at 0 Globalism, 0% at 100 Globalism.
+    set_variable = { imp_globalism_mod_sanceff = -0.8 }
+    add_to_variable = { imp_globalism_mod_sanceff = glob_scaled }
+    clamp_variable = { var = imp_globalism_mod_sanceff min = -1 max = 0 }
+
+    ## Productivity Growth -1 at 0 Globalism, +1 at 100 Globalism.
+    set_variable = { imp_globalism_mod_prod = -1 }
+    set_temp_variable = { prod_mod_t = glob_scaled }
+    multiply_temp_variable = { prod_mod_t = 2 }
+    add_to_variable = { imp_globalism_mod_prod = prod_mod_t }
+    clamp_variable = { var = imp_globalism_mod_prod min = -1 max = 1 }
+
+    ## Return on investment. -3 at 0 Globalism, +3 at 100 Globalism
+    set_variable = { imp_globalism_mod_roi = -0.02 }
+    set_temp_variable = { roi_mod_t = glob_scaled }
+    multiply_temp_variable = { roi_mod_t = 0.04 }
+    add_to_variable = { imp_globalism_mod_roi = roi_mod_t }
+    clamp_variable = { var = imp_globalism_mod_roi min = -0.03 max = 0.03 }
+
+    ## Interest Rate +2.5 at 0 globalism. 0 at 50 globalism or higher.
+    if = { 
+        limit = { 
+            check_variable = { globalism_value < 50 }
+        }
+        set_temp_variable = { glob_min_t = globalism_value }
+        divide_temp_variable = { glob_min_t = 50 }
+        multiply_temp_variable = { glob_min_t = 2.5 }
+        set_variable = { imp_globalism_mod_int = 2.5 }
+        subtract_from_variable = { imp_globalism_mod_int = glob_min_t }
+    }
+    else = { 
+        set_variable = { imp_globalism_mod_int = 0 }
+    }
+    clamp_variable = { var = imp_globalism_mod_int min = 0 max = 2.5 }
+
+    ## Investment Duration Receiving & Sending +50% at 0 Globalism. +0% at 100 Globalism.
+    ## Also Foreign Influence!
+    set_variable = { imp_globalism_mod_inv = 0.5 }
+    subtract_from_variable = { imp_globalism_mod_inv = glob_scaled }
+    clamp_variable = { var = imp_globalism_mod_inv max = 1 min = 0 }
+}
+
+imp_eco_debt_high = {
+    if = { 
+        limit = { has_elections = yes }
+
+        random_list = {
+            50 = {
+                country_event = { id = imp_economy.3 random_days = 60 }
+            }
+	    }
+    }
+    else = {
+        random_list = {
+            50 = {
+                country_event = { id = imp_economy.4 random_days = 60 }
+            }
+	    }
+    }
+}
+
+imp_eco_debt_very_high = {
+    if = { 
+        limit = { has_elections = yes }
+
+        random_list = {
+            50 = {
+                country_event = { id = imp_economy.5 random_days = 60 }
+            }
+	    }
+    }
+    else = {
+        random_list = {
+            50 = {
+                country_event = { id = imp_economy.6 random_days = 60 }
+            }
+	    }
+    }
+}
+
+imp_eco_debt_low = {
+    if = { 
+        limit = { has_elections = yes }
+
+        random_list = {
+            50 = {
+                country_event = { id = imp_economy.7 random_days = 60 }
+            }
+	    }
+    }
+    else = {
+        random_list = {
+            50 = {
+                country_event = { id = imp_economy.8 random_days = 60 }
+            }
+	    }
+    }
+}
+
+imp_eco_bond_major = {
+    random_list = { 
+        10 = {
+            country_event = imp_economy.9
+        }
+        10 = {
+            country_event = imp_economy.10
+        }
+    }
+}
+
+imp_eco_bond_minor = {
+    random_list = { 
+        10 = {
+            country_event = imp_economy.9
+        }
+        10 = {
+            country_event = imp_economy.10
+        }
+        10 = {
+            country_event = imp_economy.11
+        }
+        10 = {
+            country_event = imp_economy.12
+        }
+    }
+}

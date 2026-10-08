@@ -2,6 +2,10 @@ state = {
 	id = 1155
 	name = "STATE_1155"
 
+	resources = {
+		microchips = 155
+	}
+
 	history = {
 		owner = TAI
 		victory_points = { 7214 5 } #Hsinchu
@@ -9,6 +13,7 @@ state = {
 			infrastructure = 3
 			internet_station = 2
 			industrial_complex = 1
+			microchip_plant = 1
 			offices = 2
 			air_base = 4
 			fossil_powerplant = 1

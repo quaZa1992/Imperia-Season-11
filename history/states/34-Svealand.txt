@@ -5,6 +5,7 @@ state = {
 
 	resources = {
 		tungsten = 2.000
+		microchips = 15
 	}
 
 	history = {

@@ -1,0 +1,61 @@
+#########################################################################################
+# Original Script by: Moveably - Please don't touch. Unless I'm gone. Then can touch :) #
+#########################################################################################
+
+guiTypes = {
+	containerWindowType = {
+		name = "imp_food_transfer_scripted_gui"
+		size = { width = 584 height = 238 }
+		Orientation = center
+		origo = center
+		moveable = no
+		click_to_front = yes
+		clipping = no
+
+		iconType = {
+			name = "money_transfer_background"
+			spriteType = "GFX_money_transfer_bg"
+			position = { x = 292 y = 49 }
+		}		
+
+		instantTextboxType = {
+			name = "food_transfer_title"
+			position = { x = 480 y = 90 }
+			font = "hoi_30header"
+			text = "IMP_FOOD_TRANSFER_TITLE_WINDOW"
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "food_transfer_description"
+			position = { x = 320 y = 160 }
+			font = "hoi_18mbs"
+			maxWidth = 520
+			text = "IMP_FOOD_TRANSFER_DESC"
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "food_transfer_amount"
+			position = { x = 320 y = 300 }
+			font = "hoi_30header"
+			maxWidth = 520
+			text = "IMP_FOOD_TRANSFER_AMOUNT"
+			format = center
+		}
+
+		buttonType = {
+			name = "food_transfer_plus"
+			spriteType = "GFX_money_transfer_plus"
+			position = { x=650 y= 303 }
+			pdx_tooltip = "food_transfer_plus_tt"
+		}
+
+		buttonType = {
+			name = "food_transfer_minus"
+			spriteType = "GFX_money_transfer_minus"
+			position = { x=490 y= 303 }
+			pdx_tooltip = "food_transfer_minus_tt"
+		}
+	}
+}

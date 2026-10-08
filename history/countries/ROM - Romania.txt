@@ -660,15 +660,11 @@ capital = 150
 		international_bankers
 
 		#Bureacracy
-		bureau_02
 		#Military Spending
 		defence_02
 		#Internal Security
-		police_03
 		#Education budget
-		edu_03
 		#Health budget
-		health_03
 		#Social spending
 
 		#Trade Law
@@ -688,6 +684,11 @@ capital = 150
 		ROM_corruption_modifier
 		at_member
 		no_currency_backing
+		bureau_01
+		police_01
+		edu_01
+		health_01
+		social_01
 	}
 
 	add_timed_idea = {
@@ -919,10 +920,10 @@ capital = 150
 	sort_influence = yes
 
 	### Economy
-	set_variable = { var = debt value = 62.982 }
+	set_variable = { var = debt value = 8.982 }
 	set_variable = { var = treasury value = 5 }
-	set_variable = { var = corporate_tax_rate value = 16 }
-	set_variable = { var = population_tax_rate value = 10 }
+	set_variable = { var = corporate_tax_rate value = 50 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { var = int_investments value = 0 }
 	set_variable = { inflation_rate_var = 0.45804 }
 	set_variable = { cb_policy_rate = 20 }
@@ -990,7 +991,7 @@ capital = 150
 	recruit_character = ROM_marian_botea
 	recruit_character = ROM_marius_harabagiu
 
-	set_variable = { overall_productivity = 547 }
+	set_variable = { overall_productivity = 769 }
 	set_variable = { var_reactor_material_stockpile = 5000 }
 
 
@@ -1019,4 +1020,17 @@ capital = 150
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	reverse_add_opinion_modifier = { target = SOV modifier = RUS_OIL }
+	every_controlled_state = { set_variable = { productivity_state_var = 769 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

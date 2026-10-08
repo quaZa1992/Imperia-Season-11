@@ -1,5 +1,4 @@
 capital = 134
-oob = "GENERIC_OOB"
 2000.1.1 = {
 	set_variable = { currency_strength = 0.65 }
 	set_cosmetic_tag = MNT_autonomy_SER_constituent_republic
@@ -26,12 +25,6 @@ oob = "GENERIC_OOB"
 		orthodox_christian
 		corruption_level_08
 		stable_growth
-		defence_02
-		edu_03
-		health_02
-		social_03
-		bureau_03
-		police_05
 		volunteer_army
 		volunteer_women
 		small_medium_business_owners
@@ -43,6 +36,12 @@ oob = "GENERIC_OOB"
 		MNT_legacy_of_90
 		MNT_dominance_balance
 		no_currency_backing
+		defence_01
+		edu_01
+		health_01
+		social_01
+		bureau_01
+		police_01
 	}
 
 	#Influence system
@@ -66,7 +65,7 @@ oob = "GENERIC_OOB"
 
 	set_variable = { var = corporate_tax_rate value = 9 }
 	set_variable = { var = population_tax_rate value = 24 }
-	set_variable = { overall_productivity = 1089 }
+	set_variable = { overall_productivity = 639 }
 
 	set_technology = {
 		railway_system_01 = 1
@@ -186,4 +185,17 @@ oob = "GENERIC_OOB"
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	reverse_add_opinion_modifier = { target = SOV modifier = RUS_OIL }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = { set_variable = { productivity_state_var = 639 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

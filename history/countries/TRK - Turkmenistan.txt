@@ -108,12 +108,6 @@ capital = 729
 		rentier_state
 		export_economy
 		stagnation
-		defence_04
-		edu_02
-		health_02
-		social_03
-		bureau_03
-		police_05
 		draft_army
 		drafted_women
 		fossil_fuel_industry
@@ -123,6 +117,12 @@ capital = 729
 		closed_borders
 		TRK_ruhnama
 		no_currency_backing
+		defence_02
+		edu_01
+		health_01
+		social_01
+		bureau_01
+		police_01
 	}
 
 	add_opinion_modifier = { target = TAJ modifier = russian_proficient }
@@ -160,12 +160,12 @@ capital = 729
 	sort_influence = yes
 
 	### Economy
-	set_variable = { var = debt value = 15.394 }
+	set_variable = { var = debt value = 1.394 }
 	set_variable = { var = treasury value = 3 }
 	set_variable = { var = corporate_tax_rate value = 22 }
-	set_variable = { var = population_tax_rate value = 16 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { var = int_investments value = 0 }
-	set_variable = { overall_productivity = 366 }
+	set_variable = { overall_productivity = 466 }
 
 	set_popularities = {
 		democratic = 0.0
@@ -219,4 +219,19 @@ capital = 729
 	add_opinion_modifier = { target = TTP modifier = AlQaida_Are_Terrorists }
 	add_opinion_modifier = { target = TTP modifier = AlQaida_Are_Terrorists_Trade }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 466 }
+	}
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

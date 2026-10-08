@@ -956,7 +956,7 @@ capital = 91
 		landowners
 
 		#Bureacracy
-		bureau_01
+		bureau_02
 		#Military Spending
 		defence_01
 		#Internal Security
@@ -964,12 +964,12 @@ capital = 91
 		#Education budget
 		edu_03
 		#Health budget
-		health_04
+		health_03
 		#Social spending
-		social_06
+		social_02
 
 		#Trade Law
-		consumption_economy
+		semi_consumption_economy
 		#Conscription Law
 		draft_army
 		#Women in the military
@@ -1032,16 +1032,16 @@ capital = 91
 	sort_influence = yes
 
 	# Economy
-	set_variable = { var = debt value = 687.378 }
-	set_variable = { var = treasury value = 52 }
-	set_variable = { var = corporate_tax_rate value = 35 }
-	set_variable = { var = population_tax_rate value = 18 }
+	set_variable = { var = debt value = 387.378 }
+	set_variable = { var = treasury value = 22 }
+	set_variable = { var = corporate_tax_rate value = 43 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { var = int_investments value = 98 }
 	set_variable = { inflation_rate_var = 0.02310 }
 	set_variable = { cb_policy_rate = 3 }
 	set_variable = { currency_strength = 0.65 }
 	set_variable = { gdp_per_capita = 34.757 }
-	set_variable = { overall_productivity = 1019 }
+	set_variable = { overall_productivity = 950 }
 	set_variable = { var_reactor_material_stockpile = 7500 }
 
 	# Spanish System
@@ -1229,4 +1229,24 @@ capital = 91
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	reverse_add_opinion_modifier = { target = SOV modifier = RUS_OIL }
+	every_controlled_state = { set_variable = { productivity_state_var = 818 } }
+	91 = { set_variable = { productivity_state_var = 1207 } }
+	88 = { set_variable = { productivity_state_var = 1135 } }
+	1041 = { set_variable = { productivity_state_var = 982 } }
+	87 = { set_variable = { productivity_state_var = 982} }
+	86 = { set_variable = { productivity_state_var = 982 } }
+	94 = { set_variable = { productivity_state_var = 982 } }
+	944 = { set_variable = { productivity_state_var = 925 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

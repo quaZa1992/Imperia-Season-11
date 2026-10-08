@@ -1,0 +1,1458 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_emergency"
+		texturefile = "gfx/interface/decisions/leaders/decision_emergency.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_democrat"
+		texturefile = "gfx/interface/decisions/leaders/decision_democrat.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_us_intelligence_emergency"
+		texturefile = "gfx/interface/decisions/leaders/decision_us_intelligence_emergency.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_us_senate_emergency"
+		texturefile = "gfx/interface/decisions/leaders/decision_us_senate_emergency.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_us_army_emergency"
+		texturefile = "gfx/interface/decisions/leaders/decision_us_army_emergency.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_us_chiefs_emergency"
+		texturefile = "gfx/interface/decisions/leaders/decision_us_chiefs_emergency.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_republican"
+		texturefile = "gfx/interface/decisions/leaders/decision_republican.dds"
+	}
+	spriteType = {
+	name = "GFX_decision_obama"
+		texturefile = "gfx/interface/decisions/leaders/decision_obama.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_carlson"
+		texturefile = "gfx/interface/decisions/leaders/tucker_carlson.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_walker"
+		texturefile = "gfx/interface/decisions/leaders/herschel_walker.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kanye"
+		texturefile = "gfx/interface/decisions/leaders/kanye_west.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cotton"
+		texturefile = "gfx/interface/decisions/leaders/tom_cotton.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_santorum"
+		texturefile = "gfx/interface/decisions/leaders/rick_santorum.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_lee"
+		texturefile = "gfx/interface/decisions/leaders/mike_lee.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_gingrich"
+		texturefile = "gfx/interface/decisions/leaders/newt_gingrich.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_hawley"
+		texturefile = "gfx/interface/decisions/leaders/josh_hawley.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_alexander"
+		texturefile = "gfx/interface/decisions/leaders/lamar_alexander.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_portman"
+		texturefile = "gfx/interface/decisions/leaders/rob_portman.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_hogan"
+		texturefile = "gfx/interface/decisions/leaders/larry_hogan.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_youngkin"
+		texturefile = "gfx/interface/decisions/leaders/glenn_youngkin.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_christie"
+		texturefile = "gfx/interface/decisions/leaders/chris_christie.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_yang"
+		texturefile = "gfx/interface/decisions/leaders/andrew_yang.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_stewart"
+		texturefile = "gfx/interface/decisions/leaders/jon_stewart.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_oprah"
+		texturefile = "gfx/interface/decisions/leaders/oprah_winfrey.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cuban"
+		texturefile = "gfx/interface/decisions/leaders/mark_cuban.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_aoc"
+		texturefile = "gfx/interface/decisions/leaders/aoc.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_khanna"
+		texturefile = "gfx/interface/decisions/leaders/ro_khanna.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_turner"
+		texturefile = "gfx/interface/decisions/leaders/nina_turner.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_bowman"
+		texturefile = "gfx/interface/decisions/leaders/jamaal_bowman.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_sbrown"
+		texturefile = "gfx/interface/decisions/leaders/sherrod_brown.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_klobuchar"
+		texturefile = "gfx/interface/decisions/leaders/amy_klobuchar.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_raimondo"
+		texturefile = "gfx/interface/decisions/leaders/gina_raimondo.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_vilsack"
+		texturefile = "gfx/interface/decisions/leaders/tom_vilsack.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_holder"
+		texturefile = "gfx/interface/decisions/leaders/eric_holder.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_mcauliffe"
+		texturefile = "gfx/interface/decisions/leaders/terry_mcauliffe.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_powell"
+		texturefile = "gfx/interface/decisions/leaders/colin_powell.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_biden"
+		texturefile = "gfx/interface/decisions/leaders/decision_biden.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_hillary"
+		texturefile = "gfx/interface/decisions/leaders/decision_hillary.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kamala"
+		texturefile = "gfx/interface/decisions/leaders/decision_kamala.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_butt"
+		texturefile = "gfx/interface/decisions/leaders/decision_butt.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_walz"
+		texturefile = "gfx/interface/decisions/leaders/decision_walz.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_newsom"
+		texturefile = "gfx/interface/decisions/leaders/decision_newsom.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kaine"
+		texturefile = "gfx/interface/decisions/leaders/decision_kaine.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_whitmer"
+		texturefile = "gfx/interface/decisions/leaders/decision_whitmer.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_gore"
+		texturefile = "gfx/interface/decisions/leaders/decision_gore.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_bernie"
+		texturefile = "gfx/interface/decisions/leaders/decision_bernie.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_warren"
+		texturefile = "gfx/interface/decisions/leaders/decision_warren.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kucinich"
+		texturefile = "gfx/interface/decisions/leaders/decision_kucinich.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kerry"
+		texturefile = "gfx/interface/decisions/leaders/decision_kerry.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_clark"
+		texturefile = "gfx/interface/decisions/leaders/decision_clark.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_dean"
+		texturefile = "gfx/interface/decisions/leaders/decision_dean.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_edwards"
+		texturefile = "gfx/interface/decisions/leaders/decision_edwards.dds"
+	}
+		spriteType = {
+	name = "GFX_decision_gbush"
+		texturefile = "gfx/interface/decisions/leaders/decision_gbush.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_mccain"
+		texturefile = "gfx/interface/decisions/leaders/decision_mccain.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_keyes"
+		texturefile = "gfx/interface/decisions/leaders/decision_keyes.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_forbes"
+		texturefile = "gfx/interface/decisions/leaders/decision_forbes.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cheney"
+		texturefile = "gfx/interface/decisions/leaders/decision_cheney.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_romney"
+		texturefile = "gfx/interface/decisions/leaders/decision_romney.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_Trump"
+		texturefile = "gfx/interface/decisions/leaders/decision_trump.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_pence"
+		texturefile = "gfx/interface/decisions/leaders/decision_pence.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cruz"
+		texturefile = "gfx/interface/decisions/leaders/decision_cruz.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_jbush"
+		texturefile = "gfx/interface/decisions/leaders/decision_jbush.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_rubio"
+		texturefile = "gfx/interface/decisions/leaders/decision_rubio.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_vance"
+		texturefile = "gfx/interface/decisions/leaders/decision_vance.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_desantis"
+		texturefile = "gfx/interface/decisions/leaders/decision_desantis.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ramaswamy"
+		texturefile = "gfx/interface/decisions/leaders/decision_ramaswamy.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_huckabee"
+		texturefile = "gfx/interface/decisions/leaders/decision_huckabee.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_buchanan"
+		texturefile = "gfx/interface/decisions/leaders/decision_buchanan.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_armey"
+		texturefile = "gfx/interface/decisions/leaders/decision_armey.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kasich"
+		texturefile = "gfx/interface/decisions/leaders/decision_kasich.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_coulter"
+		texturefile = "gfx/interface/decisions/leaders/decision_coulter.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_pierson"
+		texturefile = "gfx/interface/decisions/leaders/decision_pierson.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_labour"
+		texturefile = "gfx/interface/decisions/leaders/decision_labour.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_blair"
+		texturefile = "gfx/interface/decisions/leaders/decision_blair.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_brown"
+		texturefile = "gfx/interface/decisions/leaders/decision_brown.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_emiliband"
+		texturefile = "gfx/interface/decisions/leaders/decision_emiliband.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_corbyn"
+		texturefile = "gfx/interface/decisions/leaders/decision_corbyn.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_mcdonnell"
+		texturefile = "gfx/interface/decisions/leaders/decision_mcdonnell.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_starmer"
+		texturefile = "gfx/interface/decisions/leaders/decision_starmer.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_starmer"
+		texturefile = "gfx/interface/decisions/leaders/decision_starmer.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_longbailey"
+		texturefile = "gfx/interface/decisions/leaders/decision_longbailey.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_nandy"
+		texturefile = "gfx/interface/decisions/leaders/decision_nandy.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_smith"
+		texturefile = "gfx/interface/decisions/leaders/decision_smith.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_burnham"
+		texturefile = "gfx/interface/decisions/leaders/decision_burnham.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cooper"
+		texturefile = "gfx/interface/decisions/leaders/decision_cooper.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kendall"
+		texturefile = "gfx/interface/decisions/leaders/decision_kendall.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_dmiliband"
+		texturefile = "gfx/interface/decisions/leaders/decision_dmiliband.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_balls"
+		texturefile = "gfx/interface/decisions/leaders/decision_balls.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_abbott"
+		texturefile = "gfx/interface/decisions/leaders/decision_abbott.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_prescott"
+		texturefile = "gfx/interface/decisions/leaders/decision_prescott.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_conservative"
+		texturefile = "gfx/interface/decisions/leaders/decision_conservative.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_hague"
+		texturefile = "gfx/interface/decisions/leaders/decision_hague.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_duncan"
+		texturefile = "gfx/interface/decisions/leaders/decision_duncan.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_howard"
+		texturefile = "gfx/interface/decisions/leaders/decision_howard.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cameron"
+		texturefile = "gfx/interface/decisions/leaders/decision_cameron.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_may"
+		texturefile = "gfx/interface/decisions/leaders/decision_may.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_bj"
+		texturefile = "gfx/interface/decisions/leaders/decision_bj.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_lettuce"
+		texturefile = "gfx/interface/decisions/leaders/decision_lettuce.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_sunak"
+		texturefile = "gfx/interface/decisions/leaders/decision_sunak.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_badenoch"
+		texturefile = "gfx/interface/decisions/leaders/decision_badenoch.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_jenrick"
+		texturefile = "gfx/interface/decisions/leaders/decision_jenrick.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_hunt"
+		texturefile = "gfx/interface/decisions/leaders/decision_hunt.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_gove"
+		texturefile = "gfx/interface/decisions/leaders/decision_gove.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_leadsom"
+		texturefile = "gfx/interface/decisions/leaders/decision_leadsom.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_davis"
+		texturefile = "gfx/interface/decisions/leaders/decision_davis.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_libdem"
+		texturefile = "gfx/interface/decisions/leaders/decision_libdem.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_kennedy"
+		texturefile = "gfx/interface/decisions/leaders/decision_kennedy.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_farron"
+		texturefile = "gfx/interface/decisions/leaders/decision_farron.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_clegg"
+		texturefile = "gfx/interface/decisions/leaders/decision_clegg.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_cable"
+		texturefile = "gfx/interface/decisions/leaders/decision_cable.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_swinson"
+		texturefile = "gfx/interface/decisions/leaders/decision_swinson.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_davey"
+		texturefile = "gfx/interface/decisions/leaders/decision_davey.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_spd"
+		texturefile = "gfx/interface/decisions/leaders/decision_spd.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_schroder"
+		texturefile = "gfx/interface/decisions/leaders/decision_schroder.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_sigmar"
+		texturefile = "gfx/interface/decisions/leaders/decision_sigmar.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_steinbruck"
+		texturefile = "gfx/interface/decisions/leaders/decision_steinbruck.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_steinmeier"
+		texturefile = "gfx/interface/decisions/leaders/frank_walter_steinmeier.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_heil"
+		texturefile = "gfx/interface/decisions/leaders/hubertus_heil.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_pistorius"
+		texturefile = "gfx/interface/decisions/leaders/boris_pistorius.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_schwesig"
+		texturefile = "gfx/interface/decisions/leaders/manuela_schwesig.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_weil"
+		texturefile = "gfx/interface/decisions/leaders/stephan_weil.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_kuhnert"
+		texturefile = "gfx/interface/decisions/leaders/kevin_kuhnert.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_esken"
+		texturefile = "gfx/interface/decisions/leaders/saskia_esken.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_stegner"
+		texturefile = "gfx/interface/decisions/leaders/ralf_stegner.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_lafontaine"
+		texturefile = "gfx/interface/decisions/leaders/oskar_lafontaine.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_maas"
+		texturefile = "gfx/interface/decisions/leaders/heiko_maas.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_beck"
+		texturefile = "gfx/interface/decisions/leaders/kurt_beck.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_platzeck"
+		texturefile = "gfx/interface/decisions/leaders/matthias_platzeck.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_schwan"
+		texturefile = "gfx/interface/decisions/leaders/gesine_schwan.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_schulz"
+		texturefile = "gfx/interface/decisions/leaders/decision_schulz.dds"
+	}
+        spriteType = {
+		name = "GFX_decision_die"
+		texturefile = "gfx/interface/decisions/leaders/decision_die.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_gysi"
+		texturefile = "gfx/interface/decisions/leaders/gregor_gysi.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_reichinnek"
+		texturefile = "gfx/interface/decisions/leaders/decision_reichinnek.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_wagenknecht"
+		texturefile = "gfx/interface/decisions/leaders/sahra_wagenknecht.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_bartsch"
+		texturefile = "gfx/interface/decisions/leaders/dietmar_bartsch.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_kipping"
+		texturefile = "gfx/interface/decisions/leaders/katja_kipping.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_riexinger"
+		texturefile = "gfx/interface/decisions/leaders/bernd_riexinger.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_lafontaine"
+		texturefile = "gfx/interface/decisions/leaders/oskar_lafontaine.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_gleiss"
+		texturefile = "gfx/interface/decisions/leaders/thies_gleiss.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_redler"
+		texturefile = "gfx/interface/decisions/leaders/lucy_redler.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_ramelow"
+		texturefile = "gfx/interface/decisions/leaders/bodo_ramelow.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_wellsow"
+		texturefile = "gfx/interface/decisions/leaders/susanne_hennig_wellsow.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_wissler"
+		texturefile = "gfx/interface/decisions/leaders/janine_wissler.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_dagdelen"
+		texturefile = "gfx/interface/decisions/leaders/sevim_dagdelen.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hunko"
+		texturefile = "gfx/interface/decisions/leaders/andrej_hunko.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_modrow"
+		texturefile = "gfx/interface/decisions/leaders/hans_modrow.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_nahles"
+		texturefile = "gfx/interface/decisions/leaders/decision_nahles.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_uekermann"
+		texturefile = "gfx/interface/decisions/leaders/decision_uekermann.dds"
+	}
+	    spriteType = {
+		name = "GFX_decision_scholz"
+		texturefile = "gfx/interface/decisions/leaders/decision_scholz.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_cdu"
+		texturefile = "gfx/interface/decisions/leaders/decision_cdu.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_merkel"
+		texturefile = "gfx/interface/decisions/leaders/decision_merkel.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_kramp"
+		texturefile = "gfx/interface/decisions/leaders/decision_kramp.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_klockner"
+		texturefile = "gfx/interface/decisions/leaders/decision_klockner.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_ziemiak"
+		texturefile = "gfx/interface/decisions/leaders/decision_ziemiak.dds"
+	}
+        spriteType = {
+		name = "GFX_decision_merz"
+		texturefile = "gfx/interface/decisions/leaders/friedrich_merz.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_laschet"
+		texturefile = "gfx/interface/decisions/leaders/armin_laschet.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_rottgen"
+		texturefile = "gfx/interface/decisions/leaders/norbert_rottgen.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_schauble"
+		texturefile = "gfx/interface/decisions/leaders/wolfgang_schauble.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_spahn"
+		texturefile = "gfx/interface/decisions/leaders/jens_spahn.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_linnemann"
+		texturefile = "gfx/interface/decisions/leaders/carsten_linnemann.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_dobrindt"
+		texturefile = "gfx/interface/decisions/leaders/alexander_dobrindt.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_soder"
+		texturefile = "gfx/interface/decisions/leaders/markus_soder.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_leyen"
+		texturefile = "gfx/interface/decisions/leaders/ursula_von_der_leyen.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_altmaier"
+		texturefile = "gfx/interface/decisions/leaders/peter_altmaier.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_mcallister"
+		texturefile = "gfx/interface/decisions/leaders/david_mcallister.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_guttenberg"
+		texturefile = "gfx/interface/decisions/leaders/karl_theodor_zu_guttenberg.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_stoiber"
+		texturefile = "gfx/interface/decisions/leaders/edmund_stoiber.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_afd"
+		texturefile = "gfx/interface/decisions/leaders/decision_afd.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_neubauer"
+		texturefile = "gfx/interface/decisions/leaders/harald_neubauer.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_schill"
+		texturefile = "gfx/interface/decisions/leaders/ronald_schill.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_weidel"
+		texturefile = "gfx/interface/decisions/leaders/alice_weidel.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_chrupalla"
+		texturefile = "gfx/interface/decisions/leaders/tino_chrupalla.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hocke"
+		texturefile = "gfx/interface/decisions/leaders/bjorn_hocke.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_gauland"
+		texturefile = "gfx/interface/decisions/leaders/alexander_gauland.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_meuthen"
+		texturefile = "gfx/interface/decisions/leaders/jorg_meuthen.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_storch"
+		texturefile = "gfx/interface/decisions/leaders/beatrix_von_storch.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_steinbach"
+		texturefile = "gfx/interface/decisions/leaders/erika_steinbach.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_maassen"
+		texturefile = "gfx/interface/decisions/leaders/hans_georg_maassen.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_sarrazin"
+		texturefile = "gfx/interface/decisions/leaders/thilo_sarrazin.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_lucke"
+		texturefile = "gfx/interface/decisions/leaders/bernd_lucke.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_starbatty"
+		texturefile = "gfx/interface/decisions/leaders/joachim_starbatty.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_kubitschek"
+		texturefile = "gfx/interface/decisions/leaders/gotz_kubitschek.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_kalbitz"
+		texturefile = "gfx/interface/decisions/leaders/andreas_kalbitz.dds"
+	}
+	    spriteType = {
+		name = "GFX_decision_fdp"
+		texturefile = "gfx/interface/decisions/leaders/decision_fdp.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_lindner"
+		texturefile = "gfx/interface/decisions/leaders/decision_lindner.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_gerhardt"
+		texturefile = "gfx/interface/decisions/leaders/decision_gerhardt.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_kubicki"
+		texturefile = "gfx/interface/decisions/leaders/decision_kubicki.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_durr"
+		texturefile = "gfx/interface/decisions/leaders/decision_durr.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_rosler"
+		texturefile = "gfx/interface/decisions/leaders/decision_rosler.dds"
+	}
+	    spriteType = {
+		name = "GFX_decision_niebel"
+		texturefile = "gfx/interface/decisions/leaders/decision_niebel.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_pieper"
+		texturefile = "gfx/interface/decisions/leaders/decision_pieper.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_doring"
+		texturefile = "gfx/interface/decisions/leaders/decision_doring.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_beer"
+		texturefile = "gfx/interface/decisions/leaders/decision_beer.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_westerwelle"
+		texturefile = "gfx/interface/decisions/leaders/decision_westerwelle.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_solms"
+		texturefile = "gfx/interface/decisions/leaders/decision_solms.dds"
+	}
+	    spriteType = {
+		name = "GFX_decision_grune"
+		texturefile = "gfx/interface/decisions/leaders/decision_grune.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_ozdemir"
+		texturefile = "gfx/interface/decisions/leaders/decision_ozdemir.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_fischer"
+		texturefile = "gfx/interface/decisions/leaders/decision_fischer.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_eckardt"
+		texturefile = "gfx/interface/decisions/leaders/decision_eckardt.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_kuhn"
+		texturefile = "gfx/interface/decisions/leaders/decision_kuhn.dds"
+	}
+	    spriteType = {
+		name = "GFX_decision_kunast"
+		texturefile = "gfx/interface/decisions/leaders/decision_kunast.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_roth"
+		texturefile = "gfx/interface/decisions/leaders/decision_roth.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_habeck"
+		texturefile = "gfx/interface/decisions/leaders/decision_habeck.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_baerbock"
+		texturefile = "gfx/interface/decisions/leaders/decision_baerbock.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_lang"
+		texturefile = "gfx/interface/decisions/leaders/decision_lang.dds"
+	}
+	    spriteType = {
+		name = "GFX_decision_omid"
+		texturefile = "gfx/interface/decisions/leaders/decision_omid.dds"
+	}
+        spriteType = {
+		name = "GFX_decision_banaszak"
+		texturefile = "gfx/interface/decisions/leaders/decision_banaszak.dds"
+	}
+	    spriteType = {
+		name = "GFX_decision_brantner"
+		texturefile = "gfx/interface/decisions/leaders/decision_brantner.dds"
+	}
+		spriteType = {
+		name = "imp_leader_sov_ur_decisions"
+		texturefile = "gfx/interface/decisions/leaders/decision_ur.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_putin"
+		texturefile = "gfx/interface/decisions/leaders/decision_vladimir_putin.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_medvedev"
+		texturefile = "gfx/interface/decisions/leaders/decision_dmitry_medvedev.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_kiriyenko"
+		texturefile = "gfx/interface/decisions/leaders/decision_sergey_kiriyenko.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_sobyanin"
+		texturefile = "gfx/interface/decisions/leaders/decision_sergei_sobyanin.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_belousov"
+		texturefile = "gfx/interface/decisions/leaders/decision_andrey_belousov.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_kozak"
+		texturefile = "gfx/interface/decisions/leaders/decision_dmitry_kozak.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_mishustin"
+		texturefile = "gfx/interface/decisions/leaders/decision_mikhail_mishustin.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_kudrin"
+		texturefile = "gfx/interface/decisions/leaders/decision_alexei_kudrin.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_gref"
+		texturefile = "gfx/interface/decisions/leaders/decision_german_gref.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_siluanov"
+		texturefile = "gfx/interface/decisions/leaders/decision_anton_siluanov.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_nabiullina"
+		texturefile = "gfx/interface/decisions/leaders/decision_elvira_nabiullina.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_oreshkin"
+		texturefile = "gfx/interface/decisions/leaders/decision_maksim_oreshkin.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_dvorkovich"
+		texturefile = "gfx/interface/decisions/leaders/decision_arkady_dvorkovich.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_shoigu"
+		texturefile = "gfx/interface/decisions/leaders/decision_sergei_shoigu.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_patrushev"
+		texturefile = "gfx/interface/decisions/leaders/decision_nikolai_patrushev.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_bortnikov"
+		texturefile = "gfx/interface/decisions/leaders/decision_alexander_bortnikov.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_naryshkin"
+		texturefile = "gfx/interface/decisions/leaders/decision_sergei_naryshkin.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ps"
+		texturefile = "gfx/interface/decisions/leaders/decision_ps.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_jospin"
+		texturefile = "gfx/interface/decisions/leaders/decision_jospin.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_royal"
+		texturefile = "gfx/interface/decisions/leaders/decision_royal.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hollande"
+		texturefile = "gfx/interface/decisions/leaders/decision_hollande.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hamon"
+		texturefile = "gfx/interface/decisions/leaders/decision_hamon.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_strauss"
+		texturefile = "gfx/interface/decisions/leaders/decision_strauss.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hidalgo"
+		texturefile = "gfx/interface/decisions/leaders/decision_hidalgo.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_valls"
+		texturefile = "gfx/interface/decisions/leaders/decision_valls.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_faure"
+		texturefile = "gfx/interface/decisions/leaders/decision_faure.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_filippetti"
+		texturefile = "gfx/interface/decisions/leaders/decision_filippetti.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_rpr"
+		texturefile = "gfx/interface/decisions/leaders/decision_rpr.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_chirac"
+		texturefile = "gfx/interface/decisions/leaders/decision_chirac.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_sarkozy"
+		texturefile = "gfx/interface/decisions/leaders/decision_sarkozy.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_juppe"
+		texturefile = "gfx/interface/decisions/leaders/decision_juppe.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_fillon"
+		texturefile = "gfx/interface/decisions/leaders/decision_fillon.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_lagarde"
+		texturefile = "gfx/interface/decisions/leaders/decision_lagarde.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_villepin"
+		texturefile = "gfx/interface/decisions/leaders/decision_villepin.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_cope"
+		texturefile = "gfx/interface/decisions/leaders/decision_cope.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_mitterrand"
+		texturefile = "gfx/interface/decisions/leaders/decision_mitterrand.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_morizet"
+		texturefile = "gfx/interface/decisions/leaders/decision_morizet.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_ciotti"
+		texturefile = "gfx/interface/decisions/leaders/decision_ciotti.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_yade"
+		texturefile = "gfx/interface/decisions/leaders/decision_yade.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_udf"
+		texturefile = "gfx/interface/decisions/leaders/decision_udf.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_bayrou"
+		texturefile = "gfx/interface/decisions/leaders/decision_bayrou.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_macron"
+		texturefile = "gfx/interface/decisions/leaders/decision_macron.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_philippe"
+		texturefile = "gfx/interface/decisions/leaders/decision_philippe.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_villani"
+		texturefile = "gfx/interface/decisions/leaders/decision_villani.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_darmanin"
+		texturefile = "gfx/interface/decisions/leaders/decision_darmanin.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_taubira"
+		texturefile = "gfx/interface/decisions/leaders/decision_taubira.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_berge"
+		texturefile = "gfx/interface/decisions/leaders/decision_berge.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_attal"
+		texturefile = "gfx/interface/decisions/leaders/decision_attal.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_muschotti"
+		texturefile = "gfx/interface/decisions/leaders/decision_muschotti.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_mahjoubi"
+		texturefile = "gfx/interface/decisions/leaders/decision_mahjoubi.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_amadou"
+		texturefile = "gfx/interface/decisions/leaders/decision_amadou.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_bouzon"
+		texturefile = "gfx/interface/decisions/leaders/decision_bouzon.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_degois"
+		texturefile = "gfx/interface/decisions/leaders/decision_degois.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_pp"
+		texturefile = "gfx/interface/decisions/leaders/decision_pp.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_aznar"
+		texturefile = "gfx/interface/decisions/leaders/decision_aznar.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_rajoy"
+		texturefile = "gfx/interface/decisions/leaders/decision_rajoy.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_casado"
+		texturefile = "gfx/interface/decisions/leaders/decision_casado.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_feijoo"
+		texturefile = "gfx/interface/decisions/leaders/decision_feijoo.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_santamaria"
+		texturefile = "gfx/interface/decisions/leaders/decision_santamaria.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_cifuentes"
+		texturefile = "gfx/interface/decisions/leaders/decision_cifuentes.dds"
+	}
+	    spriteType = {
+		name = "GFX_decision_psoe"
+		texturefile = "gfx/interface/decisions/leaders/decision_psoe.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_alumnia"
+		texturefile = "gfx/interface/decisions/leaders/decision_alumnia.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_zapatero"
+		texturefile = "gfx/interface/decisions/leaders/decision_zapatero.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_sanchez"
+		texturefile = "gfx/interface/decisions/leaders/decision_sanchez.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_rubalcaba"
+		texturefile = "gfx/interface/decisions/leaders/decision_rubalcaba.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_diaz"
+		texturefile = "gfx/interface/decisions/leaders/decision_diaz.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_diez"
+		texturefile = "gfx/interface/decisions/leaders/decision_diez.dds"
+	}
+	    spriteType = {
+		name = "GFX_decision_gaddafi_family"
+		texturefile = "gfx/interface/decisions/leaders/decision_gaddafi_family.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_gaddafi"
+		texturefile = "gfx/interface/decisions/leaders/decision_gaddafi.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_muammar"
+		texturefile = "gfx/interface/decisions/leaders/decision_muammar.dds"
+	}
+	    spriteType = {
+		name = "GFX_decision_al_islam"
+		texturefile = "gfx/interface/decisions/leaders/decision_al_islam.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_saadi"
+		texturefile = "gfx/interface/decisions/leaders/decision_saadi.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_mutassim"
+		texturefile = "gfx/interface/decisions/leaders/decision_mutassim.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hannibal"
+		texturefile = "gfx/interface/decisions/leaders/decision_hannibal.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_ayesha"
+		texturefile = "gfx/interface/decisions/leaders/decision_ayesha.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_al_arab"
+		texturefile = "gfx/interface/decisions/leaders/decision_al_arab.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_khamis"
+		texturefile = "gfx/interface/decisions/leaders/decision_khamis.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_prc"
+		texturefile = "gfx/interface/decisions/leaders/GFX_decision_prc.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_xi"
+		texturefile = "gfx/interface/decisions/leaders/decision_xi_jinping.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hu"
+		texturefile = "gfx/interface/decisions/leaders/decision_hu_jintao.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_wen"
+		texturefile = "gfx/interface/decisions/leaders/decision_wen_jiabao.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_keqiang"
+		texturefile = "gfx/interface/decisions/leaders/decision_li_keqiang.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_rongji"
+		texturefile = "gfx/interface/decisions/leaders/decision_zhu_rongji.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_wang_yang"
+		texturefile = "gfx/interface/decisions/leaders/decision_wang_yang.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_liqiang"
+		texturefile = "gfx/interface/decisions/leaders/decision_li_qiang.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hanzheng"
+		texturefile = "gfx/interface/decisions/leaders/decision_han_zheng.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_chunhua"
+		texturefile = "gfx/interface/decisions/leaders/decision_hu_chunhua.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_qinghong"
+		texturefile = "gfx/interface/decisions/leaders/decision_zeng_qinghong.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_liuhe"
+		texturefile = "gfx/interface/decisions/leaders/decision_liu_he.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_qishan"
+		texturefile = "gfx/interface/decisions/leaders/decision_wang_qishan.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_ziyang"
+		texturefile = "gfx/interface/decisions/leaders/decision_zhao_ziyang.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_yaobang"
+		texturefile = "gfx/interface/decisions/leaders/decision_hu_yaobang.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_baotong"
+		texturefile = "gfx/interface/decisions/leaders/decision_bao_tong.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_lirui"
+		texturefile = "gfx/interface/decisions/leaders/decision_li_rui.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_wen_reform"
+		texturefile = "gfx/interface/decisions/leaders/decision_wen_jiabao.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_wangyang_reform"
+		texturefile = "gfx/interface/decisions/leaders/decision_wang_yang.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_keping"
+		texturefile = "gfx/interface/decisions/leaders/decision_yu_keping.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_yuanchao"
+		texturefile = "gfx/interface/decisions/leaders/decision_li_yuanchao.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_jiechi"
+		texturefile = "gfx/interface/decisions/leaders/decision_yang_jiechi.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_yongtu"
+		texturefile = "gfx/interface/decisions/leaders/decision_long_yongtu.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_jiwei"
+		texturefile = "gfx/interface/decisions/leaders/decision_lou_jiwei.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_deming"
+		texturefile = "gfx/interface/decisions/leaders/decision_chen_deming.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_boxilai"
+		texturefile = "gfx/interface/decisions/leaders/decision_bo_xilai.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_huning"
+		texturefile = "gfx/interface/decisions/leaders/decision_wang_huning.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_liqun"
+		texturefile = "gfx/interface/decisions/leaders/decision_deng_liqun.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_liuyuan"
+		texturefile = "gfx/interface/decisions/leaders/decision_liu_yuan.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_dejiang"
+		texturefile = "gfx/interface/decisions/leaders/decision_zhang_dejiang.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_quanguo"
+		texturefile = "gfx/interface/decisions/leaders/decision_chen_quanguo.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_yazhou"
+		texturefile = "gfx/interface/decisions/leaders/decision_liu_yazhou.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_caihou"
+		texturefile = "gfx/interface/decisions/leaders/decision_xu_caihou.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_boxiong"
+		texturefile = "gfx/interface/decisions/leaders/decision_guo_boxiong.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_zhengsheng"
+		texturefile = "gfx/interface/decisions/leaders/decision_yu_zhengsheng.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_weidong"
+		texturefile = "gfx/interface/decisions/leaders/decision_he_weidong.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_youxia"
+		texturefile = "gfx/interface/decisions/leaders/decision_zhang_youxia.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_cpc_emergency"
+		texturefile = "gfx/interface/decisions/leaders/decision_cpc_emergency.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_pla_emergency"
+		texturefile = "gfx/interface/decisions/leaders/decision_pla_emergency.dds"
+	}
+		spriteType = {
+		name = "state_security_commission"
+		texturefile = "gfx/interface/decisions/leaders/decision_security_commission.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_jongil"
+		texturefile = "gfx/interface/decisions/leaders/decision_kim_jong_il.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_jongun"
+		texturefile = "gfx/interface/decisions/leaders/decision_kim_jong_un.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_yojong"
+		texturefile = "gfx/interface/decisions/leaders/decision_kim_yo_jong.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_pyongil"
+		texturefile = "gfx/interface/decisions/leaders/decision_kim_pyong_il.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_jongchul"
+		texturefile = "gfx/interface/decisions/leaders/decision_kim_jong_chul.dds"
+		}
+		spriteType = {
+		name = "GFX_decision_myongrok"
+		texturefile = "gfx/interface/decisions/leaders/decision_jo_myong_rok.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_yongho"
+		texturefile = "gfx/interface/decisions/leaders/decision_ri_yong_ho.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_yongchol"
+		texturefile = "gfx/interface/decisions/leaders/decision_hyon_yong_chol.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_jongchon"
+		texturefile = "gfx/interface/decisions/leaders/decision_pak_jong_chon.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_pyongchol"
+		texturefile = "gfx/interface/decisions/leaders/decision_ri_pyong_chol.dds"
+		}
+		spriteType = {
+		name = "GFX_decision_songthaek"
+		texturefile = "gfx/interface/decisions/leaders/decision_jang_song_thaek.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_ryonghae"
+		texturefile = "gfx/interface/decisions/leaders/decision_choe_ryong_hae.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_pongju"
+		texturefile = "gfx/interface/decisions/leaders/decision_pak_pong_ju.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_tokhun"
+		texturefile = "gfx/interface/decisions/leaders/decision_kim_tok_hun.dds"
+			spriteType = {
+	}
+		name = "GFX_decision_jongnam"
+		texturefile = "gfx/interface/decisions/leaders/decision_jongnam.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_saddam"
+		texturefile = "gfx/interface/decisions/leaders/decision_saddam_hussein.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_qusay"
+		texturefile = "gfx/interface/decisions/leaders/decision_qusay_hussein.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_uday"
+		texturefile = "gfx/interface/decisions/leaders/decision_uday_hussein.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_douri"
+		texturefile = "gfx/interface/decisions/leaders/decision_izzat_ibrahim_al_douri.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_ramadan"
+		texturefile = "gfx/interface/decisions/leaders/decision_taha_yassin_ramadan.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_aziz"
+		texturefile = "gfx/interface/decisions/leaders/decision_tariq_aziz.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_marouf"
+		texturefile = "gfx/interface/decisions/leaders/decision_taha_muhie_eldin_marouf.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_zubeidi"
+		texturefile = "gfx/interface/decisions/leaders/decision_muhammad_hamza_al_zubeidi.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hammadi"
+		texturefile = "gfx/interface/decisions/leaders/decision_saadoun_hammadi.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hamud"
+		texturefile = "gfx/interface/decisions/leaders/decision_abd_hamud.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_majid"
+		texturefile = "gfx/interface/decisions/leaders/decision_ali_hassan_al_majid.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_xi"
+		texturefile = "gfx/interface/decisions/leaders/decision_xi_jinping.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hu"
+		texturefile = "gfx/interface/decisions/leaders/decision_hu_jintao.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_wen"
+		texturefile = "gfx/interface/decisions/leaders/decision_wen_jiabao.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_keqiang"
+		texturefile = "gfx/interface/decisions/leaders/decision_li_keqiang.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_rongji"
+		texturefile = "gfx/interface/decisions/leaders/decision_zhu_rongji.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_wang_yang"
+		texturefile = "gfx/interface/decisions/leaders/decision_wang_yang.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_liqiang"
+		texturefile = "gfx/interface/decisions/leaders/decision_li_qiang.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_hanzheng"
+		texturefile = "gfx/interface/decisions/leaders/decision_han_zheng.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_chunhua"
+		texturefile = "gfx/interface/decisions/leaders/decision_hu_chunhua.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_qinghong"
+		texturefile = "gfx/interface/decisions/leaders/decision_zeng_qinghong.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_liuhe"
+		texturefile = "gfx/interface/decisions/leaders/decision_liu_he.dds"
+	}
+		spriteType = {
+		name = "GFX_decision_qishan"
+		texturefile = "gfx/interface/decisions/leaders/decision_wang_qishan.dds"
+	}
+}

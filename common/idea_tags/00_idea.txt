@@ -71,6 +71,18 @@ idea_categories = {
 		ledger = civilian
 	}
 
+	national_ideas = {
+		slot = imp_national_ideas_1 
+		slot = imp_national_ideas_1 
+		slot = imp_national_ideas_2
+		slot = imp_national_ideas_2 
+		slot = imp_national_ideas_3 
+		slot = imp_national_ideas_3 
+		cost = 150
+		removal_cost = 0
+		ledger = civilian
+	}
+
 	defense_companies = {
 		slot = tank_manufacturer
 		slot = naval_manufacturer

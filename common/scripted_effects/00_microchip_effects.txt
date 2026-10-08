@@ -107,7 +107,7 @@ microchip_update = {
 			country_microchip_produced = {
 				value = microchip_plant_total
 				multiply = {
-					value = 20
+					value = 6 # Imperia: microchip plant base output 6 (MD 20)
 					add = country_extra_microchip_per_plant
 				}
 			}
@@ -464,11 +464,11 @@ md_tech_microchip_production_2_effect = {
 			NOT = { has_country_flag = md_applied_microchip_production_2 }
 		}
 		set_country_flag = md_applied_microchip_production_2
-		set_variable = { country_extra_microchip_per_plant = 1 }
+		set_variable = { country_extra_microchip_per_plant = 2 } # Imperia
 		modify_building_resources = {
 			building = microchip_plant
 			resource = microchips
-			amount = 1
+			amount = 2
 		}
 	}
 }
@@ -479,11 +479,11 @@ md_tech_microchip_production_3_effect = {
 			NOT = { has_country_flag = md_applied_microchip_production_3 }
 		}
 		set_country_flag = md_applied_microchip_production_3
-		set_variable = { country_extra_microchip_per_plant = 2 }
+		set_variable = { country_extra_microchip_per_plant = 4 } # Imperia
 		modify_building_resources = {
 			building = microchip_plant
 			resource = microchips
-			amount = 1
+			amount = 2
 		}
 	}
 }
@@ -494,12 +494,8 @@ md_tech_microchip_production_4_effect = {
 			NOT = { has_country_flag = md_applied_microchip_production_4 }
 		}
 		set_country_flag = md_applied_microchip_production_4
-		set_variable = { country_extra_microchip_per_plant = 3 }
-		modify_building_resources = {
-			building = microchip_plant
-			resource = microchips
-			amount = 1
-		}
+		set_variable = { country_extra_microchip_per_plant = 4 } # Imperia
+		# Imperia: no extra microchips from this tech (it unlocks microchip plant level 2 instead)
 	}
 }
 
@@ -509,11 +505,11 @@ md_tech_microchip_production_5_effect = {
 			NOT = { has_country_flag = md_applied_microchip_production_5 }
 		}
 		set_country_flag = md_applied_microchip_production_5
-		set_variable = { country_extra_microchip_per_plant = 4 }
+		set_variable = { country_extra_microchip_per_plant = 6 } # Imperia
 		modify_building_resources = {
 			building = microchip_plant
 			resource = microchips
-			amount = 1
+			amount = 2
 		}
 	}
 }
@@ -524,11 +520,11 @@ md_tech_microchip_production_6_effect = {
 			NOT = { has_country_flag = md_applied_microchip_production_6 }
 		}
 		set_country_flag = md_applied_microchip_production_6
-		set_variable = { country_extra_microchip_per_plant = 5 }
+		set_variable = { country_extra_microchip_per_plant = 8 } # Imperia
 		modify_building_resources = {
 			building = microchip_plant
 			resource = microchips
-			amount = 1
+			amount = 2
 		}
 	}
 }
@@ -539,7 +535,7 @@ md_tech_microchip_production_7_effect = {
 			NOT = { has_country_flag = md_applied_microchip_production_7 }
 		}
 		set_country_flag = md_applied_microchip_production_7
-		set_variable = { country_extra_microchip_per_plant = 6 }
+		set_variable = { country_extra_microchip_per_plant = 9 } # Imperia
 		modify_building_resources = {
 			building = microchip_plant
 			resource = microchips
@@ -554,7 +550,7 @@ md_tech_microchip_production_8_effect = {
 			NOT = { has_country_flag = md_applied_microchip_production_8 }
 		}
 		set_country_flag = md_applied_microchip_production_8
-		set_variable = { country_extra_microchip_per_plant = 7 }
+		set_variable = { country_extra_microchip_per_plant = 10 } # Imperia
 		modify_building_resources = {
 			building = microchip_plant
 			resource = microchips
@@ -569,7 +565,7 @@ md_tech_microchip_production_9_effect = {
 			NOT = { has_country_flag = md_applied_microchip_production_9 }
 		}
 		set_country_flag = md_applied_microchip_production_9
-		set_variable = { country_extra_microchip_per_plant = 8 }
+		set_variable = { country_extra_microchip_per_plant = 11 } # Imperia
 		modify_building_resources = {
 			building = microchip_plant
 			resource = microchips
@@ -584,7 +580,7 @@ md_tech_microchip_production_10_effect = {
 			NOT = { has_country_flag = md_applied_microchip_production_10 }
 		}
 		set_country_flag = md_applied_microchip_production_10
-		set_variable = { country_extra_microchip_per_plant = 9 }
+		set_variable = { country_extra_microchip_per_plant = 12 } # Imperia
 		modify_building_resources = {
 			building = microchip_plant
 			resource = microchips

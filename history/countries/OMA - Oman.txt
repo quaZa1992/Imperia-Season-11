@@ -69,12 +69,9 @@ capital = 182
 		al_jazeera_allowed
 		omani_expat
 		stagnation
-		defence_04
 		edu_03
 		health_02
 		social_03
-		bureau_03
-		police_03
 		export_economy
 		volunteer_army
 		small_medium_business_owners
@@ -85,6 +82,9 @@ capital = 182
 		tiny_shia_population
 		econ_isr_boycotte
 		no_currency_backing
+		defence_02
+		bureau_02
+		police_02
 	}
 
 	# Starting tech
@@ -239,10 +239,10 @@ capital = 182
 	sort_influence = yes
 
 	### Economy
-	set_variable = { var = debt value = 16.687 }
+	set_variable = { var = debt value = 4.687 }
 	set_variable = { var = treasury value = 4 }
-	set_variable = { var = corporate_tax_rate value = 12 }
-	set_variable = { var = population_tax_rate value = 17 }
+	set_variable = { var = corporate_tax_rate value = 19 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { var = int_investments value = 0 }
 
 	set_popularities = {
@@ -289,7 +289,7 @@ capital = 182
 			military_career
 		}
 	}
-	set_variable = { overall_productivity = 624 }
+	set_variable = { overall_productivity = 726 }
 
 	recruit_character = OMA_mohammed_waeli
 	recruit_character = OMA_abdullah_badi
@@ -338,4 +338,17 @@ capital = 182
 	add_opinion_modifier = { target = UAE modifier = arab_league_relations }
 	add_opinion_modifier = { target = YEM modifier = arab_league_relations }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = { set_variable = { productivity_state_var = 726 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

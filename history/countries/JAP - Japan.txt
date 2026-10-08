@@ -49,6 +49,7 @@ capital = 615
 		JAP_ring_of_fire
 		JAP_ykk_group
 		no_currency_backing
+		imp_lost_generation
 	}
 
 	# Dynamic Modifiers
@@ -215,7 +216,7 @@ capital = 615
 		}
 	}
 
-	set_variable = { overall_productivity = 985 }
+	set_variable = { overall_productivity = 1322 }
 	set_variable = { var_reactor_material_stockpile = 35000 }
 
 	# Special Projects
@@ -233,8 +234,8 @@ capital = 615
 
 	# Technologies
 	set_technology = {
-		microchip_production_2 = 1
-		microchip_production_3 = 1
+		#microchip_production_2 = 1 # Imperia: microchip rework
+		#microchip_production_3 = 1 # Imperia: microchip rework
 
 		COMSAT1 = 1
 		COMSAT2 = 1
@@ -1902,4 +1903,29 @@ capital = 615
 	add_relation_modifier = { target = ITA modifier = ITA_World_Economical_Relations }
 	add_relation_modifier = { target = UKR modifier = UKR_world_economical_relations }
 	add_relation_modifier = { target = ISR modifier = ISR_World_Economical_Relations }
+	every_controlled_state = { set_variable = { productivity_state_var = 1322 } }
+	618 = { set_variable = { productivity_state_var = 800 } }
+	621 = { set_variable = { productivity_state_var = 800 } }
+	620 = { set_variable = { productivity_state_var = 800 } }
+	939 = { set_variable = { productivity_state_var = 800 } }
+	615 = { set_variable = { productivity_state_var = 1503 } }
+	613 = { set_variable = { productivity_state_var = 1251 } }
+	612 = { set_variable = { productivity_state_var = 1221 } }
+	611 = { set_variable = { productivity_state_var = 1138 } }
+	610 = { set_variable = { productivity_state_var = 1045 } }
+	609 = { set_variable = { productivity_state_var = 1085 } }
+	616 = { set_variable = { productivity_state_var = 1023 } }
+	617 = { set_variable = { productivity_state_var = 878 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

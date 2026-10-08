@@ -1200,7 +1200,6 @@ technologies = {
 
 	genetics_4 = {
 		productivity_growth_modifier = 0.1
-		agricolture_productivity_modifier = 0.20
 
 		research_cost = 1.5
 		start_year = 2000
@@ -1240,7 +1239,6 @@ technologies = {
 
 	genetics_6 = {
 		productivity_growth_modifier = 0.1
-		agricolture_productivity_modifier = 0.30
 
 		research_cost = 1.5
 		start_year = 2010
@@ -1453,7 +1451,6 @@ technologies = {
 
 	genetics_10 = {
 		productivity_growth_modifier = 0.1
-		agricolture_productivity_modifier = 0.30
 
 		research_cost = 1.5
 		start_year = 2030
@@ -1497,6 +1494,7 @@ technologies = {
 				date < 2028.1.1
 			}
 		}
+		monthly_population = 0.05
 	}
 
 	genetics_11 = {

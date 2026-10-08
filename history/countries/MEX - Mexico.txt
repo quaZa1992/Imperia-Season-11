@@ -335,13 +335,11 @@ capital = 835
 		#Military Spending
 		defence_01
 		#Internal Security
-		police_04
 		#Education budget
 		edu_03
 		#Health budget
 		health_02
 		#Social spending
-		social_03
 
 		#Trade Law
 		semi_consumption_economy
@@ -362,6 +360,8 @@ capital = 835
 
 		un_aid_cdf_member
 		no_currency_backing
+		police_01
+		social_01
 	}
 	add_to_array = { global.un_aid_esco_contributor = THIS }
 	add_to_array = { global.un_aid_cdf_contributor = THIS }
@@ -393,13 +393,13 @@ capital = 835
 	sort_influence = yes
 
 	### Economy
-	set_variable = { var = debt value = 721 }
+	set_variable = { var = debt value = 308 }
 	set_variable = { var = treasury value = 52 }
 	set_variable = { inflation_rate_var = 0.16586 }
 	set_variable = { cb_policy_rate = 3 }
 	set_variable = { var = corporate_tax_rate value = 30 }
 	set_variable = { var = population_tax_rate value = 28 }
-	set_variable = { overall_productivity = 622 }
+	set_variable = { overall_productivity = 852 }
 	set_variable = { var_reactor_material_stockpile = 2500 }
 
 	set_popularities = {
@@ -475,4 +475,17 @@ capital = 835
 	add_opinion_modifier = { target = TTP modifier = AlQaida_Are_Terrorists_Trade }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
+	every_controlled_state = { set_variable = { productivity_state_var = 852 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

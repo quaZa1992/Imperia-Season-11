@@ -167,10 +167,10 @@ units = {
 			ship = { name = "Chángchēng-365" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Kilo Class" } } }
 			ship = { name = "Chángchēng-366" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } }
 			ship = { name = "Chángchēng-367" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } }
-			ship = { name = "Chángchēng-368" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia
-			ship = { name = "Chángchēng-369" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia
-			ship = { name = "Chángchēng-370" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia
-			ship = { name = "Chángchēng-371" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia
+			# ship = { name = "Chángchēng-368" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia # Imperia: disabled
+			# ship = { name = "Chángchēng-369" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia # Imperia: disabled
+			# ship = { name = "Chángchēng-370" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia # Imperia: disabled
+			# ship = { name = "Chángchēng-371" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia # Imperia: disabled
 		}
 		task_force = {
 			name = "Reserve of East Sea Fleet"
@@ -228,10 +228,10 @@ units = {
 		task_force = {
 			name = "PLAN 32nd Submarine Flotilla"
 			location = 994
-			ship = { name = "Chángchēng-372" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia
-			ship = { name = "Chángchēng-373" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia
-			ship = { name = "Chángchēng-374" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia
-			ship = { name = "Chángchēng-375" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia
+			# ship = { name = "Chángchēng-372" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia # Imperia: disabled
+			# ship = { name = "Chángchēng-373" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia # Imperia: disabled
+			# ship = { name = "Chángchēng-374" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia # Imperia: disabled
+			# ship = { name = "Chángchēng-375" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_2 = { amount = 1 owner = CHI creator = SOV version_name = "Improved Kilo Class" } } } #IRL on construction in Russia # Imperia: disabled
 			ship = { name = "Chángchēng-275" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_1 = { amount = 1 owner = CHI version_name = "Type 033 Class" } } }
 			ship = { name = "Chángchēng-276" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_1 = { amount = 1 owner = CHI version_name = "Type 033 Class" } } }
 			ship = { name = "Chángchēng-277" definition = attack_submarine start_experience_factor = 0.30 equipment = { attack_submarine_hull_1 = { amount = 1 owner = CHI version_name = "Type 033 Class" } } }

@@ -1,0 +1,58 @@
+#########################################################################################
+# Original Script by: Moveably - Please don't touch. Unless I'm gone. Then can touch :) #
+#########################################################################################
+
+scripted_gui = {
+	imp_food_transfer_scripted_gui = {
+	
+		context_type = diplomatic_action
+		
+		window_name = "imp_food_transfer_scripted_gui"
+
+		effects = {
+			food_transfer_plus_click = {
+				add_to_variable = { ROOT.foodgift_size = 1 }
+				clamp_variable = { var = ROOT.foodgift_size min = 0 max = 10000 }
+			}
+
+			food_transfer_plus_control_click = {
+				add_to_variable = { ROOT.foodgift_size = 10 }
+				clamp_variable = { var = ROOT.foodgift_size min = 0 max = 10000 }
+			}
+
+			food_transfer_plus_shift_click = {
+				add_to_variable = { ROOT.foodgift_size = 100 }
+				clamp_variable = { var = ROOT.foodgift_size min = 0 max = 10000 }
+			}
+
+			food_transfer_plus_alt_click = {
+				add_to_variable = { ROOT.foodgift_size = 1000 }
+				clamp_variable = { var = ROOT.foodgift_size min = 0 max = 10000 }
+			}
+
+			food_transfer_minus_click = {
+				add_to_variable = { ROOT.foodgift_size = -1 }
+				clamp_variable = { var = ROOT.foodgift_size min = 0 max = 10000 }
+			}
+
+			food_transfer_minus_control_click = {
+				add_to_variable = { ROOT.foodgift_size = -10 }
+				clamp_variable = { var = ROOT.foodgift_size min = 0 max = 10000 }
+			}
+
+			food_transfer_minus_shift_click = {
+				add_to_variable = { ROOT.foodgift_size = -100 }
+				clamp_variable = { var = ROOT.foodgift_size min = 0 max = 10000 }
+			}
+
+			food_transfer_minus_alt_click = {
+				add_to_variable = { ROOT.foodgift_size = -1000 }
+				clamp_variable = { var = ROOT.foodgift_size min = 0 max = 10000 }
+			}
+		}
+
+		triggers = {
+			
+		}
+	}
+}

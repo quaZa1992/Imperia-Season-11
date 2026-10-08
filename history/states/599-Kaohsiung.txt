@@ -3,6 +3,7 @@ state = {
 	name = "STATE_599"
 	resources = {
 		aluminium = 1.000
+		microchips = 35
 	}
 
 	history = {
@@ -21,7 +22,7 @@ state = {
 			dockyard = 1
 			air_base = 4
 			nuclear_reactor = 1
-			microchip_plant = 2
+			microchip_plant = 1
 			11914 = {
 				naval_base = 4
 				naval_facility = 1

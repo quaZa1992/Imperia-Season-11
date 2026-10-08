@@ -5,6 +5,7 @@ state = {
 	resources = {
 		steel = 24
 		aluminium = 6
+		microchips = 15
 	}
 	history = {
 		owner = ITA

@@ -61,15 +61,15 @@
 @cp_policy_rate_interest = 0.33
 
 # GDP per-building contribution coefficients: output = total * (base_factor + prod_factor * productivity) * manpower_fulfillment
-@gdp_civ_base_factor = 17.5
+@gdp_civ_base_factor = 10 # Imperia (MD 17.5)
 @gdp_civ_prod_factor = 20
-@gdp_mil_base_factor = 1.5
+@gdp_mil_base_factor = 1 # Imperia (MD 1.5)
 @gdp_mil_prod_factor = 1
-@gdp_dockyard_base_factor = 1.5
+@gdp_dockyard_base_factor = 1 # Imperia (MD 1.5)
 @gdp_dockyard_prod_factor = 1
-@gdp_office_base_factor = 50
+@gdp_office_base_factor = 35 # Imperia (MD 50)
 @gdp_office_prod_factor = 50
-@gdp_agriculture_district_base_factor = 25
+@gdp_agriculture_district_base_factor = 15 # Imperia (MD 25)
 @gdp_agriculture_district_prod_factor = 25
 @gdp_microchip_base_factor = 32
 @gdp_microchip_prod_factor = 35
@@ -330,7 +330,7 @@ calculate_tax_rate = {
 				value = corporate_tax_rate
 				multiply = -1
 				add = 20
-				multiply = 0.005
+				multiply = 0.05 # Imperia: extra productivity loss from corporate tax (MD 0.005)
 			}
 		}
 
@@ -339,6 +339,26 @@ calculate_tax_rate = {
 				value = population_tax_rate
 				multiply = -0.01
 			}
+		}
+		# Imperia: expected welfare/education/healthcare spending depending on population tax rate
+		if = {
+			limit = { check_variable = { population_tax_rate > 45 } }
+			set_variable = { expectations_from_pop_tax = 4 }
+		}
+		else_if = {
+			limit = { check_variable = { population_tax_rate > 38 } }
+			set_variable = { expectations_from_pop_tax = 3 }
+		}
+		else_if = {
+			limit = { check_variable = { population_tax_rate > 31 } }
+			set_variable = { expectations_from_pop_tax = 2 }
+		}
+		else_if = {
+			limit = { check_variable = { population_tax_rate > 24 } }
+			set_variable = { expectations_from_pop_tax = 1 }
+		}
+		else = {
+			set_variable = { expectations_from_pop_tax = 0 }
 		}
 
 		# Average Tax Rate
@@ -353,7 +373,7 @@ calculate_tax_rate = {
 
 		set_variable = {
 			tax_rate_change_5 = {
-				value = 250
+				value = 50 # Imperia: cheaper tax rate adjustments (MD 250)
 				multiply = {
 					value = 1
 					add = modifier@tax_rate_change_multiplier_modifier
@@ -363,7 +383,7 @@ calculate_tax_rate = {
 		}
 		set_variable = {
 			tax_rate_change = {
-				value = 50
+				value = 10 # Imperia: cheaper tax rate adjustments (MD 50)
 				multiply = {
 					value = 1
 					add = modifier@tax_rate_change_multiplier_modifier
@@ -517,6 +537,7 @@ calculate_tax_gain = {
 	set_variable = {
 		agriculture_district_tax = {
 			value = agriculture_district_total
+			multiply = 2 # Imperia
 			multiply = {
 				value = 1
 				add = modifier@agriculture_district_income_tax_modifier
@@ -2114,6 +2135,12 @@ calculate_additional_income_rate = {
 		add_to_variable = { additional_income_rate = additional_income_SAU_pipeline_transit }
 	}
 
+	# Imperia - Slush Fund Economy
+	if = {
+		limit = { has_idea = imp_ni_slush_fund_eco }
+		set_variable = { imp_ni_slush_fund_income = 1.0 }
+		add_to_variable = { additional_income_rate = imp_ni_slush_fund_income }
+	}
 	#Sold Equipment Tax Income
 	if = {
 		limit = { check_variable = { market_sold_contracts > 0 } }
@@ -2367,6 +2394,8 @@ calculate_additional_income_rate = {
 		add_to_variable = { additional_income_rate = market_sold_cost }
 		set_variable = { market_sold_value_track = market_sold_cost }
 	}
+	# Imperia - incoming subsidies (money transfer tool)
+	add_to_variable = { additional_income_rate = total_subsidies_in }
 
 	#Czech-Hungarian trade
 	if = {
@@ -2962,12 +2991,11 @@ update_military_rate = {
 
 	#from millions yearly to billions weekly
 	set_variable = { equipment_operative_cost = { value = equipment_operative_cost multiply = @equipment_operative_cost_multiplier multiply = 0.019 multiply = 0.001 } }
+	# Imperia: army upkeep doubled in peacetime, only +25% for players at war (MD: x2.25 players / x1.45 AI at war)
+	multiply_variable = { equipment_operative_cost = 2 }
 	if = { limit = { has_war = yes }
 		if = { limit = { is_ai = no }
-			multiply_variable = { equipment_operative_cost = 2.25 }
-		}
-		else = {
-			multiply_variable = { equipment_operative_cost = 1.45 }
+			multiply_variable = { equipment_operative_cost = 1.25 }
 		}
 	}
 
@@ -4428,10 +4456,10 @@ calculate_additional_expense_rate = {
 # Purpose: Computes weekly ROI from international investments and splits it into treasury vs reinvested shares
 calculate_int_investments_rate = {
 	# Base ROI + stacked return_on_investment_modifier, clamped to the engine-wide ceiling
-	set_variable = { roi_rate = { value = 0.06 add = modifier@return_on_investment_modifier clamp = { min = 0 max = global.roi_rate_cap } } }
+	set_variable = { roi_rate = { value = 0.04 add = modifier@return_on_investment_modifier clamp = { min = 0 max = global.roi_rate_cap } } }
 
 	#This is how much money we get back in a year, converted to weekly
-	set_variable = { int_investments_rate = { value = int_investments multiply = roi_rate multiply = 0.019 clamp = { min = 0 max = @math_expressions_max } } }
+	set_variable = { int_investments_rate = { value = int_investments add = { value = imp_total_bonds_held multiply = 0.25 } multiply = roi_rate multiply = 0.019 clamp = { min = 0 max = @math_expressions_max } } }
 
 	if = { limit = { check_variable = { int_reinvest_mode = 1 } }
 		set_variable = { int_investments_collected_rate = 0 }
@@ -5102,12 +5130,13 @@ calculate_gdp = {
 	set_variable = {
 		resource_sector_workers = {
 			value = total_resource_amount
-			multiply = 0.075
+			multiply = 10 # Imperia (MD 0.075; see productivity share below)
 			multiply = {
 				value = 1
 				add = modifier@resource_sector_workers_modifier
 			}
 			divide = { value = gdpc_converging_var clamp = { min = 0.1 max = @math_expressions_max } }
+			multiply = 0.001 # Imperia: thousands to millions
 			multiply = {
 				value = 1
 				add = modifier@resource_extraction_workforce_requirement_modifier
@@ -5115,6 +5144,24 @@ calculate_gdp = {
 			}
 		}
 	}
+	# Imperia: share of the resource sector workforce tied directly to overall productivity
+	if = {
+		limit = { check_variable = { overall_productivity > 1250 } }
+		set_temp_variable = { resource_sector_workers_percentage = 0.1 }
+	}
+	else = {
+		set_temp_variable = {
+			resource_sector_workers_percentage = {
+				value = overall_productivity
+				divide = 1250
+				multiply = -1
+				add = 1
+				multiply = 0.9
+				clamp = { min = 0.1 max = 1 }
+			}
+		}
+	}
+	multiply_variable = { resource_sector_workers = resource_sector_workers_percentage }
 	set_temp_variable = {
 		max_resource_workers = {
 			value = workforce_total
@@ -5165,40 +5212,33 @@ calculate_gdp = {
 	}
 
 	# Employment in Subsistence Agriculture
+	# Imperia: share of subsistence agriculture workers tied directly to overall productivity
+	# (avoids the GDP/c feedback loop of MD's gdp/c based formula)
 	if = {
-		limit = { check_variable = { gdpc_converging_var < 1.3 } }
-		set_variable = {
-			agriculture_workers = {
-				value = workforce_total
+		limit = { check_variable = { overall_productivity > 1250 } }
+		set_temp_variable = { agriculture_workers_percentage = 0.05 }
+	}
+	else = {
+		set_temp_variable = {
+			agriculture_workers_percentage = {
+				value = overall_productivity
+				divide = 1250
+				multiply = -1
+				add = 1
+				multiply = 0.9
+				clamp = { min = 0.05 max = 0.9 }
 				multiply = {
-					value = gdpc_converging_var
-					multiply = -0.02
-					add = 0.9
+					value = 1
+					add = modifier@agriculture_workers_modifier
 				}
+				clamp = { min = 0.0 max = 0.9 }
 			}
 		}
 	}
-	else = {
-		set_variable = {
-			agriculture_workers = {
-				value = workforce_total
-				multiply = {
-					value = 1.076
-					multiply = 0.9
-					divide = gdpc_converging_var
-					multiply = {
-						value = 1.076
-						multiply = -1
-						divide = gdpc_converging_var
-						add = 2
-					}
-					multiply = {
-						value = 1
-						add = modifier@agriculture_workers_modifier
-					}
-					clamp = { min = 0.0 max = 0.9 }
-				}
-			}
+	set_variable = {
+		agriculture_workers = {
+			value = workforce_total
+			multiply = agriculture_workers_percentage
 		}
 	}
 
@@ -5206,13 +5246,14 @@ calculate_gdp = {
 		gdp_from_agriculture = {
 			value = agriculture_workers
 			multiply = {
-				value = 2.75
+				value = gdpc_converging_var # Imperia: GDP per subsistence worker ~ GDP/c (MD fixed 2.75)
 				multiply = {
 					value = 1
 					add = modifier@agricolture_productivity_modifier
 				}
 			}
 			multiply = 1.337
+			divide = 10 # Imperia
 		}
 	}
 	subtract_from_temp_variable = { workforce_total = agriculture_workers }
@@ -5416,9 +5457,7 @@ calculate_gdp = {
 
 	set_temp_variable = {
 		worker_requirement_gdp_multiplier = {
-			value = 3
-			divide = { value = gdpc_converging_var clamp = { min = 5 max = @math_expressions_max } }
-			add = 1
+			value = 1 # Imperia: GDP/c based worker requirement disabled (caused GDP/c spiral). MD: 3 / gdp_c + 1
 		}
 	}
 	set_variable = { worker_requirement_gdp_multiplier_display = { value = worker_requirement_gdp_multiplier subtract = 1 } }
@@ -6114,6 +6153,113 @@ calculate_gdp = {
 			clamp = { min = 0.1 max = @math_expressions_max }
 		}
 	}
+
+	##### Imperia GDP adjustments #####
+	## Alright. Let's do another pass of this. This way gdps with less than 1000 productivity get another shaft without destroying them.
+	## Especially in combination with removing a lot of gdp/c penalties native to the game.
+	if = { 
+		limit = { check_variable = { overall_productivity < 1000 } }
+
+		set_temp_variable = { imp_extra_p = overall_productivity }
+		divide_temp_variable = { imp_extra_p = 1000 }
+		multiply_variable = { gdp_total = imp_extra_p }
+	}
+
+	## Then do some manual adjustments
+	if = {
+		limit = { tag = USA }
+		# Just add extra gdp for the USA. Eaz. 
+		multiply_variable = { gdp_total = 1.0 }
+	}
+	else_if = {
+		# Japan is complicated. Mexico is also complicated lol. We will fake these.
+		limit = { 
+			tag = JAP
+			date < 2030.01.01
+		}
+		set_temp_variable = { jap_t_y = global.year }
+		subtract_from_temp_variable = { jap_t_y = 2000 }
+		multiply_temp_variable = { jap_t_y = 0.03 }
+
+		set_temp_variable = { jap_t = 1.20 }
+		subtract_from_temp_variable = { jap_t = jap_t_y }
+
+		multiply_variable = { gdp_total = jap_t }
+	}
+	else_if = {
+		# Every else is tiny.
+		limit = { 
+			NOT = { tag = CHI } 
+		}
+		multiply_variable = { gdp_total = 0.80 }
+	}
+
+	## Individual Adjustments
+	if = { 
+		# Iran & Argentina are also complicated urgh They don't have the manpower to have a realistic GDP so we'll just fake it.
+		limit = { 
+			OR = { 
+				tag = PER
+				tag = ARG
+			}
+			date < 2020.01.01
+		}
+
+		set_temp_variable = { per_t_y = global.year }
+		subtract_from_temp_variable = { per_t_y = 2000 }
+		multiply_temp_variable = { per_t_y = 10 }
+
+		set_temp_variable = { per_t = 200 }
+		subtract_from_temp_variable = { per_t = per_t_y }
+
+		add_to_variable = { gdp_total = per_t }
+	}
+	else_if = { 
+		# These countries aren't doing great in 2000.
+		limit = { 
+			OR = { 
+				tag = SOV
+				tag = UKR
+			}
+		}
+
+		set_temp_variable = { sov_t_y = global.year }
+		subtract_from_temp_variable = { sov_t_y = 2000 }
+		multiply_temp_variable = { sov_t_y = 0.05 }
+
+		set_temp_variable = { sov_t = 0.25 }
+		add_to_temp_variable = { sov_t = sov_t_y }
+
+		if = { 
+			limit = { 
+				check_variable = { sov_t > 0.75 }
+			}
+			set_temp_variable = { sov_t = 0.75 } # fixed: was set_variable (cap had no effect)
+		}
+
+		multiply_variable = { gdp_total = sov_t }
+	}
+
+	## Then, since even that is not enough. Let's artificially lower the gdp of sub 1T gdp nations further.
+	## It's just artificial, which means they will still be perfectly playable. Just lower debt ceilings.
+	if = { 
+		limit = { 
+			check_variable = { gdp_total < 1000 } 
+			}
+		set_temp_variable = { imp_add_red_t = gdp_total }
+		divide_temp_variable = { imp_add_red_t = 1000 }
+		
+		##and then add 25% of that back. To make a less curvey curve.
+		set_temp_variable = { imp_add_corr_t = 1 }
+		subtract_from_temp_variable = { imp_add_corr_t = imp_add_red_t}
+		multiply_temp_variable = { imp_add_corr_t = 0.75 }
+
+		add_to_temp_variable = { imp_add_red_t = imp_add_corr_t }
+
+		multiply_variable = { gdp_total = imp_add_red_t }
+	}
+	clamp_variable = { var = gdp_total min = 0.1 }
+	##### End Imperia GDP adjustments #####
 
 	set_variable = {
 		gdp_per_capita = {

@@ -53,12 +53,9 @@ capital = 249
 		corruption_level_09
 		christian
 		stable_growth
-		defence_02
 		edu_01
 		health_01
-		social_02
 		bureau_01
-		police_02
 		volunteer_army
 		no_women_in_military
 		USA_usaid #https://explorer.usaid.gov/aid-dashboard.html
@@ -70,6 +67,9 @@ capital = 249
 		multi_ethnic_state_idea
 		officer_basic_training
 		no_currency_backing
+		defence_01
+		social_01
+		police_01
 	}
 	add_dynamic_modifier = { modifier = Commonwealth_member_modifier }
 	add_to_array = { global.commonwealth_member = THIS }
@@ -89,7 +89,7 @@ capital = 249
 	add_to_array = { influence_array_val = 12 }
 	sort_influence = yes
 
-	set_variable = { var = debt value = 14 }
+	set_variable = { var = debt value = 0 }
 	set_variable = { var = treasury value = 1 }
 	set_variable = { var = corporate_tax_rate value = 30 }
 	set_variable = { var = population_tax_rate value = 30 }
@@ -205,7 +205,7 @@ capital = 249
 
 	set_variable = { literacy_rate = 0.681 }
 
-	set_variable = { overall_productivity = 861 }
+	set_variable = { overall_productivity = 289 }
 
 
 	# Relation Starting Configuration (moved from on_startup)
@@ -281,4 +281,19 @@ capital = 249
 	add_opinion_modifier = { target = SAF modifier = African_Union_Relations }
 	add_opinion_modifier = { target = LBA modifier = African_Union_Relations }
 	add_opinion_modifier = { target = EGY modifier = African_Union_Relations }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 289 }
+	}
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

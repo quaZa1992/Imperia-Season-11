@@ -93,4 +93,19 @@ units = {
 			ship = { name = "HMS Sturkö (M14)" definition = corvette start_experience_factor = 0.70 equipment = { corvette_hull_3 = { amount = 1 owner = SWE version_name = "Styrsö Class" } } }
 		}
 	}
+	fleet = {
+		name = "Reservflottiljen" # Imperia decomissioned ships
+		naval_base = 11215
+		task_force = {
+			name = "Reservflottiljen"
+			location = 11215
+			ship = { name = "HMS Neptun (Nep)" definition = attack_submarine start_experience_factor = 0.15 equipment = { attack_submarine_hull_1 = { amount = 1 owner = SWE version_name = "Näcken Class" } } }
+			ship = { name = "HMS Najad (Nad)" definition = attack_submarine start_experience_factor = 0.15 equipment = { attack_submarine_hull_1 = { amount = 1 owner = SWE version_name = "Näcken Class" } } }
+			ship = { name = "HMS Norrtälje (R133)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = SWE version_name = "Ystad Class" } } }
+			ship = { name = "HMS Varberg (R134)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = SWE version_name = "Ystad Class" } } }
+			ship = { name = "HMS Västerås (R135)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = SWE version_name = "Ystad Class" } } }
+			ship = { name = "HMS Västervik (R136)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = SWE version_name = "Ystad Class" } } }
+			ship = { name = "HMS Umeå (R137)" definition = corvette start_experience_factor = 0.15 equipment = { corvette_hull_2 = { amount = 1 owner = SWE version_name = "Ystad Class" } } }
+		}
+	}
 }

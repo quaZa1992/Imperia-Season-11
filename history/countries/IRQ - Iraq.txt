@@ -482,7 +482,7 @@ capital = 557
 			sly
 		}
 	}
-	set_variable = { overall_productivity = 505 }
+	set_variable = { overall_productivity = 630 }
 
 	recruit_character = IRQ_izzat_ibrahim_al_douri
 	recruit_character = IRQ_sultan_hashim_ahmad_al_tai
@@ -559,9 +559,22 @@ capital = 557
 	add_opinion_modifier = { target = TUN modifier = arab_league_relations }
 	add_opinion_modifier = { target = UAE modifier = arab_league_relations }
 	add_opinion_modifier = { target = YEM modifier = arab_league_relations }
+	every_controlled_state = { set_variable = { productivity_state_var = 630 } }
 }
 
 2003.1.1 = {
 	kill_country_leader = yes
 
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

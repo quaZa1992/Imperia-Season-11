@@ -1,0 +1,623 @@
+#########################################################################################
+# Original Script by: Moveably - Please don't touch. Unless I'm gone. Then can touch :) #
+#########################################################################################
+
+defined_text = {
+	name = imp_dip_sanc_on_us_0
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^0 }
+        localization_key = "[?imp_dip_sanc_on_us^0.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_1
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^1 }
+        localization_key = "[?imp_dip_sanc_on_us^1.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_2
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^2 }
+        localization_key = "[?imp_dip_sanc_on_us^2.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_3
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^3 }
+        localization_key = "[?imp_dip_sanc_on_us^3.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_4
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^4 }
+        localization_key = "[?imp_dip_sanc_on_us^4.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_5
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^5 }
+        localization_key = "[?imp_dip_sanc_on_us^5.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_6
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^6 }
+        localization_key = "[?imp_dip_sanc_on_us^6.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_7
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^7 }
+        localization_key = "[?imp_dip_sanc_on_us^7.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_8
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^8 }
+        localization_key = "[?imp_dip_sanc_on_us^8.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_9
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^9 }
+        localization_key = "[?imp_dip_sanc_on_us^9.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_10
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^10 }
+        localization_key = "[?imp_dip_sanc_on_us^10.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_11
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^11 }
+        localization_key = "[?imp_dip_sanc_on_us^11.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_12
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^12 }
+        localization_key = "[?imp_dip_sanc_on_us^12.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_13
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^13 }
+        localization_key = "[?imp_dip_sanc_on_us^13.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_14
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^14 }
+        localization_key = "[?imp_dip_sanc_on_us^14.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_dip_sanc_on_us_15
+
+    text = { trigger = { has_variable = imp_dip_sanc_on_us^15 }
+        localization_key = "[?imp_dip_sanc_on_us^15.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+
+
+
+defined_text = {
+	name = imp_fin_sanc_on_us_0
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^0 }
+        localization_key = "[?imp_fin_sanc_on_us^0.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_1
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^1 }
+        localization_key = "[?imp_fin_sanc_on_us^1.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_2
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^2 }
+        localization_key = "[?imp_fin_sanc_on_us^2.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_3
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^3 }
+        localization_key = "[?imp_fin_sanc_on_us^3.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_4
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^4 }
+        localization_key = "[?imp_fin_sanc_on_us^4.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_5
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^5 }
+        localization_key = "[?imp_fin_sanc_on_us^5.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_6
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^6 }
+        localization_key = "[?imp_fin_sanc_on_us^6.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_7
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^7 }
+        localization_key = "[?imp_fin_sanc_on_us^7.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_8
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^8 }
+        localization_key = "[?imp_fin_sanc_on_us^8.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_9
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^9 }
+        localization_key = "[?imp_fin_sanc_on_us^9.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_10
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^10 }
+        localization_key = "[?imp_fin_sanc_on_us^10.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_11
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^11 }
+        localization_key = "[?imp_fin_sanc_on_us^11.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_12
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^12 }
+        localization_key = "[?imp_fin_sanc_on_us^12.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_13
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^13 }
+        localization_key = "[?imp_fin_sanc_on_us^13.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_fin_sanc_on_us_14
+
+    text = { trigger = { has_variable = imp_fin_sanc_on_us^14 }
+        localization_key = "[?imp_fin_sanc_on_us^14.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+
+
+
+defined_text = {
+	name = imp_eco_sanc_on_us_0
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^0 }
+        localization_key = "[?imp_eco_sanc_on_us^0.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_1
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^1 }
+        localization_key = "[?imp_eco_sanc_on_us^1.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_2
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^2 }
+        localization_key = "[?imp_eco_sanc_on_us^2.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_3
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^3 }
+        localization_key = "[?imp_eco_sanc_on_us^3.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_4
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^4 }
+        localization_key = "[?imp_eco_sanc_on_us^4.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_5
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^5 }
+        localization_key = "[?imp_eco_sanc_on_us^5.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_6
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^6 }
+        localization_key = "[?imp_eco_sanc_on_us^6.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_7
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^7 }
+        localization_key = "[?imp_eco_sanc_on_us^7.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_8
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^8 }
+        localization_key = "[?imp_eco_sanc_on_us^8.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_9
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^9 }
+        localization_key = "[?imp_eco_sanc_on_us^9.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_10
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^10 }
+        localization_key = "[?imp_eco_sanc_on_us^10.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_11
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^11 }
+        localization_key = "[?imp_eco_sanc_on_us^11.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_12
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^12 }
+        localization_key = "[?imp_eco_sanc_on_us^12.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_13
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^13 }
+        localization_key = "[?imp_eco_sanc_on_us^13.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_eco_sanc_on_us_14
+
+    text = { trigger = { has_variable = imp_eco_sanc_on_us^14 }
+        localization_key = "[?imp_eco_sanc_on_us^14.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+
+
+
+defined_text = {
+	name = imp_mil_sanc_on_us_0
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^0 }
+        localization_key = "[?imp_mil_sanc_on_us^0.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_1
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^1 }
+        localization_key = "[?imp_mil_sanc_on_us^1.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_2
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^2 }
+        localization_key = "[?imp_mil_sanc_on_us^2.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_3
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^3 }
+        localization_key = "[?imp_mil_sanc_on_us^3.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_4
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^4 }
+        localization_key = "[?imp_mil_sanc_on_us^4.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_5
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^5 }
+        localization_key = "[?imp_mil_sanc_on_us^5.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_6
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^6 }
+        localization_key = "[?imp_mil_sanc_on_us^6.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_7
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^7 }
+        localization_key = "[?imp_mil_sanc_on_us^7.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_8
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^8 }
+        localization_key = "[?imp_mil_sanc_on_us^8.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_9
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^9 }
+        localization_key = "[?imp_mil_sanc_on_us^9.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_10
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^10 }
+        localization_key = "[?imp_mil_sanc_on_us^10.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_11
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^11 }
+        localization_key = "[?imp_mil_sanc_on_us^11.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_12
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^12 }
+        localization_key = "[?imp_mil_sanc_on_us^12.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_13
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^13 }
+        localization_key = "[?imp_mil_sanc_on_us^13.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = imp_mil_sanc_on_us_14
+
+    text = { trigger = { has_variable = imp_mil_sanc_on_us^14 }
+        localization_key = "[?imp_mil_sanc_on_us^14.GetNameWithFlag]"
+    }
+    text = {
+        localization_key = ""
+    }
+}

@@ -267,6 +267,10 @@ focus_tree = {
 
 		mutually_exclusive = { focus = HKG_little_bird_under_british_wing focus = HKG_city_state_idea focus = HKG_loyal_puppet }
 
+		available = {
+			is_subject = no # Imperia: no free independence via focus while puppeted
+		}
+
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
@@ -449,6 +453,10 @@ focus_tree = {
 		cost = 10
 
 		mutually_exclusive = { focus = HKG_great_hong_kong_nation focus = HKG_city_state_idea focus = HKG_loyal_puppet }
+
+		available = {
+			is_subject = no # Imperia: no free independence via focus while puppeted
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_CMW }
 
@@ -652,6 +660,10 @@ focus_tree = {
 		cost = 10
 
 		mutually_exclusive = { focus = HKG_great_hong_kong_nation focus = HKG_little_bird_under_british_wing focus = HKG_loyal_puppet }
+
+		available = {
+			is_subject = no # Imperia: no free independence via focus while puppeted
+		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 

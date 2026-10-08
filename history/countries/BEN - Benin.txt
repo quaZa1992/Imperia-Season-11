@@ -87,12 +87,9 @@ capital = 344
 
 		fast_growth
 		defence_01
-		edu_03
 		health_01
 		ecowas_member_state
 		social_01
-		bureau_03
-		police_02
 		semi_consumption_economy
 		draft_army
 		volunteer_women
@@ -104,6 +101,9 @@ capital = 344
 		officer_basic_training
 		cfa_franc
 		no_currency_backing
+		edu_01
+		bureau_01
+		police_01
 	}
 
 	#Influence system
@@ -119,7 +119,7 @@ capital = 344
 	add_to_array = { influence_array_val = 20 }
 	sort_influence = yes
 
-	set_variable = { var = debt value = 6 }
+	set_variable = { var = debt value = 0 }
 	set_variable = { var = int_investments value = 0.1 }
 	set_variable = { var = treasury value = 2 }
 	set_variable = { inflation_rate_var = 0.00327 }
@@ -132,7 +132,7 @@ capital = 344
 	add_to_array = { agri_crop_price = 25 } # Cash = 1
 	set_variable = { literacy_rate = 0.347 }
 	set_variable = { gdp_per_capita = 2.431 }
-	set_variable = { overall_productivity = 790 }
+	set_variable = { overall_productivity = 316 }
 
 
 	add_opinion_modifier = { target = HAI modifier = french_speaking }
@@ -288,4 +288,17 @@ capital = 344
 	add_opinion_modifier = { target = SAF modifier = African_Union_Relations }
 	add_opinion_modifier = { target = LBA modifier = African_Union_Relations }
 	add_opinion_modifier = { target = EGY modifier = African_Union_Relations }
+	every_controlled_state = { set_variable = { productivity_state_var = 316 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

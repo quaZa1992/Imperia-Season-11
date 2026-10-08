@@ -1,0 +1,541 @@
+imp_leader_eng_con_decisions = {	
+	icon = GFX_decision_conservative
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 1 }
+	}
+}
+imp_leader_eng_lab_decisions = {	
+	icon = GFX_decision_labour
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 3 }
+	}
+}
+imp_leader_eng_lib_decisions = {	
+	icon = GFX_decision_libdem
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 2 }
+	}
+}
+imp_leader_fra_ps_decisions = {	
+	icon = GFX_decision_ps
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 3 }
+	}
+}
+imp_leader_fra_rpr_decisions = {	
+	icon = GFX_decision_rpr
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 1 }
+	}
+}
+imp_leader_fra_udf_decisions = {	
+	icon = GFX_decision_udf
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 2 }
+	}
+}
+imp_leader_ger_cdu_decisions = {	
+	icon = GFX_decision_cdu
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 1 }
+	}
+}
+imp_leader_ger_fdp_decisions = {	
+	icon = GFX_decision_fdp
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 16 }
+	}
+}
+imp_leader_ger_afd_decisions = {	
+	icon = GFX_decision_afd
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 20 }
+	}
+}
+imp_leader_ger_grune_decisions = {	
+	icon = GFX_decision_grune
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 17 }
+	}
+}
+imp_leader_ger_die_decisions = {	
+	icon = GFX_decision_die
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 5 }
+	}
+}
+imp_leader_ger_spd_decisions = {
+	icon = GFX_decision_spd
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 3 }
+	}
+}
+imp_leader_jap_dp_decisions = {
+	icon = GFX_decision_dp
+	
+	priority = 2000	
+	visible = {
+		is_in_array = { ruling_party = 2 }
+	}
+}
+imp_leader_jap_jcp_decisions = {
+	icon = GFX_decision_jcp
+	
+	priority = 2000	
+	visible = {
+        OR = {
+			is_in_array = { ruling_party = 4 }
+            is_in_array = { ruling_party = 19 }
+        }
+	}
+}
+imp_leader_jap_ldp_decisions = {
+	icon = GFX_decision_ldp
+	
+	priority = 2000	
+	visible = {
+        OR = {
+			is_in_array = { ruling_party = 0 }
+            is_in_array = { ruling_party = 1 }
+            is_in_array = { ruling_party = 6 }
+        }
+	}
+}
+imp_leader_lba_gdf_decisions = {	
+	icon = GFX_decision_gaddafi_family
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 7 }
+	}
+}
+imp_leader_may_bn_decisions = {	
+	icon = GFX_decision_bn
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 20 }
+	}
+}
+imp_leader_may_dap_decisions = {	
+	icon = GFX_decision_dap
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 18 }
+	}
+}
+imp_leader_may_pas_decisions = {	
+	icon = GFX_decision_pas
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 12 }
+	}
+}
+imp_leader_may_pkr_decisions = {	
+	icon = GFX_decision_pkr
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 3 }
+	}
+}
+imp_leader_por_ps_decisions = {	
+	icon = GFX_decision_porps
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 3 }
+	}
+}
+imp_leader_sia_cpt_decisions = {	
+	icon = GFX_decision_cpt
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 4 }
+	}
+}
+imp_leader_sia_dem_decisions = {	
+	icon = GFX_decision_cpt
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 1 }
+	}
+}
+imp_leader_sia_junta_decisions = {	
+	icon = GFX_decision_junta
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 22 }
+	}
+}
+imp_leader_sia_pht_decisions = {	
+	icon = GFX_decision_pht
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 18 }
+	}
+}
+imp_leader_sia_tnp_decisions = {	
+	icon = GFX_decision_tnp
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 14 }
+	}
+}
+imp_leader_sin_pap_decisions = {	
+	icon = GFX_decision_pap
+	
+	priority = 2000	
+	visible = {
+        OR = {
+			is_in_array = { ruling_party = 1 }
+            is_in_array = { ruling_party = 7 }
+            is_in_array = { ruling_party = 13 }
+            is_in_array = { ruling_party = 20 }
+        }
+
+	}
+}
+imp_leader_sov_ur_decisions = {	
+	icon = GFX_decision_ur
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 6 }
+	}
+}
+imp_leader_sov_cprf_decisions = {	
+	icon = GFX_decision_cprf
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 4 }
+	}
+}
+imp_leader_spr_pp_decisions = {	
+	icon = GFX_decision_pp
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 1 }
+	}
+}
+imp_leader_spr_psoe_decisions = {	
+	icon = GFX_decision_psoe
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 3 }
+	}
+}
+imp_leader_usa_inst_dem_decisions = {	
+	icon = GFX_decision_democrat
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 2 }
+	}
+}
+imp_leader_usa_mov_dem_decisions = {	
+	icon = GFX_decision_democrat
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 2 }
+	}
+}
+imp_leader_usa_dis_dem_decisions = {	
+	icon = GFX_decision_democrat
+	
+	priority = 2000	
+	visible = {
+			is_in_array = { ruling_party = 2 }
+	}
+}
+imp_leader_usa_inst_rep_decisions = {	
+	icon = GFX_decision_republican
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 1 }
+	}
+}
+imp_leader_usa_mov_rep_decisions = {	
+	icon = GFX_decision_republican
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 1 }
+	}
+}
+imp_leader_usa_dis_rep_decisions = {	
+	icon = GFX_decision_republican
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 1 }
+	}
+}
+imp_leader_can_lib_decisions = {	
+	icon = GFX_decision_canadian
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 2 }
+	}
+}
+imp_leader_can_con_decisions = {	
+	icon = GFX_decision_canadian
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 1 }
+	}
+}
+imp_leader_can_ndp_decisions = {	
+	icon = GFX_decision_canadian
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 3 }
+	}
+}
+imp_leader_can_com_decisions = {	
+	icon = GFX_decision_canadian
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 4 }
+	}
+}
+imp_leader_can_chp_decisions = {	
+	icon = GFX_decision_canadian
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 6 }
+	}
+}
+imp_leader_can_pro_decisions = {	
+	icon = GFX_decision_canadian
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 14 }
+	}
+}
+imp_leader_can_lbt_decisions = {	
+	icon = GFX_decision_canadian
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 16 }
+	}
+}
+imp_leader_can_grn_decisions = {	
+	icon = GFX_decision_canadian
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 17 }
+	}
+}
+imp_leader_can_marx_decisions = {	
+	icon = GFX_decision_canadian
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 19 }
+	}
+}
+imp_leader_can_act_decisions = {	
+	icon = GFX_decision_canadian
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 20 }
+	}
+}
+imp_leader_can_nat_decisions = {	
+	icon = GFX_decision_canadian
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 21 }
+	}
+}
+imp_leader_prc_inst_decisions = {	
+	icon = GFX_decision_prc
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 4 }
+	}
+}
+imp_leader_prc_ref_decisions = {	
+	icon = GFX_decision_prc
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 4 }
+	}
+}
+imp_leader_prc_mao_decisions = {	
+	icon = GFX_decision_prc
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 4 }
+	}
+}
+imp_leader_dprk_fam_decisions = {	
+	icon = GFX_decision_dprk
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 4 }
+	}
+}
+imp_leader_dprk_mil_decisions = {	
+	icon = GFX_decision_dprk
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 4 }
+	}
+}
+imp_leader_dprk_party_decisions = {	
+	icon = GFX_decision_dprk
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 4 }
+	}
+}
+imp_leader_irq_bath_decisions = {	
+	icon = GFX_decision_dprk
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 21 }
+	}
+}
+imp_leader_irq_shia_decisions = {	
+	icon = GFX_decision_dprk
+	
+	priority = 2000	
+	visible = {
+			OR = {
+				is_in_array = { ruling_party = 8 }
+				is_in_array = { ruling_party = 9 }
+			}
+	}
+}
+imp_alt_macron = {	
+	icon = GFX_decision_macron
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 2 }
+			has_country_leader = { name = "Emmanuel Macron" }
+	}
+}
+imp_alt_jon_stewart = {	
+	icon = GFX_decision_jon_stewart
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 2 }
+			has_country_leader = { name = "Jon Stewart" }
+	}
+}
+imp_alt_donald_trump = {	
+	icon = GFX_decision_Trump
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 1 }
+			has_country_leader = { name = "Donald Trump" }
+	}
+}
+imp_alt_george_bush = {	
+	icon = GFX_decision_gbush
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 1 }
+			has_country_leader = { name = "George W. Bush" }
+	}
+}
+imp_alt_olaf_scholz = {	
+	icon = GFX_decision_scholz
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 3 }
+			has_country_leader = { name = "Olaf Scholz" }
+	}
+}
+imp_alt_putin = {	
+	icon = GFX_decision_putin
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 6 }
+			has_country_leader = { name = "Vladimir Putin" }
+	}
+}
+imp_alt_medvedev = {	
+	icon = GFX_decision_medvedev
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 6 }
+			has_country_leader = { name = "Dmitry Medvedev" }
+	}
+}
+imp_alt_xilai = {	
+	icon = GFX_decision_xilai
+	
+	priority = 2000	
+	visible = {
+		    is_in_array = { ruling_party = 4 }
+			has_country_leader = { name = "Bo Xilai" }
+	}
+}
+imp_leader_emergency_decisions = {	
+	icon = GFX_decision_emergency
+	
+	priority = 2000	
+}

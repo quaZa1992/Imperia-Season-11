@@ -700,6 +700,7 @@ capital = 604
 
 		antarctica_small_treaty_admin_cost_1
 		no_currency_backing
+		imp_lost_generation
 	}
 	add_to_array = { global.un_aid_esco_contributor = THIS }
 	add_to_array = { global.un_aid_ido_contributor = THIS }
@@ -827,8 +828,8 @@ capital = 604
 	complete_special_project = sp:sp_nuclear_energy
 
 	set_technology = {
-		microchip_production_2 = 1
-		microchip_production_3 = 1
+		#microchip_production_2 = 1 # Imperia: microchip rework
+		#microchip_production_3 = 1 # Imperia: microchip rework
 
 		nuclear_technology = 1
 		reactor1 = 1
@@ -1206,7 +1207,7 @@ capital = 604
 	recruit_character = KOR_park_seongsoo
 	recruit_character = KOR_sim_seungseop
 
-	set_variable = { overall_productivity = 900 }
+	set_variable = { overall_productivity = 1153 }
 	set_variable = { var_reactor_material_stockpile = 12500 }
 
 
@@ -1236,4 +1237,22 @@ capital = 604
 	add_opinion_modifier = { target = NZL modifier = Major_Non_NATO_Ally }
 	add_opinion_modifier = { target = ARG modifier = Major_Non_NATO_Ally }
 	add_opinion_modifier = { target = USA modifier = Major_Non_NATO_Ally }
+	every_controlled_state = { set_variable = { productivity_state_var = 1153 } }
+	604 = { set_variable = { productivity_state_var = 1259 } }
+	605 = { set_variable = { productivity_state_var = 1132 } }
+	606 = { set_variable = { productivity_state_var = 1053 } }
+	607 = { set_variable = { productivity_state_var = 985 } }
+	608 = { set_variable = { productivity_state_var = 800 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

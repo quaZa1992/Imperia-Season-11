@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		enbo_aipac_happy = {
+			picture = enbo_aipac
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.05
+				corporate_tax_income_multiplier_modifier = 0.01
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		enbo_aipac_unpleased = {
+			picture = enbo_aipac
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.05
+				corporate_tax_income_multiplier_modifier = -0.01
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		enbo_aipac_economic_lock = {
+			picture = enbo_aipac
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				economic_cycles_cost_factor = 99
+				econ_cycle_upg_cost_multiplier_modifier = 99
+			}
+		}
+	}
+}

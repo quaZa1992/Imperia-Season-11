@@ -66,7 +66,7 @@ ideas = {
 		sp_maglev_trains_idea = {
 
 			modifier = {
-				country_productivity_growth_modifier = 0.30
+				infra_cost_multiplier_modifier = -0.25
 			}
 			equipment_bonus = {
 				train_equipment = {
@@ -95,7 +95,7 @@ ideas = {
 		sp_improved_synthetic_diamonds_idea = {
 
 			modifier = {
-				country_resource_chromium = 30
+				country_resource_chromium = 6
 			}
 		}
 		sp_deep_sea_mining_idea = {

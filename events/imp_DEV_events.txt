@@ -1,0 +1,23 @@
+
+add_namespace = dev_event
+
+# SETUP MASTERY
+country_event = {
+	id = dev_event.mastery
+
+	title = dev_event.mastery.MASTERY_SETUP
+	desc = dev_event.mastery.MASTERY_SETUP_IS_COMPLETE
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			add_dynamic_modifier = { modifier = imp_dynamic_mastery_factor }
+            imp_military_quality_calculate = yes
+		}
+	}
+
+	option = {
+		name = dev_event.mastery.OPTION
+	}
+}

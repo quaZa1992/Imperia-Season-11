@@ -58,10 +58,8 @@ capital = 292
 		stagnation
 		defence_02
 		edu_01
-		health_02
 		social_01
 		OAU_member
-		bureau_02
 		police_03
 		export_economy
 		volunteer_army
@@ -73,6 +71,8 @@ capital = 292
 		officer_basic_training
 		rising_level_of_aids
 		no_currency_backing
+		health_01
+		bureau_01
 	}
 	add_dynamic_modifier = { modifier = Commonwealth_member_modifier }
 	add_to_array = { global.commonwealth_member = THIS }
@@ -184,7 +184,7 @@ capital = 292
 
 	set_variable = { literacy_rate = 0.680 }
 
-	set_variable = { overall_productivity = 444 }
+	set_variable = { overall_productivity = 311 }
 
 
 	# Relation Starting Configuration (moved from on_startup)
@@ -262,4 +262,19 @@ capital = 292
 	add_opinion_modifier = { target = EGY modifier = African_Union_Relations }
 	set_variable = { inflation_rate_var = 0.26788 }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 311 }
+	}
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

@@ -56,18 +56,18 @@ capital = 849
 		farmers
 		international_bankers
 		small_medium_business_owners
-		bureau_03
 		defence_01
-		police_02
-		edu_03
-		health_04
-		social_02
 		semi_consumption_economy
 		volunteer_army
 		volunteer_women
 		officer_military_school
 		christian
 		no_currency_backing
+		bureau_01
+		police_01
+		edu_01
+		health_01
+		social_01
 	}
 
 	# Cartel System
@@ -95,12 +95,12 @@ capital = 849
 	set_variable = { international_bankers_opinion = 60 }
 	set_variable = { small_medium_business_owners_opinion = 40 }
 
-	set_variable = { var = debt value = 16 }
+	set_variable = { var = debt value = 0 }
 	set_variable = { var = treasury value = 1 }
-	set_variable = { var = corporate_tax_rate value = 12 }
-	set_variable = { var = population_tax_rate value = 10 }
+	set_variable = { var = corporate_tax_rate value = 50 }
+	set_variable = { var = population_tax_rate value = 31 }
 	set_variable = { var = int_investments value = 0 }
-	set_variable = { overall_productivity = 590 }
+	set_variable = { overall_productivity = 348 }
 
 	add_opinion_modifier = { target = COS modifier = spanish_speaking }
 	reverse_add_opinion_modifier = { target = COS modifier = spanish_speaking }
@@ -204,4 +204,17 @@ capital = 849
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = { set_variable = { productivity_state_var = 348 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

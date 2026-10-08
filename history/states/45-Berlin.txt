@@ -4,6 +4,9 @@ state = {
 	manpower = 3636951
 	state_category = state_04
 
+	resources = {
+		microchips = 15
+	}
 	history = {
 		owner = GER
 		set_variable = { state_renewable_capacity_factor_modifier_var = 0.561 }
@@ -18,7 +21,7 @@ state = {
 			air_base = 5
 			anti_air_building = 1
 			radar_station = 2
-			microchip_plant = 2
+			microchip_plant = 1
 			6521 = {
 				landmark_berlin_reichstag = {
 					allowed = {

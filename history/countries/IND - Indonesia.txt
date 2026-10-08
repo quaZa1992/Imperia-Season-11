@@ -255,13 +255,13 @@ capital = 631
 	sort_influence = yes
 
 	### Economy
-	set_variable = { var = debt value = 1052.183 }
-	set_variable = { var = treasury value = 39.4 }
+	set_variable = { var = debt value = 165.183 }
+	set_variable = { var = treasury value = 19.4 }
 	set_variable = { var = int_investments value = 3 }
 	set_variable = { inflation_rate_var = 0.18478 }
 	set_variable = { cb_policy_rate = 13 }
-	set_variable = { var = corporate_tax_rate value = 18 }
-	set_variable = { var = population_tax_rate value = 27 }
+	set_variable = { var = corporate_tax_rate value = 48 }
+	set_variable = { var = population_tax_rate value = 24 }
 
 	# Custom Investment Targets for Indonesia
 	add_to_array = { IND.investment_targets = SIN } # Singapore
@@ -351,7 +351,7 @@ capital = 631
 	recruit_character = IND_agus_suhartono
 	recruit_character = IND_marsetio
 
-	set_variable = { overall_productivity = 477 }
+	set_variable = { overall_productivity = 409 }
 
 	if = {
 		limit = {
@@ -384,4 +384,23 @@ capital = 631
 	add_opinion_modifier = { target = TTP modifier = AlQaida_Are_Terrorists_Trade }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
+	every_controlled_state = { set_variable = { productivity_state_var = 409 } }
+	631 = { set_variable = { productivity_state_var = 853 } }
+	640 = { set_variable = { productivity_state_var = 389 } }
+	639 = { set_variable = { productivity_state_var = 389 } }
+	637 = { set_variable = { productivity_state_var = 258 } }
+	636 = { set_variable = { productivity_state_var = 258 } }
+	638 = { set_variable = { productivity_state_var = 201 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

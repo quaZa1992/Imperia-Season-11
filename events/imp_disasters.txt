@@ -1,0 +1,127 @@
+add_namespace = imp_earthquake
+add_namespace = imp_famine
+news_event = {
+	id = imp_earthquake.1
+	title = imp_earthquake.1.t
+	desc = imp_earthquake.1.d
+	is_triggered_only = yes
+	picture = GFX_imp_seismograph_news
+	
+	option = {
+		name = imp_earthquake.1.a
+	}
+}
+news_event = {
+	id = imp_earthquake.3
+	title = imp_earthquake.3.t
+	desc = imp_earthquake.3.d
+	is_triggered_only = yes
+	picture = GFX_imp_earthquake_3
+	
+	option = {
+		name = imp_earthquake.3.a
+	}
+}
+news_event = {
+	id = imp_earthquake.4
+	title = imp_earthquake.4.t
+	desc = imp_earthquake.4.d
+	is_triggered_only = yes
+	picture = GFX_imp_tsunami_wave
+	
+	option = {
+		name = imp_earthquake.4.a
+	}
+}
+news_event = {
+	id = imp_earthquake.5
+	title = imp_earthquake.5.t
+	desc = imp_earthquake.5.d
+	is_triggered_only = yes
+	picture = GFX_imp_seismograph_small
+	
+	option = {
+		name = imp_earthquake.5.a
+	}
+}
+news_event = {
+	id = imp_earthquake.6
+	title = imp_earthquake.6.t
+	desc = imp_earthquake.6.d
+	is_triggered_only = yes
+	picture = GFX_imp_earthquake_1
+	
+	option = {
+		name = imp_earthquake.6.a
+	}
+}
+news_event = {
+	id = imp_earthquake.7
+	title = imp_earthquake.7.t
+	desc = imp_earthquake.7.d
+	is_triggered_only = yes
+	picture = GFX_imp_seismic_analysis
+	
+	option = {
+		name = imp_earthquake.7.a
+	}
+}
+news_event = {
+	id = imp_earthquake.2
+	title = imp_earthquake.2.t
+	desc = imp_earthquake.2.d
+	is_triggered_only = yes
+	picture = GFX_news_event_bond_crisis_1
+
+	option = {
+		name = imp_earthquake.2.a
+		
+	}
+}
+news_event = {
+	id = imp_famine.1
+	title = imp_famine.1.t
+	desc = imp_famine.1.d
+	is_triggered_only = yes
+	picture = GFX_imp_famine_1
+
+	option = {
+		name = imp_famine.1.a
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = { is_in_south_america = yes }
+			add_ideas = imp_worldwide_rationing_5
+		}
+		if = {
+			limit = { is_sub_saharan_nation = yes }
+			add_ideas = imp_worldwide_rationing_4
+		}
+		if = {
+			limit = { 
+				is_in_asia = yes 
+				NOT = { original_tag = CHI }
+			}
+			add_ideas = imp_worldwide_rationing_2
+		}
+		if = {
+			limit = { original_tag = CHI }
+			add_ideas = imp_worldwide_rationing_1
+		}
+		if = { limit = { NOT = { 
+			has_idea = imp_worldwide_rationing_1
+			has_idea = imp_worldwide_rationing_2
+			has_idea = imp_worldwide_rationing_4
+			has_idea = imp_worldwide_rationing_5
+			} }
+			add_ideas = imp_worldwide_rationing_3
+		}
+	}
+	option = {
+		name = imp_famine.1.b
+		ai_chance = {
+			base = 1
+		}
+	}
+}

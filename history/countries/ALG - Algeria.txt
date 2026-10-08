@@ -148,13 +148,8 @@ set_research_slots = 4
 		export_economy
 		LoAS_member
 		stagnation
-		defence_05
 		edu_03
-		health_04
-		social_05
 		OAU_member
-		bureau_03
-		police_04
 		moderately_conservative_society
 		youth_radicalization
 		al_jazeera_allowed
@@ -179,6 +174,11 @@ set_research_slots = 4
 		ALG_french_influence
 		ALG_moroccan_rivalry_start
 		no_currency_backing
+		defence_04
+		health_02
+		social_02
+		bureau_01
+		police_02
 	}
 
 	add_opinion_modifier = {
@@ -307,14 +307,14 @@ set_research_slots = 4
 	add_to_array = { global.arabic_countries = THIS }	#From is_arabic_nation trigger
 
 	# Economy System
-	set_variable = { var = debt value = 161 }
+	set_variable = { var = debt value = 34 }
 	set_variable = { var = int_investments value = 1 }
 	set_variable = { var = treasury value = 20 }
 	set_variable = { inflation_rate_var = 0.02646 }
 	set_variable = { cb_policy_rate = 3 }
-	set_variable = { var = corporate_tax_rate value = 25 }
-	set_variable = { var = population_tax_rate value = 35 }
-	set_variable = { overall_productivity = 785 }
+	set_variable = { var = corporate_tax_rate value = 36 }
+	set_variable = { var = population_tax_rate value = 38 }
+	set_variable = { overall_productivity = 560 }
 	set_power_balance = {
 		id = algeria_power_balance
 		set_default = yes
@@ -501,4 +501,19 @@ set_research_slots = 4
 	add_opinion_modifier = { target = LBA modifier = African_Union_Relations }
 	add_opinion_modifier = { target = EGY modifier = African_Union_Relations }
 
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 560 }
+	}
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

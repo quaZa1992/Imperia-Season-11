@@ -1,0 +1,11 @@
+﻿l_english:
+ # Imperia <-> Millennium Dawn 2.0.2 integration: new keys
+ imp_gdp_per_capita_below_world_average_tt:0 "GDP per capita is below the world average (Current: $$§Y[?ROOT.gdp_per_capita|1]§!k, World Average: $$§Y[?global.average_gdp_capita|1]§!k)"
+ CHI_AUTH_S_DEF:0 "the People's Republic of China"
+ CHI_AUTH_S_ADJ:0 "Chinese"
+ USA_AMERICA_democratic_DEF:0 "the United States of America"
+ USA_AMERICA_democratic_ADJ:0 "American"
+ NKO_AUTH_S_DEF:0 "the Democratic People's Republic of Korea"
+ NKO_AUTH_S_ADJ:0 "North Korean"
+ SOV_RUSSIA_putin_DEF:0 "the Russian Federation"
+ SOV_RUSSIA_putin_ADJ:0 "Russian"

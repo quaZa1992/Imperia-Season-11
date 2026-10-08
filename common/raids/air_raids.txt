@@ -21,7 +21,7 @@ types = {
 		}
 		launchable = {
 			set_temp_variable = { cost = 99 }
-			raid_can_launch = yes
+			imp_raid_can_launch_war_only = yes # Imperia: no peacetime launch with political power
 		}
 
 
@@ -477,7 +477,7 @@ types = {
 		}
 		launchable = {
 			set_temp_variable = { cost = 99 }
-			raid_can_launch = yes
+			imp_raid_can_launch_war_only = yes # Imperia: no peacetime launch with political power
 		}
 
 		target_type = {
@@ -896,7 +896,7 @@ types = {
 		}
 		launchable = {
 			set_temp_variable = { cost = 99 }
-			raid_can_launch = yes
+			imp_raid_can_launch_war_only = yes # Imperia: no peacetime launch with political power
 		}
 
 		target_type = {
@@ -1858,7 +1858,7 @@ types = {
 
 		launchable = {
 			set_temp_variable = { cost = 99 }
-			raid_can_launch = yes
+			imp_raid_can_launch_war_only = yes # Imperia: no peacetime launch with political power
 		}
 
 		unit_requirements = {
@@ -2310,7 +2310,7 @@ types = {
 
 		launchable = {
 			set_temp_variable = { cost = 99 }
-			raid_can_launch = yes
+			imp_raid_can_launch_war_only = yes # Imperia: no peacetime launch with political power
 		}
 
 		unit_requirements = {
@@ -2807,7 +2807,7 @@ types = {
 
 		launchable = {
 			set_temp_variable = { cost = 99 }
-			raid_can_launch = yes
+			imp_raid_can_launch_war_only = yes # Imperia: no peacetime launch with political power
 		}
 
 		target_type = {
@@ -3218,11 +3218,11 @@ types = {
 				}
 			}
 			set_temp_variable = { cost = 99 }
-			raid_can_launch = yes
+			imp_raid_can_launch_war_only = yes # Imperia: no peacetime launch with political power
 		}
 		launchable = {
 			set_temp_variable = { cost = 99 }
-			raid_can_launch = yes
+			imp_raid_can_launch_war_only = yes # Imperia: no peacetime launch with political power
 		}
 
 

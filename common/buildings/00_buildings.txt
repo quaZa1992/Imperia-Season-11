@@ -99,7 +99,7 @@ buildings = {
 		value = 1
 		infrastructure_construction_effect = yes
 		level_cap = {
-			state_max = 11
+			state_max = 6
 		}
 		state_modifiers = {
 			state_productivity_growth_modifier = 0.05
@@ -169,7 +169,7 @@ buildings = {
 	# 8 Nuclear Reactor
 	nuclear_reactor = {
 		show_on_map = 1
-		base_cost = 50000
+		base_cost = 62500
 		icon_frame = 27
 		damage_factor = 1
 		value = 1
@@ -177,8 +177,8 @@ buildings = {
 		tags = { nuclear }
 		country_modifiers = {
 			modifiers = {
-				nuclear_energy_gain = 4 #in gigawatts
-				nuclear_fuel_consumption = 40 #weekly consumption
+				nuclear_energy_gain = 2 #in gigawatts
+				nuclear_fuel_consumption = 20 #weekly consumption
 			}
 		}
 		level_cap = {
@@ -345,7 +345,7 @@ buildings = {
 	# 17 Fossil Fuel Powerplant
 	fossil_powerplant = {
 		show_on_map = 1
-		base_cost = 9500
+		base_cost = 7500
 		icon_frame = 34
 		centered = yes
 		# Represents the Consumption of Fossil Fuels per Powerplant
@@ -353,7 +353,7 @@ buildings = {
 		country_modifiers = {
 			modifiers = {
 				fossil_energy_gain = 2 #in gigawatts //this remains in place till I remove it please
-				fossil_fuel_consumption = 20
+				fossil_fuel_consumption = 40
 			}
 		}
 		damage_factor = 1
@@ -529,10 +529,10 @@ buildings = {
 		base_cost = 45000
 		per_level_extra_cost = 4000
 		icon_frame = 36
-		local_resources_microchips = 20
+		local_resources_microchips = 6
 		level_cap = {
 			shares_slots = yes
-			state_max = 5
+			state_max = 2
 		}
 		country_modifiers = {
 			modifiers = {
@@ -722,6 +722,7 @@ buildings = {
 			state_renewable_energy_generation_modifier = 0.10
 			state_fossil_fuel_energy_generation_modifier = 0.10
 			state_nuclear_energy_generation_modifier = 0.10
+			local_building_slots_factor = 0.05
 		}
 	}
 
@@ -739,7 +740,7 @@ buildings = {
 			group_by = infrastructure_keystone
 		}
 		state_modifiers = {
-			local_resource_gain_efficiency_per_infrastructure = 0.15
+			local_resource_gain_efficiency_per_infrastructure = 0.02
 		}
 	}
 
@@ -777,6 +778,27 @@ buildings = {
 		country_modifiers = {
 			modifiers = {
 				nuclear_reactor_fuel_production = 350
+			}
+		}
+	}
+	civilian_shelter = {
+		base_cost = 15000
+		per_level_extra_cost = 15000
+		icon_frame = 21
+		infrastructure = yes
+		damage_factor = 0
+		value = 1
+		infrastructure_construction_effect = yes
+		level_cap = {
+			state_max = 10
+		}
+		show_modifier = yes
+		state_modifiers = {
+			local_supplies_for_controller = 0.02
+		}
+		country_modifiers = {
+			modifiers = {
+				
 			}
 		}
 	}

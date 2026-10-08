@@ -1,0 +1,12 @@
+
+
+imp_dynamic_mastery_factor = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_fortify_the_borders
+	land_mastery_gain_factor = imp_army_mastery_factor
+	air_mastery_gain_factor = imp_air_mastery_factor
+	naval_mastery_gain_factor = imp_navy_mastery_factor
+	equipment_mastery_gain_factor = imp_army_mastery_factor
+	elite_forces_mastery_gain_factor = imp_army_mastery_factor
+}

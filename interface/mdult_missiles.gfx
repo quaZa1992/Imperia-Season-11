@@ -7884,7 +7884,10 @@ spriteTypes = {
 		name = "GFX_SPR_OLV8_medium"
 		texturefile = "gfx/interface/technologies/FRA/MISSILE/vegax.dds"
 	}
-
+	SpriteType = {
+		name = "GFX_imp_burestnevik_medium"
+		texturefile = "gfx/interface/scripted_gui/missiles/models/SOV/imp_burevestnik.dds"
+	}
 	### Missile Technologies ###
 	#
 	# ---> Technologies.gfx

@@ -17,6 +17,9 @@ very_high_interest_country_modifiers = {
 impact_of_tax_dynamic_modifier = {
 
 	stability_factor = stability_factor_from_population_tax
+	expected_education_modifier = expectations_from_pop_tax
+	expected_healthcare_modifier = expectations_from_pop_tax
+	expected_welfare_modifier = expectations_from_pop_tax
 	consumer_goods_expected_value = consumer_goods_from_corporate_tax
 	receiving_investment_cost_modifier = receiving_investment_cost_form_corporate_tax
 	productivity_growth_modifier = productivity_growth_modifier_from_corporate_tax
@@ -48,7 +51,7 @@ gdp_per_capita_country_modifiers = {
 	research_speed_factor = research_speed_factor_gdp_modifier
 	stability_factor = stability_factor_gdp_modifier
 	education_cost_multiplier_modifier = research_slot_modifier
-	total_workforce_modifier = total_workforce_gdp_c_modifier_var
+	#total_workforce_modifier = total_workforce_gdp_c_modifier_var
 	production_speed_fossil_powerplant_factor = fossil_pp_construction_gdp_c_modifier_var
 }
 
@@ -64,11 +67,10 @@ civilian_microchip_consumption_modifier = {
 	stability_factor = country_base_microchip_civ_consumption_stab_var
 }
 
-
 # State-Owned Investments
 state_owned_local_renewable_capacity_modifier = {
 
-	state_renewable_energy_generation_modifier = 0.25
+	state_renewable_energy_generation_modifier = 0.4
 }
 
 state_owned_encouraged_productivity = {
@@ -78,56 +80,56 @@ state_owned_encouraged_productivity = {
 
 state_owned_local_infrastructure_modifier = {
 
-	state_production_speed_infrastructure_factor = 0.20
-	state_production_speed_internet_station_factor = 0.20
-	state_production_speed_rail_way_factor = 0.20
-	state_production_speed_rail_terminal_factor = 0.20
+	state_production_speed_infrastructure_factor = 0.4
+	state_production_speed_internet_station_factor = 0.4
+	state_production_speed_rail_way_factor = 0.4
+	state_production_speed_rail_terminal_factor = 0.4
 }
 
 state_owned_local_military_infrastructure_modifier = {
 
-	state_production_speed_air_base_factor = 0.15
-	state_production_speed_anti_air_building_factor = 0.15
-	state_production_speed_radar_station_factor = 0.15
-	state_production_speed_rocket_site_factor = 0.15
+	state_production_speed_air_base_factor = 0.4
+	state_production_speed_anti_air_building_factor = 0.4
+	state_production_speed_radar_station_factor = 0.4
+	state_production_speed_rocket_site_factor = 0.4
 }
 
 state_owned_local_energy_infrastructure_modifier = {
 
-	state_production_speed_renewable_energy_infra_factor = 0.15
-	state_production_speed_fossil_powerplant_factor = 0.15
-	state_production_speed_fuel_silo_factor = 0.15
-	state_production_speed_nuclear_reactor_factor = 0.15
-	state_production_speed_energy_infrastructure_factor = 0.15
-	state_production_speed_industrial_infrastructure_factor = 0.15
+	state_production_speed_synthetic_refinery_factor = 0.4
+	state_production_speed_fossil_powerplant_factor = 0.4
+	state_production_speed_fuel_silo_factor = 0.4
+	state_production_speed_nuclear_reactor_factor = 0.4
+	state_production_speed_energy_infrastructure_factor = 0.4
+	state_production_speed_industrial_infrastructure_factor = 0.4
 }
 
 state_owned_build_forward_logistics_base_modifier = {
 
-	local_supply_impact_factor = -0.25
+	local_supply_impact_factor = -0.4
 }
 
 state_owned_improve_rebuilding_efforts_modifier = {
 
-	compliance_growth = 0.15
-	resistance_activity = -0.05
+	compliance_growth = 0.25
+	resistance_activity = -0.10
 }
 
 state_owned_hire_extra_primary_sector_workers_modifier = {
 
-	state_resources_factor = 0.15
+	state_resources_factor = 0.25
 }
 
 state_owned_local_naval_infrastructure_modifier = {
 
-	state_production_speed_naval_supply_hub_factor = 0.15
-	state_production_speed_naval_headquarters_factor = 0.15
-	state_production_speed_naval_base_factor = 0.15
+	state_production_speed_naval_supply_hub_factor = 0.4
+	state_production_speed_naval_headquarters_factor = 0.4
+	state_production_speed_naval_base_factor = 0.4
 }
 
 state_owned_local_fortification_efforts_modifier = {
 
-	state_production_speed_bunker_factor = 0.15
-	state_production_speed_coastal_bunker_factor = 0.15
-	state_production_speed_stronghold_network_factor = 0.15
+	state_production_speed_bunker_factor = 0.4
+	state_production_speed_coastal_bunker_factor = 0.4
+	state_production_speed_stronghold_network_factor = 0.4
 }

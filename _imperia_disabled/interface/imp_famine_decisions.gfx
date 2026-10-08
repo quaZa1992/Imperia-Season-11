@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_basic_crops"
+		texturefile = "gfx/interface/agriculture/basic_crops.dds"
+	}
+}

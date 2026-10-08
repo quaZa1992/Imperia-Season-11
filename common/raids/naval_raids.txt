@@ -24,7 +24,7 @@ types = {
 		available = {
 			raid_target_eligible = yes
 			set_temp_variable = { cost = 300 }
-			raid_can_launch = yes
+			imp_raid_can_launch_war_only = yes # Imperia: no peacetime launch with political power
 			raid_target_eligible_from = yes
 		}
 		#TODO: Replace these with the ASM missiles after adding them as equipment
@@ -110,7 +110,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -300
+							add_political_power = -10
 						}
 					}
 				}
@@ -201,7 +201,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -300
+							add_political_power = -10
 						}
 					}
 				}
@@ -292,7 +292,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -300
+							add_political_power = -10
 						}
 					}
 				}
@@ -383,7 +383,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -300
+							add_political_power = -10
 						}
 					}
 				}
@@ -668,7 +668,7 @@ types = {
 					var:actor_country = {
 						if = {
 							limit = { NOT = { has_war_with = var:ROOT.victim_country } }
-							add_political_power = -300
+							add_political_power = -10
 						}
 					}
 				}
@@ -705,7 +705,7 @@ types = {
 					var:actor_country = {
 						if = {
 							limit = { NOT = { has_war_with = var:ROOT.victim_country } }
-							add_political_power = -300
+							add_political_power = -10
 						}
 					}
 				}
@@ -742,7 +742,7 @@ types = {
 					var:actor_country = {
 						if = {
 							limit = { NOT = { has_war_with = var:ROOT.victim_country } }
-							add_political_power = -300
+							add_political_power = -10
 						}
 					}
 				}
@@ -779,7 +779,7 @@ types = {
 					var:actor_country = {
 						if = {
 							limit = { NOT = { has_war_with = var:ROOT.victim_country } }
-							add_political_power = -300
+							add_political_power = -10
 						}
 					}
 				}
@@ -963,7 +963,7 @@ types = {
 		available = {
 			raid_target_eligible = yes
 			set_temp_variable = { cost = 300 }
-			raid_can_launch = yes
+			imp_raid_can_launch_war_only = yes # Imperia: no peacetime launch with political power
 			raid_target_eligible_from = yes
 		}
 

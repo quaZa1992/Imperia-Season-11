@@ -403,12 +403,7 @@ capital = 215
 		EGY_outdated_army_idea
 		EGY_irrigation_problems
 		stable_growth
-		defence_03
-		edu_02
 		health_01
-		social_02
-		bureau_02
-		police_04
 		muslim_brotherhood_home
 		muslim_brotherhood_crackdown
 		al_jazeera_allowed
@@ -427,6 +422,11 @@ capital = 215
 		EGY_guards_of_secularism
 		EGY_military_anger1
 		no_currency_backing
+		defence_02
+		edu_01
+		social_01
+		bureau_01
+		police_02
 	}
 
 	#Islamism
@@ -463,13 +463,13 @@ capital = 215
 	add_opinion_modifier = { target = ISR modifier = ISR_Arab_Conflict }
 	reverse_add_opinion_modifier = { target = ISR modifier = ISR_Arab_Conflict }
 
-	set_variable = { var = debt value = 356 }
+	set_variable = { var = debt value = 56 }
 	set_variable = { var = treasury value = 28 }
 	set_variable = { var = int_investments value = 4.2 }
 	set_variable = { inflation_rate_var = 0.03080 }
 	set_variable = { cb_policy_rate = 6 }
-	set_variable = { var = corporate_tax_rate value = 22 }
-	set_variable = { var = population_tax_rate value = 23 }
+	set_variable = { var = corporate_tax_rate value = 50 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { gdp_per_capita = 7.869 }
 	set_variable = { currency_strength = 0.65 }
 	add_to_array = { agri_crop_allocation = 0.889 } # Basic = 0
@@ -477,7 +477,7 @@ capital = 215
 	add_to_array = { agri_crop_price = 15 } # Basic = 0
 	add_to_array = { agri_crop_price = 25 } # Cash = 1
 	set_variable = { literacy_rate = 0.608 }
-	set_variable = { overall_productivity = 535 }
+	set_variable = { overall_productivity = 556 }
 
 	### EGY ###
 	#Influence system
@@ -700,4 +700,19 @@ capital = 215
 	add_opinion_modifier = { target = ARG modifier = Major_Non_NATO_Ally }
 	add_opinion_modifier = { target = USA modifier = Major_Non_NATO_Ally }
 
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 556 }
+	}
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

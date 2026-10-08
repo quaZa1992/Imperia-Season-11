@@ -62,9 +62,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_the_three_represents"
@@ -94,9 +92,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_scientific_development_outlook_foreshadowed"
@@ -139,9 +135,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_invigorate_country_through_STE"
@@ -181,9 +175,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_provincial_youth_league_cohort"
@@ -222,9 +214,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_three_represents_codified"
@@ -280,9 +270,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_yangtze_delta_integration"
@@ -317,9 +305,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_the_610_office_mandate"
@@ -383,9 +369,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_a_lighter_touch_on_dissent"
@@ -450,9 +434,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_the_great_western_development"
@@ -544,9 +526,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_wto_accession_drive #Should also sholrten some economic focusses or something like that"
@@ -591,9 +571,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_jiang_doctrine_taiwan"
@@ -633,9 +611,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Jiang Zemin" } }
 
-		bypass = { NOT = { has_country_leader = { name = "Jiang Zemin" } } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_the_shanghai_succession"
@@ -683,7 +659,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Hu Jintao" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_hu_jintao_reign #We should add a trait to Hu, based on his work as VP and in the military commission"
@@ -725,7 +700,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Hu Jintao" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_scientific_outlook_on_development"
@@ -774,7 +748,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Hu Jintao" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_property_tax_pilot_program"
@@ -820,7 +793,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Hu Jintao" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_intra_party_democracy_experiments"
@@ -859,7 +831,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_CORRUPTION FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Hu Jintao" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_inner_party_supervision_regulations"
@@ -895,7 +866,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Hu Jintao" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_national_overall_emergency_response_plan"
@@ -933,7 +903,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Hu Jintao" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_beijing_action_plan_green_olympics"
@@ -978,7 +947,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Hu Jintao" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_western_development_strategy"
@@ -1028,7 +996,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Hu Jintao" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_youth_league_pipeline"
@@ -1065,7 +1032,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Hu Jintao" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_cadre_evaluation_reform"
@@ -1576,7 +1542,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Zeng Qinghong" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_zeng_qinghong_reign"
@@ -1622,7 +1587,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Zeng Qinghong" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_organisation_department_mandate #check the effect to be shure"
@@ -1659,7 +1623,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Zeng Qinghong" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_provincial_reshuffle"
@@ -1698,7 +1661,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Zeng Qinghong" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_coastal_acceleration_doctrine"
@@ -1739,7 +1701,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 
-		available = { has_country_leader = { name = "Zeng Qinghong" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_defence_industry_consolidation"
@@ -1829,7 +1790,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Zeng Qinghong" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_china_among_the_starts"
@@ -1878,7 +1838,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Zeng Qinghong" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_western_institutional_engagement"
@@ -1913,7 +1872,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_CORRUPTION FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Zeng Qinghong" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_selective_anti_corruption"
@@ -1950,7 +1908,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Zeng Qinghong" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_quiet_succession_engineering"
@@ -1989,7 +1946,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_the_chinese_dream"
@@ -2032,7 +1988,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_document_nine"
@@ -2077,7 +2032,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_CORRUPTION FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_tiger_and_flies"
@@ -2113,7 +2067,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_leading_small_group_doctrine"
@@ -2152,7 +2105,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_CORRUPTION FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_mass_line_education"
@@ -2190,7 +2142,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_astana_speech"
@@ -2229,7 +2180,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_made_in_china_2025"
@@ -2285,7 +2235,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_two_centeraries"
@@ -2324,7 +2273,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_xi_jinping_thought_enshrined"
@@ -2374,7 +2322,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_abolish_term_limits"
@@ -2411,7 +2358,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_leader_of_the_people"
@@ -2494,7 +2440,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_wolf_warrior_doctrine"
@@ -2532,7 +2477,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_two_establishments"
@@ -2580,7 +2524,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_common_prosperity"
@@ -2625,7 +2568,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_governance_moderenisation"
@@ -2665,7 +2607,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_designated_succesor"
@@ -2702,7 +2643,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Xi Jinping" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_the_party_that_lasts"
@@ -2743,7 +2683,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Bo Xilai" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_chongqing_model_nationalisation"
@@ -2790,7 +2729,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Bo Xilai" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_public_rental_housing_drive"
@@ -2825,7 +2763,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Bo Xilai" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_strike_black_sing_red"
@@ -2861,7 +2798,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Bo Xilai" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_mass_line_renewed"
@@ -2901,7 +2837,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Bo Xilai" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_politics_law_commision_realigned"
@@ -2940,7 +2875,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Bo Xilai" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_cadre_rotation"
@@ -2978,7 +2912,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Bo Xilai" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_davos_boycott"
@@ -3015,7 +2948,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Bo Xilai" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_two_reaffirmations"
@@ -3052,7 +2984,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Bo Xilai" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_common_prosperity_original"
@@ -3091,7 +3022,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Bo Xilai" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_the_securitate_restructured"
@@ -3128,7 +3058,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = { has_country_leader = { name = "Bo Xilai" } }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHI_Yangtze_confederation"

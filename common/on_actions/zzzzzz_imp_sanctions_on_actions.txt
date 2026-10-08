@@ -1,0 +1,1966 @@
+#########################################################################################
+# Original Script by: Moveably - Please don't touch. Unless I'm gone. Then can touch :) #
+#########################################################################################
+# NOTE: Sanctions won't be properly calculated until the second month. Not much I can do about that sadly.
+
+
+on_actions = {
+	## Extra Economic Calculations. Requires to calculate sanction strength.
+	on_monthly_LIC = {
+		effect = {
+			if = {
+				# Calculate the total office parks and mil/docks. We only want to do this once per monthy globally and not once per country.
+				# In MD, the Control is Liechtenstein. This nation cannot be annexxed. So that's preferable over making a global flag.
+				set_variable = { global.global_num_offices = 0 }
+				set_variable = { global.global_num_mils = 0 }
+				set_variable = { global.imp_gdp_total = 0}
+				every_country = { 
+					imp_sanctions_extra_calculations = yes
+				}
+			}
+
+			## Now Calculate Sanction Outgoing Strength
+			every_country = {
+				imp_sanctions_strength_calculate = yes
+			}
+
+			## Now calculate Sanction Incoming Strength
+			every_country = {
+				imp_sanctions_calculate = yes
+			}
+		}
+	}
+
+	# Starting Sanctions
+	on_startup = {
+		effect = {
+			# UNITED STATES SANCTIONS
+			USA = {
+				if = {
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					PER = {
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV } 
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						} 
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					NKO = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SUD = {
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					TAL = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					CUB = {
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+
+					SIE = {
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					UNI = {
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					RWA = {
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+
+			# EUROPEAN UNION SANCTIONS
+			AUS = {
+				if = {
+					
+					limit = { is_ai = no }
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			DEN = {
+				if = {
+					
+					limit = { is_ai = no }
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			ENG = {
+				if = {
+					
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			FIN = {
+				if = {
+					
+					limit = { is_ai = no }
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			FRA = {
+				if = {
+					
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			GER = {
+				if = {
+					
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			GRE = {
+				if = {
+					
+					limit = { is_ai = no }
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			HOL = {
+				if = {
+					
+					limit = { is_ai = no }
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			IRE = {
+				if = {
+					
+					limit = { is_ai = no }
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+					
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			ITA = {
+				if = {
+					
+					limit = { is_ai = no }
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			POR = {
+				if = {
+					
+					limit = { is_ai = no }
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			SPR = {
+				if = {
+					
+					limit = { is_ai = no }
+
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+			SWE = {
+				if = {
+					
+					limit = { is_ai = no }
+					
+					IRQ = { 
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					SER = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+					
+					LBA = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Financial Sanctions
+						add_to_array = { array = PREV.imp_fin_sanc_by_us value = THIS }
+						add_to_array = { array = imp_fin_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_fin_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+
+						# Military Sanctions
+						add_to_array = { array = PREV.imp_mil_sanc_by_us value = THIS }
+						add_to_array = { array = imp_mil_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_mil_sanctioned_us
+						}
+					}
+
+					BRM = {
+						# Diplomatic Sanctions
+						add_to_array = { array = PREV.imp_dip_sanc_by_us value = THIS }
+						add_to_array = { array = imp_dip_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_dip_sanctioned_us
+						}
+
+						# Economic Sanctions
+						add_to_array = { array = PREV.imp_eco_sanc_by_us value = THIS }
+						add_to_array = { array = imp_eco_sanc_on_us value = PREV }
+						add_opinion_modifier = {
+							target = PREV
+							modifier = opinion_eco_sanctioned_us
+						}
+					}
+				}
+			}
+
+			every_country = { 
+				imp_sanctions_extra_calculations = yes
+			}
+
+			every_country = { 
+				imp_sanctions_strength_calculate = yes
+			}
+
+			every_country = { 
+				imp_sanctions_calculate = yes
+			}
+		}
+	}
+
+	# Remove Sanctions if a nation gets annexxed
+	on_annex = {
+		effect = {
+			FROM = {
+				clear_array = imp_fin_sanc_by_us 
+				clear_array = imp_eco_sanc_by_us
+				clear_array = imp_dip_sanc_by_us
+				clear_array = imp_mil_sanc_by_us
+				clear_array = imp_fin_sanc_on_us
+				clear_array = imp_eco_sanc_on_us
+				clear_array = imp_dip_sanc_on_us
+				clear_array = imp_mil_sanc_on_us
+			}
+
+			every_country = {
+				if = { 
+					limit = { is_in_array = { array = imp_fin_sanc_by_us value = FROM } }
+					remove_from_array = { imp_fin_sanc_by_us = FROM }
+				}
+				if = { 
+					limit = { is_in_array = { array = imp_eco_sanc_by_us value = FROM } }
+					remove_from_array = { imp_eco_sanc_by_us = FROM }
+				}
+				if = { 
+					limit = { is_in_array = { array = imp_dip_sanc_by_us value = FROM } }
+					remove_from_array = { imp_dip_sanc_by_us = FROM }
+				}
+				if = { 
+					limit = { is_in_array = { array = imp_mil_sanc_by_us value = FROM } }
+					remove_from_array = { imp_mil_sanc_by_us = FROM }
+				}
+				
+				if = { 
+					limit = { is_in_array = { array = imp_fin_sanc_on_us value = FROM } }
+					remove_from_array = { imp_fin_sanc_on_us = FROM }
+				}
+				if = { 
+					limit = { is_in_array = { array = imp_eco_sanc_on_us value = FROM } }
+					remove_from_array = { imp_eco_sanc_on_us = FROM }
+				}
+				if = { 
+					limit = { is_in_array = { array = imp_dip_sanc_on_us value = FROM } }
+					remove_from_array = { imp_dip_sanc_on_us = FROM }
+				}
+				if = { 
+					limit = { is_in_array = { array = imp_mil_sanc_on_us value = FROM } }
+					remove_from_array = { imp_mil_sanc_on_us = FROM }
+				}
+			}
+		}
+	}
+
+	on_monthly = {
+        effect = {
+            if = { 
+                limit = { 
+                    NOT = { has_country_flag = imp_sanction_event_cd }
+                }
+
+                if = {
+                    limit = { 
+						check_variable = { imp_dip_sanctions_p > 0.25 }  
+						NOT = { has_country_flag = imp_dip_sanction_event_cd }
+					}
+
+                    set_country_flag = { flag = imp_sanction_event_cd days = 90 value = 1 }
+					set_country_flag = { flag = imp_dip_sanction_event_cd days = 360 value = 1 }
+                    imp_dip_event = yes
+                }
+                else_if = {
+                    limit = { 
+						check_variable = { imp_eco_sanctions_p > 0.25 } 
+						NOT = { has_country_flag = imp_eco_sanction_event_cd } 
+					}
+
+                    set_country_flag = { flag = imp_sanction_event_cd days = 90 value = 1 }
+					set_country_flag = { flag = imp_eco_sanction_event_cd days = 360 value = 1 }
+                    imp_eco_event = yes
+                }
+                else_if = {
+                    limit = { 
+						check_variable = { imp_fin_sanctions_p > 0.25 }
+						NOT = { has_country_flag = imp_fin_sanction_event_cd }   
+					}
+
+                    set_country_flag = { flag = imp_sanction_event_cd days = 90 value = 1 }
+					set_country_flag = { flag = imp_fin_sanction_event_cd days = 360 value = 1 }
+                    imp_fin_event = yes
+                }
+				else_if = {
+                    limit = { 
+						check_variable = { imp_mil_sanctions_p > 0.25 } 
+						NOT = { has_country_flag = imp_mil_sanction_event_cd }   
+					}
+
+                    set_country_flag = { flag = imp_sanction_event_cd days = 90 value = 1 }
+					set_country_flag = { flag = imp_mil_sanction_event_cd days = 360 value = 1 }
+                    imp_mil_event = yes
+                }
+				
+				if = {
+                    limit = { 
+						check_variable = { imp_sanctions_blowback_p > 0.25 } 
+						NOT = { has_country_flag = imp_bb_sanction_event_cd }   
+					}
+
+					set_country_flag = { flag = imp_bb_sanction_event_cd days = 180 value = 1 }
+                    imp_bb_event = yes
+                }
+            }
+        }
+    }
+}

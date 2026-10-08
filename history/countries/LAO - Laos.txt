@@ -79,12 +79,8 @@ capital = 516
 		buddism
 		lao_vietnan_treaty
 		fast_growth
-		defence_03
-		edu_02
 		health_01
 		social_01
-		bureau_03
-		police_05
 		draft_army
 		volunteer_women
 		communist_cadres
@@ -95,6 +91,10 @@ capital = 516
 		officer_advanced_training
 		ASEAN_Member
 		no_currency_backing
+		defence_01
+		edu_01
+		bureau_01
+		police_01
 	}
 
 	# Cartel System
@@ -118,9 +118,9 @@ capital = 516
 	add_to_array = { influence_array_val = 8 }
 	sort_influence = yes
 
-	set_variable = { var = debt value = 9.028 }
-	set_variable = { var = corporate_tax_rate value = 20 }
-	set_variable = { var = population_tax_rate value = 14 }
+	set_variable = { var = debt value = 0 }
+	set_variable = { var = corporate_tax_rate value = 40 }
+	set_variable = { var = population_tax_rate value = 31 }
 	set_variable = { inflation_rate_var = 0.25270 }
 	set_variable = { cb_policy_rate = 3 }
 
@@ -206,4 +206,17 @@ capital = 516
 	add_opinion_modifier = { target = TTP modifier = AlQaida_Are_Terrorists_Trade }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
+	every_controlled_state = { set_variable = { productivity_state_var = 373 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

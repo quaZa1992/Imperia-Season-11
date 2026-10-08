@@ -1,0 +1,96 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_food_ui"
+		texturefile = "gfx/interface/scripted_gui/energy_ui.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_consumption_1"
+		texturefile = "gfx/interface/scripted_gui/economy/food_rationing_heavy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_consumption_2"
+		texturefile = "gfx/interface/scripted_gui/economy/food_rationing_medium.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_consumption_3"
+		texturefile = "gfx/interface/scripted_gui/economy/food_rationing_light.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_consumption_4"
+		texturefile = "gfx/interface/scripted_gui/economy/food_rationing_no.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_consumption_5"
+		texturefile = "gfx/interface/scripted_gui/economy/food_rationing_distribution.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_consumption_1_ON"
+		texturefile = "gfx/interface/scripted_gui/economy/food_rationing_heavy _ON.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_consumption_2_ON"
+		texturefile = "gfx/interface/scripted_gui/economy/food_rationing_medium_ON.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_consumption_3_ON"
+		texturefile = "gfx/interface/scripted_gui/economy/food_rationing_light_ON.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_consumption_4_ON"
+		texturefile = "gfx/interface/scripted_gui/economy/food_rationing_no_ON.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_consumption_5_ON"
+		texturefile = "gfx/interface/scripted_gui/economy/food_rationing_distribution_ON.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_from_market"
+		texturefile = "gfx/interface/scripted_gui/economy/fuel_from_market.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_to_market"
+		texturefile = "gfx/interface/scripted_gui/economy/fuel_from_market.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_storage_build"
+		texturefile = "gfx/interface/scripted_gui/economy/battery_park_build.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_button"
+		texturefile = "gfx/interface/scripted_gui/economy/food_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_to_market_turn_off"
+		texturefile = "gfx/interface/nuclear_plant_turn_off.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_to_market_turn_on"
+		texturefile = "gfx/interface/nuclear_plant_turn_on.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_from_market_off"
+		texturefile = "gfx/interface/fossil_plants_off.dds"
+	}
+
+	spriteType = {
+		name = "GFX_food_from_market_on"
+		texturefile = "gfx/interface/fossil_plants_on.dds"
+	}
+}

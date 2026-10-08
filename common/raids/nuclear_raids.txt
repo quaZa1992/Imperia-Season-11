@@ -1,13 +1,17 @@
 types = {
 	#Hits a province
 	tactical_nuclear_strike = {
-		allowed = { has_dlc = "Gotterdammerung" }
 		days_to_prepare = 1
 		days_re_enable = 10
 
 		category = nuclear_raids
 
 		command_power = 20 # command power allocation cost
+
+		allowed = {
+			has_dlc = "Gotterdammerung"
+		}
+		# Raid Type is visible
 
 		# Specific Target is visible
 		show_target = {
@@ -18,6 +22,7 @@ types = {
 
 		# Can prepare
 		available = {
+			is_ai = no
 			FROM = {
 				NOT = { is_subject_of = ROOT }
 				NOT = { has_non_aggression_pact_with = ROOT }
@@ -39,7 +44,7 @@ types = {
 
 		unit_requirements = {
 			equipment = {
-				type = { tactical_bomber strategic_bomber }
+				type = { cas tactical_bomber strategic_bomber naval_bomber scout_plane fighter interceptor air_transport }
 				modules = { spec_nuclear_consent }
 				amount = { min = 1 }
 			}
@@ -50,8 +55,12 @@ types = {
 				amount = { min = 1 }
 			}
 		}
+		essential_equipment = {
+
+		}
+
 		starting_point = {
-			types = { carrier air_base rocket_site submarine }
+			types = { air_base carrier rocket_site submarine }
 		}
 
 		arrow = {
@@ -89,8 +98,8 @@ types = {
 
 				# Target
 				interception = {
-					reference = 10
-					weight = -0.25
+					reference = 100
+					weight = -1
 				}
 				anti_air = {
 					weight = -0.05
@@ -113,12 +122,20 @@ types = {
 						custom_effect_tooltip = strike_aborted_tt
 						add_political_power = -50
 					}
+					raid_damage_units = {
+						plane_loss = 0.5
+						ratio = yes
+					}
 				}
 			}
 			limited_success = {
 				actor_effects = {
 					var:actor_country = {
 						custom_effect_tooltip = strike_aborted_tt
+					}
+					raid_damage_units = {
+						plane_loss = 0.3
+						ratio = yes
 					}
 				}
 			}
@@ -142,12 +159,15 @@ types = {
 						}
 					}
 					raid_damage_units = {
-						plane_loss = 0.05
+						plane_loss = 0.3
 						ratio = yes
 					}
 				}
 				victim_effects = {
 					var:target_state = {
+						set_temp_variable = { casualty_rate = -0.02 }
+						set_temp_variable = { productivity_damage = 0.99 }
+						imp_tac_nuke_effects = yes
 						custom_effect_tooltip = raid_nuclear_strike_tt
 						add_dynamic_modifier = {
 							modifier = nuclear_fallout
@@ -181,7 +201,14 @@ types = {
 				}
 				victim_effects = {
 					var:target_state = {
+						set_temp_variable = { casualty_rate = -0.05 }
+						set_temp_variable = { productivity_damage = 0.98 }
+						imp_tac_nuke_effects = yes
 						custom_effect_tooltip = raid_nuclear_strike_tt
+						add_dynamic_modifier = {
+							modifier = nuclear_fallout
+							days = 1095
+						}
 					}
 					var:victim_country = {
 						set_country_flag = has_been_nuked
@@ -207,13 +234,6 @@ types = {
 			modifier = {
 				factor = 0
 				threat < 0.10
-			}
-			# Alliance gate — nukes are a deterrent; don't strike a stronger bloc
-			# unless we are already desperate (surrender_progress >= 0.5 overrides caution).
-			modifier = {
-				factor = 0
-				raid_alliance_unfavorable = yes
-				surrender_progress < 0.5
 			}
 			modifier = {
 				# Don't target anyone who is not a potential enemy
@@ -229,13 +249,19 @@ types = {
 	}
 	#Nuke a whole state for the price of one
 	state_nuclear_strike = {
-		allowed = { has_dlc = "Gotterdammerung" }
 		category = nuclear_raids
 
 		days_to_prepare = 1
 
 		command_power = 5 # command power allocation cost
 
+		allowed = {
+			has_dlc = "Gotterdammerung"
+		}
+		# Raid Type is visible
+		visible = {
+
+		}
 		# Specific Target is visible
 		show_target = {
 			NOT = {
@@ -246,13 +272,14 @@ types = {
 
 		# Can prepare
 		available = {
+			is_ai = no
 			FROM = {
 				NOT = { is_subject_of = ROOT }
 				NOT = { has_non_aggression_pact_with = ROOT }
 				has_war_with = ROOT
 			}
 			set_temp_variable = { temp_check = 1 }
-			check_if_nuclear_weapons_in_stockpile = yes
+			# check_if_nuclear_weapons_in_stockpile = yes
 			is_able_to_use_nuclear_strikes = yes
 			is_able_to_launch_a_nuclear_strike = yes
 		}
@@ -267,15 +294,19 @@ types = {
 		unit_requirements = {
 			equipment = {
 				type = { nuclear_missile_equipment }
-				amount = { min = 1 }
+				amount = { min = 20}
 			}
 		}
 		unit_requirements = {
 			equipment = {
 				type = { nuclear_ballistic_missile_equipment }
-				amount = { min = 1 }
+				amount = { min = 20}
 			}
 		}
+		nuke_type = thermonuclear_bomb
+		essential_equipment = {
+		}
+
 		starting_point = {
 			types = { rocket_site submarine }
 		}
@@ -288,11 +319,47 @@ types = {
 
 		success_factors = {
 			success = {
-				base = 0.8
+				base = 0.3
+				strategic_bomber = {
+					reference = 1500
+					start_weight = 0
+					weight = 1
+				}
 				intel = {
-					weight = 0.2
-					#start_reference = 50
+					weight = 0.4
+					start_reference = 50
 					reference = 100
+				}
+				interception = {
+					reference = 400
+					weight = -0.2
+				}
+				anti_air = {
+					reference = 5
+					weight = -0.25
+				}
+				radar = {
+					reference = 6
+					weight = -0.3
+				}
+			}
+			disaster = {
+				intel = {
+					weight = -0.2
+					start_reference = 80
+					reference = 100
+				}
+				interception = {
+					reference = 400
+					weight = 0.2
+				}
+				anti_air = {
+					reference = 5
+					weight = 0.25
+				}
+				radar = {
+					reference = 6
+					weight = 0.3
 				}
 			}
 		}
@@ -302,15 +369,11 @@ types = {
 		success_levels = {
 			failure = {
 				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 20
+						ratio = no
+					}
 					var:actor_country = {
-						launch_nuke = {
-							province = var:ROOT.target_province #optional use either province or state
-							use_nuke = no #will consume nuke if specified
-						}
-						launch_nuke = {
-							state = var:ROOT.target_state
-							use_nuke = no
-						}
 						add_named_threat = {
 							threat = 50
 							name = state_nuclear_strike_wt_tt
@@ -322,56 +385,27 @@ types = {
 							}
 							add_stability = -0.1
 						}
-						hidden_effect = {
-							send_equipment = {
-								equipment = nuclear_ballistic_missile_equipment
-								amount = 1
-								target = EUU
-							}
-							send_equipment = {
-								equipment = nuclear_missile_equipment
-								amount = 1
-								target = EUU
-							}
-						}
 					}
 				}
 				victim_effects = {
-					var:victim_country = {
-						set_country_flag = has_been_nuked
-						set_country_flag = {
-							flag = state_nuke_check
-							days = 1
-							value = 1
-						}
-					}
 					var:target_state = {
-						#custom_effect_tooltip = raid_nuclear_strike_tt
-						add_dynamic_modifier = {
-							modifier = nuclear_fallout
-							days = 1095
-						}
-						damage_units = {
-							state = THIS
-							damage = 0.6
-							ratio = yes
-							army = yes
-							navy = yes
+						imp_nuke_intercept_effects = yes
+					}
+					var:actor_country = {
+						launch_nuke = {
+							province = var:ROOT.target_province
+							use_nuke = no
 						}
 					}
 				}
 			}
 			limited_success = {
 				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 20
+						ratio = no
+					}
 					var:actor_country = {
-						launch_nuke = {
-							province = var:ROOT.target_province #optional use either province or state
-							use_nuke = no #will consume nuke if specified
-						}
-						launch_nuke = {
-							state = var:ROOT.target_state
-							use_nuke = no
-						}
 						add_named_threat = {
 							threat = 50
 							name = state_nuclear_strike_wt_tt
@@ -383,51 +417,34 @@ types = {
 							}
 							add_stability = -0.1
 						}
-						hidden_effect = {
-							send_equipment = {
-								equipment = nuclear_ballistic_missile_equipment
-								amount = 1
-								target = EUU
-							}
-							send_equipment = {
-								equipment = nuclear_missile_equipment
-								amount = 1
-								target = EUU
-							}
-						}
 					}
 				}
 				victim_effects = {
 					var:victim_country = {
 						set_country_flag = has_been_nuked
 					}
+					var:actor_country = {
+						launch_nuke = {
+							province = var:ROOT.target_province
+							use_nuke = no
+							nuke_type = thermonuclear_bomb
+						}
+					}
 					var:target_state = {
-						#custom_effect_tooltip = raid_nuclear_strike_tt
-						add_dynamic_modifier = {
-							modifier = nuclear_fallout
-							days = 1095
-						}
-						damage_units = {
-							state = THIS
-							damage = 0.6
-							ratio = yes
-							army = yes
-							navy = yes
-						}
+						set_temp_variable = { casualty_rate = -0.20 }
+						set_temp_variable = { productivity_damage = 0.80 }
+						set_temp_variable = { military_casualties_n = 0.20 }
+						imp_big_nuke_effects = yes
 					}
 				}
 			}
 			success = {
 				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 20
+						ratio = no
+					}
 					var:actor_country = {
-						launch_nuke = {
-							province = var:ROOT.target_province #optional use either province or state
-							use_nuke = no #will consume nuke if specified
-						}
-						launch_nuke = {
-							state = var:ROOT.target_state
-							use_nuke = no
-						}
 						add_named_threat = {
 							threat = 50
 							name = state_nuclear_strike_wt_tt
@@ -439,51 +456,34 @@ types = {
 							}
 							add_stability = -0.1
 						}
-						hidden_effect = {
-							send_equipment = {
-								equipment = nuclear_ballistic_missile_equipment
-								amount = 1
-								target = EUU
-							}
-							send_equipment = {
-								equipment = nuclear_missile_equipment
-								amount = 1
-								target = EUU
-							}
-						}
 					}
 				}
 				victim_effects = {
 					var:victim_country = {
 						set_country_flag = has_been_nuked
 					}
+					var:actor_country = {
+						launch_nuke = {
+							province = var:ROOT.target_province
+							use_nuke = no
+							nuke_type = thermonuclear_bomb
+						}
+					}
 					var:target_state = {
-						#custom_effect_tooltip = raid_nuclear_strike_tt
-						add_dynamic_modifier = {
-							modifier = nuclear_fallout
-							days = 1095
-						}
-						damage_units = {
-							state = THIS
-							damage = 0.6
-							ratio = yes
-							army = yes
-							navy = yes
-						}
+						set_temp_variable = { casualty_rate = -0.40 }
+						set_temp_variable = { productivity_damage = 0.65 }
+						set_temp_variable = { military_casualties_n = 0.40 }
+						imp_big_nuke_effects = yes
 					}
 				}
 			}
 			critical_success = {
 				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 20
+						ratio = no
+					}
 					var:actor_country = {
-						launch_nuke = {
-							province = var:ROOT.target_province #optional use either province or state
-							use_nuke = no #will consume nuke if specified
-						}
-						launch_nuke = {
-							state = var:ROOT.target_state
-							use_nuke = no
-						}
 						add_named_threat = {
 							threat = 50
 							name = state_nuclear_strike_wt_tt
@@ -495,37 +495,24 @@ types = {
 							}
 							add_stability = -0.1
 						}
-						hidden_effect = {
-							send_equipment = {
-								equipment = nuclear_ballistic_missile_equipment
-								amount = 1
-								target = EUU
-							}
-							send_equipment = {
-								equipment = nuclear_missile_equipment
-								amount = 1
-								target = EUU
-							}
-						}
 					}
 				}
 				victim_effects = {
 					var:victim_country = {
 						set_country_flag = has_been_nuked
 					}
+					var:actor_country = {
+						launch_nuke = {
+							province = var:ROOT.target_province
+							use_nuke = no
+							nuke_type = thermonuclear_bomb
+						}
+					}
 					var:target_state = {
-						#custom_effect_tooltip = raid_nuclear_strike_tt
-						add_dynamic_modifier = {
-							modifier = nuclear_fallout
-							days = 1095
-						}
-						damage_units = {
-							state = THIS
-							damage = 0.6
-							ratio = yes
-							army = yes
-							navy = yes
-						}
+						set_temp_variable = { casualty_rate = -0.60 }
+						set_temp_variable = { productivity_damage = 0.55 }
+						set_temp_variable = { military_casualties_n = 0.60 }
+						imp_big_nuke_effects = yes
 					}
 				}
 			}
@@ -548,13 +535,6 @@ types = {
 			modifier = {
 				factor = 0
 				threat < 0.10
-			}
-			# Alliance gate — nukes are a deterrent; don't strike a stronger bloc
-			# unless we are already desperate (surrender_progress >= 0.5 overrides caution).
-			modifier = {
-				factor = 0
-				raid_alliance_unfavorable = yes
-				surrender_progress < 0.5
 			}
 			modifier = {
 				# Don't target anyone who is not a potential enemy
@@ -571,16 +551,22 @@ types = {
 	}
 	#The whole enchilada. It's the end of the world as we know it!
 	strategic_nuclear_strike = {
-		allowed = { has_dlc = "Gotterdammerung" }
 		category = nuclear_raids
 
 		days_to_prepare = 1
-		#Nuclear powers WILL get aggressive if they are about to be conquered
+		#Nuclear powers WILL get agressive if they are about to be conquered
 		#Realistic behavior, so people should be careful about how they push wars
 		#This should also include some more launch checks, but for now, this will work
 
 		command_power = 5 # command power allocation cost
 
+		allowed = {
+			has_dlc = "Gotterdammerung"
+		}
+		# Raid Type is visible
+		visible = {
+
+		}
 		# Specific Target is visible
 		show_target = {
 			NOT = {
@@ -590,17 +576,37 @@ types = {
 
 		# Can prepare
 		available = {
+			is_ai = no
 			FROM = {
 				NOT = { is_subject_of = ROOT }
 				NOT = { has_non_aggression_pact_with = ROOT }
 				has_war_with = ROOT
 			}
-			set_temp_variable = { temp_check = 10 }
+			set_temp_variable = { temp_check = 200 }
 			check_if_nuclear_weapons_in_stockpile = yes
 			is_able_to_use_nuclear_strikes = yes
 			if = { limit = { has_idea = nuclear_power_def }
 				surrender_progress > 0.5
 			}
+			OR = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = strategic_retaliation_only
+							has_idea = tac_first_use_strat_retaliation
+							has_idea = tac_and_strat_retaliation
+						}
+					}
+					OR = {
+						has_idea = strategic_retaliation_only
+						has_idea = tac_first_use_strat_retaliation
+						has_idea = tac_and_strat_retaliation
+					}
+					has_country_flag = has_been_nuked
+				}
+				has_idea = full_first_use
+			}
+			has_war_with = FROM
 		}
 		launchable = {
 			has_war_with = FROM
@@ -613,18 +619,24 @@ types = {
 		unit_requirements = {
 			equipment = {
 				type = { nuclear_missile_equipment }
-				amount = { min = 10 }
+				amount = { min = 20 }
 			}
 		}
 		unit_requirements = {
 			equipment = {
 				type = { nuclear_ballistic_missile_equipment }
-				amount = { min = 10 }
+				amount = { min = 20 }
 			}
+		}
+		nuke_type = thermonuclear_bomb
+		essential_equipment = {
 		}
 
 		starting_point = {
-			types = { rocket_site submarine }
+			types = {
+				rocket_site
+				submarine
+			}
 		}
 		arrow = {
 			type = ballistic
@@ -635,11 +647,47 @@ types = {
 
 		success_factors = {
 			success = {
-				base = 0.8
+				base = 0.3
+				strategic_bomber = {
+					reference = 1500
+					start_weight = 0
+					weight = 1
+				}
 				intel = {
-					weight = 0.2
-					#start_reference = 50
+					weight = 0.4
+					start_reference = 50
 					reference = 100
+				}
+				interception = {
+					reference = 400
+					weight = -0.2
+				}
+				anti_air = {
+					reference = 5
+					weight = -0.5
+				}
+				radar = {
+					reference = 6
+					weight = -0.6
+				}
+			}
+			disaster = {
+				intel = {
+					weight = -0.4
+					start_reference = 80
+					reference = 100
+				}
+				interception = {
+					reference = 1000
+					weight = 0.2
+				}
+				anti_air = {
+					reference = 5
+					weight = 0.25
+				}
+				radar = {
+					reference = 6
+					weight = 0.4
 				}
 			}
 		}
@@ -657,29 +705,30 @@ types = {
 							value = 1
 						}
 						every_owned_state = {
-							#Yes, it's weird; you basically have to make the country nuke itself, but it works
-							#DO NOT MESS WTIH THIS OR TRY TO CHANGE THIS, I TRIED, THE SCOPES DONT WORK RIGHT UNLESS ITS LIKE THIS
 							PREV = {
 								launch_nuke = {
 									state = PREV
 									use_nuke = no
 								}
 							}
-							damage_units = {
-								state = THIS
-								damage = 0.6
-								ratio = yes
-								army = yes
-								navy = yes
-							}
-							add_dynamic_modifier = {
-								modifier = nuclear_fallout
-								days = 1095
-							}
+							set_temp_variable = { casualty_rate = -0.05 }
+							set_temp_variable = { productivity_damage = 0.95 }
+							set_temp_variable = { military_casualties_n = 0.02 }
+							imp_big_nuke_effects = yes
 						}
 					}
 				}
 				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 20
+						ratio = no
+					}
+					set_temp_variable = { num_states_temp_var = 0 }
+					var:victim_country = {
+						every_owned_state = {
+							add_to_temp_variable = { num_states_temp_var = 1 }
+						}
+					}
 					var:actor_country = {
 						add_named_threat = {
 							threat = 100
@@ -693,14 +742,17 @@ types = {
 							add_stability = -0.1
 						}
 						hidden_effect = {
+							set_temp_variable = { num_Nukes_spent = 10 } # Number of Nukes Spent Per State
+							multiply_temp_variable = { num_Nukes_spent = num_states_temp_var }
+							add_to_temp_variable = { num_Nukes_spent = -20 }
 							send_equipment = {
 								equipment = nuclear_ballistic_missile_equipment
-								amount = 10
+								amount = num_Nukes_spent
 								target = EUU
 							}
 							send_equipment = {
 								equipment = nuclear_missile_equipment
-								amount = 10
+								amount = num_Nukes_spent
 								target = EUU
 							}
 						}
@@ -717,29 +769,31 @@ types = {
 							value = 1
 						}
 						every_owned_state = {
-							#Yes, it's weird; you basically have to make the country nuke itself, but it works
-							#DO NOT MESS WTIH THIS OR TRY TO CHANGE THIS, I TRIED, THE SCOPES DONT WORK RIGHT UNLESS ITS LIKE THIS
 							PREV = {
 								launch_nuke = {
 									state = PREV
 									use_nuke = no
 								}
 							}
-							damage_units = {
-								state = THIS
-								damage = 0.6
-								ratio = yes
-								army = yes
-								navy = yes
-							}
-							add_dynamic_modifier = {
-								modifier = nuclear_fallout
-								days = 1095
-							}
+							set_temp_variable = { casualty_rate = -0.20 }
+							set_temp_variable = { productivity_damage = 0.80 }
+							set_temp_variable = { military_casualties_n = 0.20 }
+							imp_big_nuke_effects = yes
+							
 						}
 					}
 				}
 				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 20
+						ratio = no
+					}
+					set_temp_variable = { num_states_temp_var = 0 }
+					var:victim_country = {
+						every_owned_state = {
+							add_to_temp_variable = { num_states_temp_var = 1 }
+						}
+					}
 					var:actor_country = {
 						add_named_threat = {
 							threat = 100
@@ -753,14 +807,17 @@ types = {
 							add_stability = -0.1
 						}
 						hidden_effect = {
+							set_temp_variable = { num_Nukes_spent = 10 } # Number of Nukes Spent Per State
+							multiply_temp_variable = { num_Nukes_spent = num_states_temp_var }
+							add_to_temp_variable = { num_Nukes_spent = -20 }
 							send_equipment = {
 								equipment = nuclear_ballistic_missile_equipment
-								amount = 10
+								amount = num_Nukes_spent
 								target = EUU
 							}
 							send_equipment = {
 								equipment = nuclear_missile_equipment
-								amount = 10
+								amount = num_Nukes_spent
 								target = EUU
 							}
 						}
@@ -777,29 +834,30 @@ types = {
 							value = 1
 						}
 						every_owned_state = {
-							#Yes, it's weird; you basically have to make the country nuke itself, but it works
-							#DO NOT MESS WTIH THIS OR TRY TO CHANGE THIS, I TRIED, THE SCOPES DONT WORK RIGHT UNLESS ITS LIKE THIS
 							PREV = {
 								launch_nuke = {
 									state = PREV
 									use_nuke = no
 								}
 							}
-							damage_units = {
-								state = THIS
-								damage = 0.6
-								ratio = yes
-								army = yes
-								navy = yes
-							}
-							add_dynamic_modifier = {
-								modifier = nuclear_fallout
-								days = 1095
-							}
+							set_temp_variable = { casualty_rate = -0.40 }
+							set_temp_variable = { productivity_damage = 0.65 }
+							set_temp_variable = { military_casualties_n = 0.35 }
+							imp_big_nuke_effects = yes
 						}
 					}
 				}
 				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 20
+						ratio = no
+					}
+					set_temp_variable = { num_states_temp_var = 0 }
+					var:victim_country = {
+						every_owned_state = {
+							add_to_temp_variable = { num_states_temp_var = 1 }
+						}
+					}
 					var:actor_country = {
 						add_named_threat = {
 							threat = 100
@@ -813,14 +871,17 @@ types = {
 							add_stability = -0.1
 						}
 						hidden_effect = {
+							set_temp_variable = { num_Nukes_spent = 10 } # Number of Nukes Spent Per State
+							multiply_temp_variable = { num_Nukes_spent = num_states_temp_var }
+							add_to_temp_variable = { num_Nukes_spent = -20 }
 							send_equipment = {
 								equipment = nuclear_ballistic_missile_equipment
-								amount = 10
+								amount = num_Nukes_spent
 								target = EUU
 							}
 							send_equipment = {
 								equipment = nuclear_missile_equipment
-								amount = 10
+								amount = num_Nukes_spent
 								target = EUU
 							}
 						}
@@ -843,21 +904,24 @@ types = {
 									use_nuke = no
 								}
 							}
-							damage_units = {
-								state = THIS
-								damage = 0.6
-								ratio = yes
-								army = yes
-								navy = yes
-							}
-							add_dynamic_modifier = {
-								modifier = nuclear_fallout
-								days = 1095
-							}
+							set_temp_variable = { casualty_rate = -0.50 }
+							set_temp_variable = { productivity_damage = 0.55 }
+							set_temp_variable = { military_casualties_n = 0.60 }
+							imp_big_nuke_effects = yes
 						}
 					}
 				}
 				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 20
+						ratio = no
+					}
+					set_temp_variable = { num_states_temp_var = 0 }
+					var:victim_country = {
+						every_owned_state = {
+							add_to_temp_variable = { num_states_temp_var = 1 }
+						}
+					}
 					var:actor_country = {
 						add_named_threat = {
 							threat = 100
@@ -871,14 +935,17 @@ types = {
 							add_stability = -0.1
 						}
 						hidden_effect = {
+							set_temp_variable = { num_Nukes_spent = 10 } # Number of Nukes Spent Per State
+							multiply_temp_variable = { num_Nukes_spent = num_states_temp_var }
+							add_to_temp_variable = { num_Nukes_spent = -20 }
 							send_equipment = {
 								equipment = nuclear_ballistic_missile_equipment
-								amount = 10
+								amount = num_Nukes_spent
 								target = EUU
 							}
 							send_equipment = {
 								equipment = nuclear_missile_equipment
-								amount = 10
+								amount = num_Nukes_spent
 								target = EUU
 							}
 						}
@@ -900,13 +967,6 @@ types = {
 			modifier = {
 				factor = 0
 				threat < 0.10
-			}
-			# Alliance gate — nukes are a deterrent; don't strike a stronger bloc
-			# unless we are already desperate (surrender_progress >= 0.5 overrides caution).
-			modifier = {
-				factor = 0
-				raid_alliance_unfavorable = yes
-				surrender_progress < 0.5
 			}
 			modifier = {
 				# Don't target anyone who is not a potential enemy

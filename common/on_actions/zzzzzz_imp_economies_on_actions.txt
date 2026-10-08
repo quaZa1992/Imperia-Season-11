@@ -1,0 +1,79 @@
+#########################################################################################
+# Original Script by: Moveably - Please don't touch. Unless I'm gone. Then can touch :) #
+#########################################################################################
+
+on_actions = 
+{
+    ## Startup
+    on_startup = {
+        effect = {
+            every_country = { 
+                imp_eco_progress_calc = yes
+                imp_eco_globalism_tick = yes
+            }
+        }
+    }
+
+    ## Globalism Tick!
+    on_weekly = {
+        effect = {
+            imp_eco_globalism_tick = yes
+        }
+    }
+
+    ## Debt events & Bond Selloff
+    on_monthly = {
+        effect = {
+            imp_eco_progress_calc = yes
+            
+            # Debt Events
+            if = { 
+                limit = { 
+                    NOT = { has_country_flag = imp_eco_debt_cd }
+                }
+
+                if = {
+                    limit = { check_variable = { debt_ratio > 2 }  }
+
+                    set_country_flag = { flag = imp_eco_debt_cd days = 180 value = 1 }
+                    imp_eco_debt_very_high = yes
+                }
+                else_if = {
+                    limit = { check_variable = { debt_ratio > 1 }  }
+
+                    set_country_flag = { flag = imp_eco_debt_cd days = 180 value = 1 }
+                    imp_eco_debt_high = yes
+                }
+                else_if = {
+                    limit = { 
+                        check_variable = { debt_ratio < 0.2 }  
+                        NOT = { 
+                            has_idea = rentier_state 
+                        }
+                    }
+
+                    set_country_flag = { flag = imp_eco_debt_cd days = 180 value = 1 }
+                    imp_eco_debt_low = yes
+                }
+            }
+
+            # Bond Selloff Events
+            if = {
+                limit = { 
+                    NOT = { has_country_flag = imp_eco_bond_cd }
+                }
+
+                if = { 
+                    limit = { has_country_flag = imp_recent_major_bond_selloff }
+                    set_country_flag = { flag = imp_eco_bond_cd days = 180 value = 1 }
+                    imp_eco_bond_major = yes
+                }
+                else_if = {
+                    limit = { has_country_flag = imp_recent_major_bond_selloff }
+                    set_country_flag = { flag = imp_eco_bond_cd days = 180 value = 1 }
+                    imp_eco_bond_minor = yes
+                }
+            }
+        }
+    }
+}

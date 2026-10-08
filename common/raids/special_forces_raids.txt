@@ -476,7 +476,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -529,7 +529,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -581,7 +581,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -634,7 +634,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -917,7 +917,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -958,7 +958,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -996,7 +996,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -1037,7 +1037,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -1341,7 +1341,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -1382,7 +1382,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -1420,7 +1420,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -1461,7 +1461,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -1646,7 +1646,7 @@ types = {
 
 		launchable = {
 			set_temp_variable = { cost = 300 }
-			raid_can_launch = yes
+			imp_raid_can_launch_war_only = yes # Imperia: no peacetime launch with political power
 		}
 
 		target_type = {
@@ -1737,7 +1737,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -1770,7 +1770,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -1810,7 +1810,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -1856,7 +1856,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -2170,7 +2170,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}
@@ -2201,7 +2201,7 @@ types = {
 							limit = {
 								NOT = { has_war_with = var:ROOT.victim_country }
 							}
-							add_political_power = -100
+							add_political_power = -10
 						}
 					}
 				}

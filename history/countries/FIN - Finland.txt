@@ -521,14 +521,14 @@ capital = 102
 	set_variable = { small_medium_business_owners = 75 }
 	set_variable = { industrial_conglomerates_opinion = 60 }
 
-	set_variable = { var = debt value = 100.697 }
+	set_variable = { var = debt value = 65.697 }
 	set_variable = { var = treasury value = 12 }
 	set_variable = { var = int_investments value = 83.9 }
 	set_variable = { inflation_rate_var = 0.01162 }
 	set_variable = { cb_policy_rate = 3 }
-	set_variable = { var = corporate_tax_rate value = 33 }
-	set_variable = { var = population_tax_rate value = 29 }
-	set_variable = { overall_productivity = 975 }
+	set_variable = { var = corporate_tax_rate value = 41 }
+	set_variable = { var = population_tax_rate value = 31 }
+	set_variable = { overall_productivity = 1280 }
 	set_variable = { var_reactor_material_stockpile = 2500 }
 
 	add_opinion_modifier = { target = BEL modifier = EU_member_opinion }
@@ -653,4 +653,19 @@ capital = 102
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	reverse_add_opinion_modifier = { target = SOV modifier = RUS_OIL }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 1280 }
+	}
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

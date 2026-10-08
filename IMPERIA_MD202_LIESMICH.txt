@@ -1,0 +1,84 @@
+﻿IMPERIA ROLEPLAY SEASON 10  x  MILLENNIUM DAWN 2.0.2
+=====================================================
+Zielversion: Hearts of Iron IV 1.19.3 ("Operation Postern"), supported_version = "1.19.*"
+Basis: Millennium Dawn 2.0.2 (Workshop 2777392649). Imperia-Änderungen (Workshop 3464169624)
+wurden auf die MD-2.0.2-Dateien übertragen, nicht umgekehrt.
+
+AUFBAU
+------
+* Alle MD-2.0.2-Dateien bilden die Grundlage.
+* 460 Textdateien sind Imperia-Dateien bzw. MD-Dateien mit eingearbeiteten Imperia-Änderungen.
+* 914 Grafikdateien (Portraits, Event-Bilder, Icons) kommen aus dem Imperia-Ordner.
+  Grafiken, die MD seit dem alten Stand aktualisiert hat und die Imperia nie verändert hat,
+  bleiben in der neuen MD-Version.
+* _imperia_disabled\ enthält Imperia-Dateien, die NICHT geladen werden (Begründung unten).
+* IMPERIA_MD202_PORTLOG.txt: technisches Protokoll aller Portierungs-Entscheidungen (Englisch).
+
+WICHTIG BEIM SPIELEN
+--------------------
+* Im Launcher NUR "Imperia Roleplay Season 10 (MD 2.0.2)" aktivieren – NICHT zusätzlich das
+  originale Millennium Dawn oder das alte Imperia. Diese Mod enthält MD 2.0.2 vollständig.
+* Neues Spiel starten. Alte Spielstände sind nicht kompatibel (MD 2.0.2 hat Wirtschaft,
+  Technologien, Mikrochips und Gesetze umgebaut).
+
+WAS GEMACHT WURDE (Kurzfassung)
+-------------------------------
+Alle Imperia-Systeme (Bond-Krise, GM-Tools, Corona, Öl-Preise, Sanktionen, Flüchtlinge,
+Verluste, Nukes/Katastrophen, Korruption, Stabilität, Pop-Culture, Geld-/Anleihen-/Subventions-
+Transfer, Schiffs-/Nahrungs-/Rohstoff-Transfer, State-Aktionen, Leader-Entscheidungen,
+Nationale Ideen, ENBO/AIPAC, Mastery u. a.) laufen auf den MD-2.0.2-Systemen. Geprüft wurden
+Klammern, Kodierung, Lokalisation, Referenzen (Ideen, Effekte, Trigger, Events, Techs,
+Ausrüstung, Module, Charaktere, Tech-Kategorien, Sprites, Texturen, Schiffsvarianten,
+Scripted-GUI-Elemente) und doppelte Definitionen.
+
+Die wichtigsten Punkte:
+* Wirtschaft (00_money_system): MD 2.0.2 hat das Geldsystem neu geschrieben. Alle Imperia-
+  Änderungen wurden im neuen System nachgebaut (Steuern, Wohlfahrts-Erwartungen, Armee-Unterhalt,
+  ROI/Anleihen, Produktivität, BIP-Faktoren und -Korrekturen, Slush-Fund, Subventionen).
+* Geld-Oberfläche: MD hat MD_money.gui durch die neue Wirtschaftsansicht ersetzt. Imperias
+  Topbar (Schulden/Anleihen, Investitionen/Anleihen, Globalismus-Zähler) und die Steuer-/
+  Beschäftigungs-Buttons wurden in die neue Ansicht eingebaut.
+* Raids: Imperias "keine Raids im Frieden per PP" über neuen Trigger imp_raid_can_launch_war_only.
+* Mikrochips: Imperias Umbau auf MD's neues Mikrochip-System übertragen.
+  HINWEIS: MD 2.0.2 hat den zivilen Chip-Verbrauch neu eingestellt – Balance im Spiel beobachten.
+* SAM-Raketen: MD hat die Skala von air_attack geändert; Imperias Wert wurde umgerechnet.
+* China/Hongkong-Fokusbäume, Flotten (CHI, ENG, FRA, SWE, TUR, USA), 185 Länder- und
+  33 State-Historien: Imperia-Änderungen in MD's überarbeitete Dateien eingearbeitet.
+
+NICHT ÜBERNOMMEN / DEAKTIVIERT (mit Grund)
+------------------------------------------
+* Japan-Fokusbaum (japan.txt + imp_jap_goals*.gfx): alte MD-Version, die MD im März 2026 durch
+  den neuen Japan-Baum ersetzt hat. Gleiche Baum-ID -> Konflikt. MD's neuer Japan-Baum ist aktiv.
+  (Imperias Änderung waren nur eigene Icons; die gfx überschrieb außerdem ein Vanilla-Sprite.)
+* imp_famine_events.txt (+ famine gui/gfx): Kopie von MD's Agrar-Events (39 von 41 Event-IDs
+  identisch) – hätte MD's aktuelle Events überschrieben. Imperia hatte das Hunger-System
+  bereits selbst deaktiviert (.disabled-Dateien).
+* Alte MD-Dateien, die Imperia noch mitschleppte (Generic Ideas.txt, 09_russia_dynamic_
+  modifiers.txt, MD_missiles_modifiers.txt, AC_window.gui): sie hätten neuere MD-Inhalte
+  doppelt definiert. Imperias Änderungen daran wurden auf die aktuellen MD-Dateien übertragen.
+* MAX_SHARED_SLOTS: Imperia hatte 56 -> 72 erhöht; MD 2.0.2 nutzt jetzt selbst 80. Imperias 72
+  hätte den Wert gesenkt -> MD's 80 gilt.
+* Code, der schon bei Imperia nicht funktionierte, weil die aufgerufenen Effekte nirgends
+  existieren (calculate_energy_in/out, law_attitude_change, resources_manpower_fulfillment_
+  modifier) wurde nicht mitgenommen.
+
+BEHOBENE FEHLER, DIE SCHON IM ALTEN IMPERIA WAREN
+--------------------------------------------------
+* imp_leader_cat.txt: überzählige schließende Klammer.
+* Abchasien: Idee "Non_State_Actor" (existiert nicht) -> MD's non_state_actor.
+* Bond-Krise: Folge-Event stand innerhalb von remove_ideas und wurde nie ausgelöst.
+* Sanktions-Event 14: Ausrüstung "Inf_equipment" gibt es nicht -> infantry_weapons_type.
+* Sanktions-Defines: KI-Embargo-Gewichte hatten falsche Namen (ohne EMBARGO_) und wirkten nie.
+* Flotten: FRA-Agosta-U-Boote und TUR-Berk-Klasse waren als Eigentum von SPR/USA eingetragen
+  -> jetzt owner = FRA/TUR, creator = SPR/USA.
+* Zwei Leader-Portraits verwiesen auf nicht vorhandene Dateien (Malaysia, Thailand).
+
+BEKANNTE RESTPUNKTE (nicht absturzrelevant, schon im alten Imperia so)
+-----------------------------------------------------------------------
+* imp_leader_decision.gfx verweist auf ca. 320 Entscheidungs-Icons (gfx/interface/decisions/
+  leaders/...), die im Imperia-Upload fehlen -> diese Icons bleiben leer.
+* Die GM-Entscheidungen zum Auslösen einer Hungersnot rufen "famine_trigger" auf, das es
+  nicht gibt (Hunger-System war bei Imperia deaktiviert).
+* minimum_radicalization_modifier / minimum_terror_threat_modifier (stability_bad_modifier)
+  sind keine definierten Modifier und haben keine Wirkung.
+* Einige Imperia-Lokalisationen fehlen schon im Original (z. B. imp_random.1, Dev-Events).

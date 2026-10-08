@@ -86,11 +86,6 @@ capital = 201
 		non_state_actor
 		lacks_international_recognition
 		defence_06
-		edu_02
-		health_04
-		social_02
-		bureau_02
-		police_03
 		iranian_aid_custom
 		volunteer_army
 		no_women_in_military
@@ -105,6 +100,11 @@ capital = 201
 		faction_resistance_axis_member
 		full_isr_boycotte
 		no_currency_backing
+		edu_01
+		health_01
+		social_01
+		bureau_01
+		police_01
 	}
 
 	# Opinion Modifiers
@@ -141,12 +141,12 @@ capital = 201
 
 	### Economy
 	set_variable = { var = debt value = 0 }
-	set_variable = { var = treasury value = 1.2 }
+	set_variable = { var = treasury value = 12 }
 	set_variable = { var = int_investments value = 0 }
 	set_variable = { var = corporate_tax_rate value = 20 }
 	set_variable = { var = population_tax_rate value = 20 }
 	set_variable = { gdp_per_capita = 9.972 }
-	set_variable = { overall_productivity = 759 }
+	set_variable = { overall_productivity = 466 }
 
 	set_popularities = {
 		democratic = 0.0
@@ -247,4 +247,17 @@ capital = 201
 	add_opinion_modifier = { target = UAE modifier = arab_league_relations }
 	add_opinion_modifier = { target = YEM modifier = arab_league_relations }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = { set_variable = { productivity_state_var = 466 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

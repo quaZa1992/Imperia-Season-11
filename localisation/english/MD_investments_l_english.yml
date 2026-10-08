@@ -1,13 +1,13 @@
 ﻿l_english:
  # Macro Investment Decisions
  investments_DECISIONS: "Construction Projects"
- investments_DECISIONS_desc: "Our construction projects in foreign countries.\n\nOur current amount of §GInternational Investments§! $$[?ROOT.int_investments] §Hbillion§!.\nCurrent Active §YInvestment Projects§!: [?active_projects]/15\n"
+ investments_DECISIONS_desc: "Our construction projects in foreign countries. Be warned that sometimes construction projects don't show up here despite working just fine. This is due to multiplayer/connection issues.\n\nWe are allowed to have [?imp_max_investment_out] active outgoing investments."
 
  investments_construction_CANCEL_decision: "Cancel Construction Project"
  investments_construction_CANCEL_decision_desc: "Refunds the cost for the unfinished buildings."
 
  investments_target_country_DECISIONS: "Construction Projects"
- investments_target_country_DECISIONS_desc: "Construction projects by foreign countries in our country."
+ investments_target_country_DECISIONS_desc: "Construction projects by foreign countries in our country. Be warned that sometimes construction projects don't show up here despite working just fine. This is due to multiplayer/connection issues.\n\n We are allowed to have [?imp_max_investment_in] active incoming investments.\n"
 
  # Project Decisions (0-14) - Generic names, building type shown in completion tooltip
  investments_project_0_decision: "Investment Project #1 in §Y[?ROOT.project_array^0.GetName]§!"
@@ -314,6 +314,16 @@
  expand_local_fortification_efforts: "Currently §YExpanding Local Fortification Efforts§! in §Y[THIS.GetName]§!."
  expand_local_fortification_efforts_tt: "§YExpand Local Fortification Efforts§! in §Y[THIS.GetName]§!\n---------\nThe defensive capabilities of §Y[THIS.GetName]§! need to be strengthened. We should look into expanding local fortifications and defensive structures to better protect this strategically important region."
  expand_local_fortification_efforts_delayed_tt: "§YEffects:§!\n[!expand_local_fortification_efforts_click]\n\n£click_right §YR Click§!: Toggle automatic repetition.\n[auto_repeat_internal_expand_fortifications_status]"
+ expand_local_fortification_efforts_click_tt: "For 180 Days we gain the following in §Y[THIS.GetName]§!:\n"
+
+ expand_local_coastal_infrastructure: "Currently §YExpanding Local Coastal Infrastructure§! in §Y[THIS.GetName]§!."
+ expand_local_coastal_infrastructure_tt: "§YExpand Local Coastal Infrastructure§! in §Y[THIS.GetName]§!\n---------\nThe coastal regions of §Y[THIS.GetName]§! would benefit greatly from improved infrastructure. We should look into expanding the ports, harbors, and coastal defenses to boost maritime trade and naval capabilities."
+ expand_local_coastal_infrastructure_delayed_tt: "§YPrerequisites:§!\n[!expand_local_coastal_infrastructure_click_enabled]\n§YEffects:§!\n[!expand_local_coastal_infrastructure_click]\n"
+ expand_local_coastal_infrastructure_click_tt: "For 180 Days we gain the following in §Y[THIS.GetName]§!:\n"
+
+ expand_local_fortification_efforts: "Currently §YExpanding Local Fortification Efforts§! in §Y[THIS.GetName]§!."
+ expand_local_fortification_efforts_tt: "§YExpand Local Fortification Efforts§! in §Y[THIS.GetName]§!\n---------\nThe defensive capabilities of §Y[THIS.GetName]§! need to be strengthened. We should look into expanding local fortifications and defensive structures to better protect this strategically important region."
+ expand_local_fortification_efforts_delayed_tt: "§YPrerequisites:§!\n[!expand_local_fortification_efforts_click_enabled]\n§YEffects:§!\n[!expand_local_fortification_efforts_click]\n"
  expand_local_fortification_efforts_click_tt: "For 180 Days we gain the following in §Y[THIS.GetName]§!:\n"
 
  # Custom Internal Investments

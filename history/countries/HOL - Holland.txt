@@ -599,8 +599,8 @@ capital = 46
 	complete_special_project = sp:sp_microchip_production
 
 	set_technology = {
-		microchip_production_2 = 1
-		microchip_production_3 = 1
+		#microchip_production_2 = 1 # Imperia: microchip rework
+		#microchip_production_3 = 1 # Imperia: microchip rework
 
 		railway_system_01 = 1
 		railway_system_02 = 1
@@ -711,13 +711,13 @@ capital = 46
 		maritime_industry
 
 		#Bureacracy
-		bureau_03
+		bureau_02
 		#Military Spending
-		defence_02
+		defence_01
 		#Internal Security
-		police_03
+		police_02
 		#Education budget
-		edu_04
+		edu_05
 		#Health budget
 		health_05
 		#Social spending
@@ -789,14 +789,14 @@ capital = 46
 	set_variable = { small_medium_business_owners_opinion = 60 }
 
 	# Economic Configuration
-	set_variable = { var = debt value = 394.728 }
+	set_variable = { var = debt value = 238.728 }
 	set_variable = { var = treasury value = 26 }
-	set_variable = { var = corporate_tax_rate value = 22 }
-	set_variable = { var = population_tax_rate value = 37 }
+	set_variable = { var = corporate_tax_rate value = 27 }
+	set_variable = { var = population_tax_rate value = 38 }
 	set_variable = { var = int_investments value = 398 }
 	set_variable = { inflation_rate_var = 0.02157 }
 	set_variable = { cb_policy_rate = 3 }
-	set_variable = { overall_productivity = 1048 }
+	set_variable = { overall_productivity = 1449 }
 
 	add_to_array = { global.enrichment_countries = THIS.id }
 	set_variable = { var_reactor_material_stockpile = 2500 }
@@ -1004,4 +1004,17 @@ capital = 46
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	reverse_add_opinion_modifier = { target = SOV modifier = RUS_OIL }
+	every_controlled_state = { set_variable = { productivity_state_var = 1449 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

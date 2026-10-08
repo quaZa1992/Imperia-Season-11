@@ -529,4 +529,10 @@ spriteTypes = {
 		name = "GFX_sp_SCIT"
 		texturefile = "gfx/interface/special_project/project_icons/sp_SCIT.dds"
 	}
+
+	#Imperia - Russia
+	spriteType = {
+	name = "GFX_sp_burevestnik"
+	texturefile = "gfx/interface/special_project/project_icons/imp_burevestnik.dds"
+	}
 }

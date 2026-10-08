@@ -11322,6 +11322,7 @@ defined_text = {
 	text = { trigger = { original_tag = YEM } localization_key = YEM.Western_Autocracy }
 	text = { trigger = { original_tag = ZAM } localization_key = ZAM.Western_Autocracy }
 	text = { trigger = { original_tag = SIA } localization_key = SIA.Western_Autocracy }
+	text = { trigger = { original_tag = GER } localization_key = GER.Western_Autocracy } # Imperia
 	text = { localization_key = generic.Western_Autocracy }
 }
 
@@ -12734,6 +12735,7 @@ defined_text = {
 	text = { trigger = { original_tag = YAM has_country_flag = SUB_united_russia } localization_key = YAM.Conservative }
 	text = { trigger = { original_tag = YAM NOT = { has_country_flag = SUB_united_russia } } localization_key = SOV.oligarchism }
 	text = { trigger = { original_tag = ZAM } localization_key = ZAM.Conservative }
+	text = { trigger = { original_tag = GER } localization_key = GER.Conservative } # Imperia
 	text = { localization_key = generic.Conservative }
 }
 
@@ -12856,6 +12858,7 @@ defined_text = {
 	text = { trigger = { original_tag = YAM } localization_key = YAM.Autocracy }
 	text = { trigger = { original_tag = YEM } localization_key = YEM.Autocracy }
 	text = { trigger = { original_tag = ZIM } localization_key = ZIM.Autocracy }
+	text = { trigger = { original_tag = GER } localization_key = GER.Autocracy } # Imperia
 	text = { localization_key = generic.Autocracy }
 }
 
@@ -13706,6 +13709,7 @@ defined_text = {
 	text = { trigger = { original_tag = YEM } localization_key = YEM.neutral_Social }
 	text = { trigger = { original_tag = ZAM } localization_key = ZAM.neutral_Social }
 	text = { trigger = { original_tag = ZIM } localization_key = ZIM.neutral_Social }
+	text = { trigger = { original_tag = GER } localization_key = GER.neutral_Social_1 } # Imperia
 	text = { localization_key = generic.neutral_Social }
 }
 
@@ -13952,6 +13956,7 @@ defined_text = {
 	text = { trigger = { original_tag = YAK } localization_key = YAK.Neutral_Autocracy }
 	text = { trigger = { original_tag = YAM } localization_key = YAM.Neutral_Autocracy }
 	text = { trigger = { original_tag = SIA } localization_key = SIA.Neutral_Autocracy }
+	text = { trigger = { original_tag = GER NOT = { has_country_flag = GER_constitutional_government } } localization_key = GER.Neutral_Autocracy_1 } # Imperia
 	text = { localization_key = generic.Neutral_Autocracy }
 }
 

@@ -1,0 +1,13 @@
+imp_sanction_resistance = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+imp_sanction_effectiveness = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}

@@ -1,5 +1,5 @@
-version="2.0.2"
-name="Millennium Dawn: Developer Version"
+version="2.0.2 Imperia"
+name="Imperia Roleplay Season 10 (MD 2.0.2)"
 tags={
 	"Alternative History"
 	"Gameplay"
@@ -10,8 +10,8 @@ tags={
 	"Balance"
 	"Fixes"
 }
+picture="thumbnail.png"
 supported_version="1.19.*"
-remote_file_id="2777392649"
 
 replace_path = "events"
 replace_path = "common/abilities"

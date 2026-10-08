@@ -167,11 +167,7 @@ capital = 508
 		corruption_level_07
 		buddism
 		stable_growth
-		defence_02
-		edu_04
-		health_02
 		social_01
-		bureau_03
 		police_02
 		partial_draft_army
 		volunteer_women
@@ -186,6 +182,12 @@ capital = 508
 		SIA_two_thailands
 		SIA_thaksin_ascendant
 		no_currency_backing
+		defence_01
+		edu_01
+		health_01
+		bureau_01
+		police_01
+		imp_lost_generation
 	}
 
 	# Cartel System
@@ -250,9 +252,9 @@ capital = 508
 	set_variable = { landowners_opinion = 60 }
 	set_variable = { small_medium_business_owners_opinion = 75 }
 
-	set_variable = { var = debt value = 135.775 }
-	set_variable = { var = treasury value = 48 }
-	set_variable = { var = corporate_tax_rate value = 20 }
+	set_variable = { var = debt value = 65.775 }
+	set_variable = { var = treasury value = 28 }
+	set_variable = { var = corporate_tax_rate value = 28 }
 	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { var = int_investments value = 0 }
 	set_variable = { inflation_rate_var = 0.00285 }
@@ -647,11 +649,11 @@ capital = 508
 	}
 
 	set_popularities = {
-		democratic = 45.0
-		communism = 0.0
+		democratic = 41.0
+		communism = 10.0
 		fascism = 0.0
-		neutrality = 25.0
-		nationalist = 30.0
+		neutrality = 20.0
+		nationalist = 29.0
 	}
 	set_politics = {
 		ruling_party = democratic
@@ -666,11 +668,13 @@ capital = 508
 	start_politics_input = yes
 
 	### Party Popularities
-	set_variable = { party_pop_array^1 = 0.32 } #conservatism (Democrats)
-	set_variable = { party_pop_array^2 = 0.13 } #liberalism (Chart Pattana)
-	set_variable = { party_pop_array^14 = 0.17 } #Neutral_conservatism
-	set_variable = { party_pop_array^18 = 0.08 } #neutral_Social (TRT)
-	set_variable = { party_pop_array^20 = 0.30 } #Nat_Populism
+	set_variable = { party_pop_array^1 = 0.35 } #conservatism (Democrats)
+	set_variable = { party_pop_array^2 = 0.06 } #liberalism (Chart Pattana)
+	set_variable = { party_pop_array^14 = 0.05 } #Neutral_conservatism
+	set_variable = { party_pop_array^18 = 0.15 } #neutral_Social (TRT)
+	set_variable = { party_pop_array^20 = 0.09 } #Nat_Populism
+	set_variable = { party_pop_array^4 = 0.10 } #communist_state (Imperia)
+	set_variable = { party_pop_array^22 = 0.20 } #Nat_Autocracy (Imperia)
 
 	### Ruling Party
 	set_variable = { ruling_party = 1 }
@@ -736,7 +740,7 @@ capital = 508
 	recruit_character = SIA_adung_phaniam
 	recruit_character = SIA_pana_klaewplodthuk
 
-	set_variable = { overall_productivity = 497 }
+	set_variable = { overall_productivity = 609 }
 
 	# Relation Starting Configuration (moved from on_startup)
 	add_opinion_modifier = { target = HAM modifier = HAM_Not_A_Recognized_country }
@@ -755,4 +759,22 @@ capital = 508
 	add_opinion_modifier = { target = TTP modifier = AlQaida_Are_Terrorists_Trade }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
+	every_controlled_state = { set_variable = { productivity_state_var = 609 } }
+	508 = { set_variable = { productivity_state_var = 862 } }
+	506 = { set_variable = { productivity_state_var = 470 } }
+	507 = { set_variable = { productivity_state_var = 434 } }
+	509 = { set_variable = { productivity_state_var = 418 } }
+	510 = { set_variable = { productivity_state_var = 362 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

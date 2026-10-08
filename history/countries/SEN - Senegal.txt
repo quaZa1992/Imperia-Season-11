@@ -26,12 +26,8 @@ capital = 364
 		fast_growth
 		defence_02
 		ecowas_member_state
-		edu_03
-		health_02
 		OAU_member
 		social_01
-		bureau_02
-		police_03
 		draft_army
 		volunteer_women
 		international_bankers
@@ -41,6 +37,10 @@ capital = 364
 		officer_basic_training
 		cfa_franc
 		no_currency_backing
+		edu_01
+		health_01
+		bureau_01
+		police_01
 	}
 
 	#Influence system
@@ -63,7 +63,7 @@ capital = 364
 	sort_influence = yes
 
 	# Economic Configuration
-	set_variable = { var = debt value = 13 }
+	set_variable = { var = debt value = 0 }
 	set_variable = { var = treasury value = 0 }
 	set_variable = { var = corporate_tax_rate value = 26 }
 	set_variable = { var = population_tax_rate value = 32 }
@@ -226,7 +226,7 @@ capital = 364
 	add_to_array = { agri_crop_price = 25 } # Cash = 1
 	set_variable = { literacy_rate = 0.393 }
 
-	set_variable = { overall_productivity = 654 }
+	set_variable = { overall_productivity = 325 }
 
 
 	# Relation Starting Configuration (moved from on_startup)
@@ -304,4 +304,19 @@ capital = 364
 	add_opinion_modifier = { target = EGY modifier = African_Union_Relations }
 	set_variable = { inflation_rate_var = 0.00827 }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 325 }
+	}
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

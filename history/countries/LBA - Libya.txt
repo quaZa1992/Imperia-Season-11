@@ -95,11 +95,7 @@ capital = 391
 		intelligence_community
 
 		#Spending
-		bureau_03
 		defence_04
-		police_02
-		edu_02
-		health_02
 		social_01
 
 		#Policies
@@ -122,6 +118,10 @@ capital = 391
 		LBA_great_man_made_river_phase2
 		LBA_stream_of_refugees
 		no_currency_backing
+		bureau_02
+		police_03
+		edu_01
+		health_01
 	}
 
 	add_opinion_modifier = {
@@ -156,10 +156,10 @@ capital = 391
 	add_to_array = { influence_array_val = 5 }
 	sort_influence = yes
 
-	set_variable = { var = debt value = 58 }
+	set_variable = { var = debt value = 28 }
 	set_variable = { var = treasury value = 20 }
-	set_variable = { var = corporate_tax_rate value = 13 }
-	set_variable = { var = population_tax_rate value = 9 }
+	set_variable = { var = corporate_tax_rate value = 50 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { var = int_investments value = 0 }
 	set_variable = { inflation_rate_var = 0.02649 }
 	set_variable = { cb_policy_rate = 3 }
@@ -351,7 +351,7 @@ capital = 391
 	set_variable = { fezzan_loyalty = 0.80 }
 	every_owned_state = { add_dynamic_modifier = { modifier = libya_tribalism_loyal_dynamic_modifier } }
 
-	set_variable = { overall_productivity = 887 }
+	set_variable = { overall_productivity = 724 }
 
 
 	# Relation Starting Configuration (moved from on_startup)
@@ -450,4 +450,17 @@ capital = 391
 	add_opinion_modifier = { target = LBA modifier = African_Union_Relations }
 	add_opinion_modifier = { target = EGY modifier = African_Union_Relations }
 
+	every_controlled_state = { set_variable = { productivity_state_var = 724 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

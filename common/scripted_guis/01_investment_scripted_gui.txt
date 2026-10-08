@@ -701,11 +701,12 @@ scripted_gui = {
 				multiply_temp_variable = { ii_cost = ii_cost_multiplier }
 				set_temp_variable = { pp_cost_temp = 75 }
 				calculate_internal_investments_costs = yes
-				add_to_variable = { expanded_building_slot_times = 1 }
-				if = {
-					limit = { check_variable = { expanded_building_slot_times = 5 } }
-					set_state_flag = block_future_expand_local_building_capacity
-				}
+
+				#add_to_variable = { expanded_building_slot_times = 1 }
+				#if = {
+				#	limit = { check_variable = { expanded_building_slot_times = 5 } }
+				#	set_state_flag = block_future_expand_local_building_capacity
+				#}
 			}
 
 			expand_local_renewable_capacity_click = {

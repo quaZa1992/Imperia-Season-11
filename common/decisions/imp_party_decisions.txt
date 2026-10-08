@@ -1,0 +1,26 @@
+imp_ger_party_decisions = {
+    AFD_party = {
+        cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		visible = {
+		    is_ai = no
+			original_tag = GER
+        }
+		complete_effect = {
+        country_event = { id = germany_party.0 }
+	    }
+    }
+    DIE_party = {
+        cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		visible = {
+		    is_ai = no
+			original_tag = GER
+        }
+		complete_effect = {
+        country_event = { id = germany_party.100 }
+	    }
+    }
+}

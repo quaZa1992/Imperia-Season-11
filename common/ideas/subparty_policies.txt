@@ -24,7 +24,7 @@ ideas = {
 			}
 
 			modifier = {
-				buildings_worker_requirement_modifier = 0.15
+				country_productivity_growth_modifier = -0.05
 			}
 		}
 
@@ -170,7 +170,7 @@ ideas = {
 			}
 
 			modifier = {
-				stability_factor = 0.15
+				stability_factor = 0.05
 			}
 		}
 		IP_patriotism = {
@@ -182,7 +182,7 @@ ideas = {
 			}
 
 			modifier = {
-				war_support_factor = 0.15
+				war_support_factor = 0.05
 			}
 		}
 		IP_patriotism_religious = {
@@ -206,7 +206,7 @@ ideas = {
 			}
 
 			modifier = {
-				foreign_influence_modifier = -0.15
+				globalism_equilibrium = -10
 			}
 		}
 
@@ -234,7 +234,7 @@ ideas = {
 			modifier = {
 				economic_cycles_cost_factor = -0.15
 				econ_cycle_upg_cost_multiplier_modifier = -0.15
-				productivity_growth_modifier = 0.75
+				productivity_growth_modifier = 0.2
 			}
 		}
 		IP_business_friendly_environment = {
@@ -246,7 +246,7 @@ ideas = {
 			}
 
 			modifier = {
-				corporate_tax_income_multiplier_modifier = 0.10
+				corporate_tax_income_multiplier_modifier = 0.05
 			}
 		}
 		IP_anti_military = {
@@ -258,8 +258,8 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
+				consumer_goods_factor = 0.05
+				health_cost_multiplier_modifier = 0.1
 			}
 		}
 

@@ -38,6 +38,7 @@ ideas = {
 			modifier = {
 				base_migration_rate_value = 0.60
 				drift_defence_factor = -0.20
+				globalism_equilibrium = 20
 				custom_modifier_tooltip = open_borders_tt
 			}
 
@@ -89,6 +90,7 @@ ideas = {
 			modifier = {
 				base_migration_rate_value = 0.40
 				drift_defence_factor = -0.15
+				globalism_equilibrium = 10
 				nationalist_outlook_campaign_cost_modifier = -0.05
 				custom_modifier_tooltip = slightly_regulated_immigration_tt
 			}
@@ -202,6 +204,7 @@ ideas = {
 			modifier = {
 				base_migration_rate_value = 0.10
 				drift_defence_factor = 0.10
+				globalism_equilibrium = -10
 				nationalist_outlook_campaign_cost_modifier = -0.15
 				custom_modifier_tooltip = heavily_regulated_immigration_tt
 			}
@@ -254,6 +257,7 @@ ideas = {
 				drift_defence_factor = 0.20
 				nationalist_outlook_campaign_cost_modifier = -0.20
 				custom_modifier_tooltip = closed_borders_tt
+				globalism_equilibrium = -20
 			}
 
 			ai_will_do = {

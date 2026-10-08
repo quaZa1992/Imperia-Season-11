@@ -1,0 +1,350 @@
+#########################################################################################
+# Original Script by: Moveably - Please don't touch. Unless I'm gone. Then can touch :) #
+#########################################################################################
+
+scripted_diplomatic_actions = 
+{
+	# DIPLOMATIC SANCTIONS
+	imp_diplo_sanctions_impose = {
+		icon = 19
+		cost = 35
+
+		allowed = {
+
+		}
+		visible = {
+			NOT = { 
+				is_in_array = { 
+					array = imp_dip_sanc_on_us
+					value = ROOT
+				}
+			}
+		}
+		selectable = {
+
+		}
+
+		send_description = IMP_DIPLO_SANCTIONS_IMPOSE_SEND
+		accept_title = IMP_DIPLO_SANCTIONS_IMPOSE_ACCEPT
+		accept_description = IMP_DIPLO_SANCTIONS_IMPOSE_ACCEPT_DESC
+
+		requires_acceptance = no
+		complete_effect = {
+			add_to_array = 
+			{ 
+				array = imp_dip_sanc_on_us
+				value = ROOT
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = opinion_dip_sanctioned_us
+			}
+			ROOT = {
+				add_to_array = { 
+					array = imp_dip_sanc_by_us
+					value = PREV
+				}
+			}
+		}
+	}
+
+	imp_diplo_sanctions_lift = 
+	{
+		icon = 19
+		cost = 35
+
+		allowed = {
+
+		}
+		visible = {
+			is_in_array = { 
+				array = imp_dip_sanc_on_us
+				value = ROOT
+			}
+		}
+		selectable = {
+
+		}
+
+		send_description = IMP_DIPLO_SANCTIONS_LIFT_SEND
+		accept_title = IMP_DIPLO_SANCTIONS_LIFT_ACCEPT
+		accept_description = IMP_DIPLO_SANCTIONS_LIFT_ACCEPT_DESC
+
+		requires_acceptance = no
+		complete_effect = {
+			remove_from_array = 
+			{ 
+				array = imp_dip_sanc_on_us
+				value = ROOT
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = opinion_dip_sanctioned_us
+			}
+			ROOT = {
+				remove_from_array = { 
+					array = imp_dip_sanc_by_us
+					value = PREV
+				}
+			}
+		}
+	}
+	
+	# FINANCIAL SANCTIONS
+	imp_fin_sanctions_impose = {
+		icon = 19
+		cost = 35
+
+		allowed = {
+
+		}
+		visible = {
+			NOT = { 
+				is_in_array = { 
+					array = imp_fin_sanc_on_us
+					value = ROOT
+				}
+			}
+		}
+		selectable = {
+
+		}
+
+		send_description = IMP_FIN_SANCTIONS_IMPOSE_SEND
+		accept_title = IMP_FIN_SANCTIONS_IMPOSE_ACCEPT
+		accept_description = IMP_FIN_SANCTIONS_IMPOSE_ACCEPT_DESC
+
+		requires_acceptance = no
+		complete_effect = {
+			add_to_array = 
+			{ 
+				array = imp_fin_sanc_on_us
+				value = ROOT
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = opinion_fin_sanctioned_us
+			}
+			ROOT = {
+				add_to_array = { 
+					array = imp_fin_sanc_by_us
+					value = PREV
+				}
+			}
+		}
+	}
+
+	imp_fin_sanctions_lift = 
+	{
+		icon = 19
+		cost = 35
+
+		allowed = {
+
+		}
+		visible = {
+			is_in_array = { 
+				array = imp_fin_sanc_on_us
+				value = ROOT
+			}
+		}
+		selectable = {
+
+		}
+
+		send_description = IMP_FIN_SANCTIONS_LIFT_SEND
+		accept_title = IMP_FIN_SANCTIONS_LIFT_ACCEPT
+		accept_description = IMP_FIN_SANCTIONS_LIFT_ACCEPT_DESC
+
+		requires_acceptance = no
+		complete_effect = {
+			remove_from_array = 
+			{ 
+				array = imp_fin_sanc_on_us
+				value = ROOT
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = opinion_fin_sanctioned_us
+			}
+			ROOT = {
+				remove_from_array = { 
+					array = imp_fin_sanc_by_us
+					value = PREV
+				}
+			}
+		}
+	}
+
+	# ECONOMIC SANCTIONS
+	imp_eco_sanctions_impose = {
+		icon = 19
+		cost = 35
+
+		allowed = {
+
+		}
+		visible = {
+			NOT = { 
+				is_in_array = { 
+					array = imp_eco_sanc_on_us
+					value = ROOT
+				}
+			}
+		}
+		selectable = {
+
+		}
+
+		send_description = IMP_ECO_SANCTIONS_IMPOSE_SEND
+		accept_title = IMP_ECO_SANCTIONS_IMPOSE_ACCEPT
+		accept_description = IMP_ECO_SANCTIONS_IMPOSE_ACCEPT_DESC
+
+		requires_acceptance = no
+		complete_effect = {
+			add_to_array = 
+			{ 
+				array = imp_eco_sanc_on_us
+				value = ROOT
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = opinion_eco_sanctioned_us
+			}
+			ROOT = {
+				add_to_array = { 
+					array = imp_eco_sanc_by_us
+					value = PREV
+				}
+			}
+		}
+	}
+
+	imp_eco_sanctions_lift = 
+	{
+		icon = 19
+		cost = 35
+
+		allowed = {
+
+		}
+		visible = {
+			is_in_array = { 
+				array = imp_eco_sanc_on_us
+				value = ROOT
+			}
+		}
+		selectable = {
+
+		}
+
+		send_description = IMP_ECO_SANCTIONS_LIFT_SEND
+		accept_title = IMP_ECO_SANCTIONS_LIFT_ACCEPT
+		accept_description = IMP_ECO_SANCTIONS_LIFT_ACCEPT_DESC
+
+		requires_acceptance = no
+		complete_effect = {
+			remove_from_array = 
+			{ 
+				array = imp_eco_sanc_on_us
+				value = ROOT
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = opinion_eco_sanctioned_us
+			}
+			ROOT = {
+				remove_from_array = { 
+					array = imp_eco_sanc_by_us
+					value = PREV
+				}
+			}
+		}
+	}
+
+	# MILITARY SANCTIONS
+	imp_mil_sanctions_impose = {
+		icon = 19
+		cost = 35
+
+		allowed = {
+
+		}
+		visible = {
+			NOT = { 
+				is_in_array = { 
+					array = imp_mil_sanc_on_us
+					value = ROOT
+				}
+			}
+		}
+		selectable = {
+
+		}
+
+		send_description = IMP_MIL_SANCTIONS_IMPOSE_SEND
+		accept_title = IMP_MIL_SANCTIONS_IMPOSE_ACCEPT
+		accept_description = IMP_MIL_SANCTIONS_IMPOSE_ACCEPT_DESC
+
+		requires_acceptance = no
+		complete_effect = {
+			add_to_array = 
+			{ 
+				array = imp_mil_sanc_on_us
+				value = ROOT
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = opinion_mil_sanctioned_us
+			}
+			ROOT = {
+				add_to_array = { 
+					array = imp_mil_sanc_by_us
+					value = PREV
+				}
+			}
+		}
+	}
+
+	imp_mil_sanctions_lift = 
+	{
+		icon = 19
+		cost = 35
+
+		allowed = {
+
+		}
+		visible = {
+			is_in_array = { 
+				array = imp_mil_sanc_on_us
+				value = ROOT
+			}
+		}
+		selectable = {
+
+		}
+
+		send_description = IMP_MIL_SANCTIONS_LIFT_SEND
+		accept_title = IMP_MIL_SANCTIONS_LIFT_ACCEPT
+		accept_description = IMP_MIL_SANCTIONS_LIFT_ACCEPT_DESC
+
+		requires_acceptance = no
+		complete_effect = {
+			remove_from_array = 
+			{ 
+				array = imp_mil_sanc_on_us
+				value = ROOT
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = opinion_mil_sanctioned_us
+			}
+			ROOT = {
+				remove_from_array = { 
+					array = imp_mil_sanc_by_us
+					value = PREV
+				}
+			}
+		}
+	}
+}

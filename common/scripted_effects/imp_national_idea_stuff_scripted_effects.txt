@@ -1,0 +1,101 @@
+#########################################################################################
+# Original Script by: Moveably - Please don't touch. Unless I'm gone. Then can touch :) #
+#########################################################################################
+
+imp_diplomatic_raid_success = 
+{
+	if = { 
+		limit = {
+			var:victim_country = {
+				NOT = { 
+					has_country_flag = imp_no_more_strike_msg
+				}
+			}
+		}
+
+		var:victim_country = { 
+			set_temp_variable = { ettt = var:ROOT.target_state }
+			country_event = imp_nat_ideas.1 
+
+			add_timed_idea = { 
+				idea = imp_terror_bombing
+				days = 90
+			}
+		}
+	}
+}
+
+imp_diplomatic_raid_fail = 
+{
+	if = { 
+		limit = {
+			var:victim_country = {
+				NOT = { 
+					has_country_flag = imp_no_more_strike_msg
+				}
+			}
+		}
+
+		var:victim_country = { 
+			set_temp_variable = { ettt = var:ROOT.target_state }
+			country_event = imp_nat_ideas.2 
+		}
+	}
+}
+
+imp_block_corruption_decrease = {
+	custom_effect_tooltip = BLOCK_CORRUPTION_DECREASE_TT
+	clr_country_flag = corruption_decrease_blocked
+	set_country_flag = {
+		flag = corruption_decrease_blocked
+		days = 365
+		value = 1
+	}
+}
+
+imp_damage_infrastructure_stuff = {
+	random_owned_controlled_state = {
+		damage_building = {
+			type = infrastructure
+			damage = 1
+		}
+		random_list = { 
+			10 = {
+				damage_building = { 
+					type = supply_node
+					damage = 1
+				}
+			}
+			10 = { 
+				damage_building = {
+					type = arms_factory
+					damage = 1
+				}
+			}
+			10 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 1
+				}
+			}
+			10 = {
+				damage_building = {
+					type = dockyard
+					damage = 1
+				}
+			}
+			10 = {
+				damage_building = { 
+					type = air_base
+					damage = 1
+				}
+			}
+			10 = {
+				damage_building = { 
+					type = fuel_silo
+					damage = 1
+				}
+			}
+		}
+	}
+}

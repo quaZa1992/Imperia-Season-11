@@ -1,0 +1,30 @@
+on_actions = 
+{
+    ## Startup
+    on_startup = {
+        effect = {
+            every_country = {
+				add_dynamic_modifier = { modifier = imp_dynamic_mastery_factor }
+                imp_military_quality_calculate = yes
+				set_variable = { dynamic_mastery_tick = 0 }
+            }
+        }
+    }
+
+    on_monthly_LUX = {
+        effect = {
+			add_to_variable = { dynamic_mastery_tick = 1 }
+			if = { limit = { check_variable = { dynamic_mastery_tick > 8 } } 
+				every_country = {
+					if = { limit = { NOT = { has_dynamic_modifier = { modifier = imp_dynamic_mastery_factor } } }
+						add_dynamic_modifier = { modifier = imp_dynamic_mastery_factor }
+					}
+				}
+				set_variable = { dynamic_mastery_tick = 0 }
+			}
+			every_country = {
+				imp_military_quality_calculate = yes
+			}
+        }
+    }
+}

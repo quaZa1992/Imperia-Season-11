@@ -82,27 +82,27 @@ capital = 489
 		partially_privatized_healthcare
 		balanced_protections
 		standard_maintenance
-		us_dollar
 		light_regulations
 
 		corruption_level_06
-		hindu
 		non_state_actor
-		defence_06
 		edu_02
-		health_03
-		social_02
-		bureau_03
 		police_02
 		draft_army
-		volunteer_women
 		farmers
 		communist_cadres
-		small_medium_business_owners
 		officer_advanced_training
 		consumption_economy
 		NEP_Himalayan_Rebellion_Struggle
 		no_currency_backing
+		no_foreign_reserve
+		pluralist
+		defence_03
+		health_01
+		social_01
+		bureau_02
+		drafted_women
+		labour_unions
 	}
 
 	# Influence Explanation
@@ -121,10 +121,10 @@ capital = 489
 	#Monetary System
 	set_variable = { var = debt value = 0.10 }
 	set_variable = { var = int_investments value = 0 }
-	set_variable = { var = treasury value = 0.86 }
+	set_variable = { var = treasury value = 5.86 }
 	set_variable = { var = corporate_tax_rate value = 9 }
 	set_variable = { var = population_tax_rate value = 10 }
-	set_variable = { overall_productivity = 1095 }
+	set_variable = { overall_productivity = 323 }
 
 	set_politics = {
 		ruling_party = communism
@@ -177,4 +177,5 @@ capital = 489
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	set_variable = { cb_policy_rate = 3 }
+	every_controlled_state = { set_variable = { productivity_state_var = 323 } }
 }

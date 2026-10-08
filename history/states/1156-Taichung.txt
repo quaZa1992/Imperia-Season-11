@@ -12,7 +12,6 @@ state = {
 			internet_station = 2
 			industrial_complex = 1
 			air_base = 4
-			microchip_plant = 2
 			fossil_powerplant = 1
 		}
 		add_core_of = TAI

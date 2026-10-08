@@ -1,0 +1,29 @@
+#########################################################################################
+# Original Script by: Moveably - Please don't touch. Unless I'm gone. Then can touch :) #
+#########################################################################################
+
+add_namespace = imp_random
+
+
+country_event = {
+	id = imp_random.1
+	title = imp_random.1.t
+	desc = imp_random.1.d
+	picture = GFX_imp_cor_1
+	is_triggered_only = yes
+
+	trigger = {
+		has_elections = yes
+	}
+
+	option = {
+		name = imp_random.1.o1
+
+
+	}
+
+	option = {
+		name = imp_random.1.o2
+
+	}
+}

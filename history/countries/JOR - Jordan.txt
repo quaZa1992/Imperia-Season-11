@@ -74,12 +74,6 @@ capital = 210
 		saudi_aid
 		LoAS_member
 		stable_growth
-		defence_05
-		edu_03
-		health_04
-		social_03
-		bureau_02
-		police_02
 		elected_legislature
 		moderately_conservative_society
 		large_refugee_population
@@ -96,6 +90,12 @@ capital = 210
 		semi_consumption_economy
 		officer_advanced_training
 		no_currency_backing
+		defence_02
+		edu_01
+		health_01
+		social_01
+		bureau_01
+		police_01
 	}
 
 	#Islamism
@@ -131,10 +131,10 @@ capital = 210
 	sort_influence = yes
 
 	### Economy
-	set_variable = { var = debt value = 44.449 }
-	set_variable = { var = treasury value = 5 }
-	set_variable = { var = corporate_tax_rate value = 19 }
-	set_variable = { var = population_tax_rate value = 26 }
+	set_variable = { var = debt value = 0.449 }
+	set_variable = { var = treasury value = 4 }
+	set_variable = { var = corporate_tax_rate value = 50 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { var = int_investments value = 0 }
 	set_variable = { inflation_rate_var = 0.00606 }
 	set_variable = { cb_policy_rate = 3 }
@@ -285,4 +285,17 @@ capital = 210
 	add_opinion_modifier = { target = ARG modifier = Major_Non_NATO_Ally }
 	add_opinion_modifier = { target = USA modifier = Major_Non_NATO_Ally }
 
+	every_controlled_state = { set_variable = { productivity_state_var = 599 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

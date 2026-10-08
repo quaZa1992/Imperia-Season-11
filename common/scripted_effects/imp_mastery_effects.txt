@@ -1,0 +1,132 @@
+imp_military_quality_calculate =
+{
+	set_temp_variable =  { imp_mil_mastery_rate = 1 }
+	
+	## GDP/C
+	set_temp_variable = { gdpc_mastery_effect = gdp_per_capita }
+	divide_temp_variable = { gdpc_mastery_effect = 30 }
+	clamp_temp_variable = {
+		var = gdpc_mastery_effect
+		max = 2
+		min = 0.5
+	}
+	multiply_temp_variable = { imp_mil_mastery_rate = gdpc_mastery_effect }
+	
+	## SPENDING
+	if = { limit = { has_idea = defence_00 }
+		multiply_temp_variable = { imp_mil_mastery_rate = 0.7 }
+	}
+	if = { limit = { has_idea = defence_01 }
+		multiply_temp_variable = { imp_mil_mastery_rate = 0.8 }
+	}
+	if = { limit = { has_idea = defence_02 }
+		multiply_temp_variable = { imp_mil_mastery_rate = 0.9 }
+	}
+	if = { limit = { has_idea = defence_04 }
+		multiply_temp_variable = { imp_mil_mastery_rate = 1.1 }
+	}
+	if = { limit = { has_idea = defence_05 }
+		multiply_temp_variable = { imp_mil_mastery_rate = 1.2 }
+	}
+	if = { limit = { has_idea = defence_06 }
+		multiply_temp_variable = { imp_mil_mastery_rate = 1.3 }
+	}
+	if = { limit = { has_idea = defence_07 }
+		multiply_temp_variable = { imp_mil_mastery_rate = 1.4 }
+	}
+	if = { limit = { has_idea = defence_08 }
+		multiply_temp_variable = { imp_mil_mastery_rate = 1.5 }
+	}
+	if = { limit = { has_idea = defence_09 }
+		multiply_temp_variable = { imp_mil_mastery_rate = 1.6 }
+	}
+	
+	## CONSCRIPTION
+	
+	if = { limit = { has_idea = no_military }
+		multiply_temp_variable = { imp_mil_mastery_rate = 0.5 }
+	}
+	if = { limit = { has_idea = volunteer_army }
+		multiply_temp_variable = { imp_mil_mastery_rate = 1.2 }
+	}
+	if = { limit = { has_idea = partial_draft_army }
+		multiply_temp_variable = { imp_mil_mastery_rate = 1 }
+	}
+	if = { limit = { has_idea = draft_army }
+		multiply_temp_variable = { imp_mil_mastery_rate = 0.8 }
+	}
+	
+	## TRAINING
+	
+	
+	if = { limit = { has_idea = officer_baptism_by_fire }
+		multiply_temp_variable = { imp_mil_mastery_rate = 0.3 }
+	}
+	if = { limit = { has_idea = officer_basic_training }
+		multiply_temp_variable = { imp_mil_mastery_rate = 0.5 }
+	}
+	if = { limit = { has_idea = officer_advanced_training }
+		multiply_temp_variable = { imp_mil_mastery_rate = 0.8 }
+	}
+	if = { limit = { has_idea = officer_military_school }
+		multiply_temp_variable = { imp_mil_mastery_rate = 0.9 }
+	}
+	if = { limit = { has_idea = officer_military_academy }
+		multiply_temp_variable = { imp_mil_mastery_rate = 1 }
+	}
+	if = { limit = { has_idea = officer_international_education }
+		multiply_temp_variable = { imp_mil_mastery_rate = 1.2 }
+	}
+	
+	## ARMY SIZE
+	
+	set_temp_variable = {army_size_k = has_manpower}
+	divide_temp_variable = {army_size_k = 2}
+	add_to_temp_variable = {army_size_k = amount_manpower_in_deployment_queue}
+	divide_temp_variable = {army_size_k = 10000}
+	add_to_temp_variable = {army_size_k = deployed_army_manpower_k}
+	divide_temp_variable = {army_size_k = 1.3}
+	
+	set_temp_variable = {navy_size_k = has_manpower}
+	divide_temp_variable = {navy_size_k = 50000}
+	add_to_temp_variable = {navy_size_k = deployed_navy_manpower_k}
+	divide_temp_variable = {navy_size_k = 1.3}
+	
+	set_temp_variable = {air_size_k = has_manpower}
+	divide_temp_variable = {air_size_k = 500000}
+	add_to_temp_variable = {air_size_k = deployed_airforce_manpower_k}
+	divide_temp_variable = {air_size_k = 1.3}
+	
+	
+	set_variable = {imp_air_mastery_factor = 8 }
+	set_variable = {imp_navy_mastery_factor = 16 }
+	set_variable = {imp_army_mastery_factor = 100 }
+	
+	divide_variable = {imp_air_mastery_factor = air_size_k}
+	divide_variable = {imp_navy_mastery_factor = navy_size_k}
+	divide_variable = {imp_army_mastery_factor = army_size_k}
+	
+	multiply_variable = {imp_air_mastery_factor = imp_mil_mastery_rate}
+	multiply_variable = {imp_navy_mastery_factor = imp_mil_mastery_rate}
+	multiply_variable = {imp_army_mastery_factor = imp_mil_mastery_rate}
+	
+	add_to_variable = { imp_air_mastery_factor = -1 }
+	add_to_variable = { imp_navy_mastery_factor = -1 }
+	add_to_variable = { imp_army_mastery_factor = -1 }
+	
+	
+	clamp_variable = {
+		var = imp_air_mastery_factor
+		max = 7.5
+	}
+	clamp_variable = {
+		var = imp_navy_mastery_factor
+		max = 7.5
+	}
+	clamp_variable = {
+		var = imp_army_mastery_factor
+		max = 7.5
+	}
+	
+	# Disabled log = "[GetDateText]: MASTERY [THIS.GetName]: ARMY [?imp_army_mastery_factor] | ARMY DIFFICULTY [?army_size_k]| NAVY [?imp_navy_mastery_factor] | NAVY DIFFICULTY [?navy_size_k]| AIR [?imp_air_mastery_factor] | AIR DIFFICULTY [?air_size_k]|"
+}

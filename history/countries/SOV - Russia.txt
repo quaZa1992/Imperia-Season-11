@@ -2,7 +2,7 @@ capital = 652
 
 2000.1.1 = {
 	set_variable = { currency_strength = 0.7 }
-	set_cosmetic_tag = SOV
+	set_cosmetic_tag = SOV_RUSSIA_putin
 	set_country_flag = antarctica_ccas_member
 	set_country_flag = antarctica_ccamlr_member
 	set_country_flag = dynamic_flag
@@ -6562,8 +6562,6 @@ capital = 652
 		recession
 		defence_03
 		edu_03
-		health_03
-		social_02
 		bureau_03
 		police_03
 		draft_army
@@ -6608,6 +6606,10 @@ capital = 652
 
 		antarctica_small_treaty_admin_cost_2
 		no_currency_backing
+		health_02
+		social_01
+		imp_sov_stagnant_electronics
+		imp_lost_generation
 	}
 
 	set_country_flag = SUB_taxes_to_close
@@ -6667,16 +6669,16 @@ capital = 652
 	sort_influence = yes
 
 	### Economy
-	set_variable = { var = debt value = 1259.766 }
-	set_variable = { var = treasury value = 40 }
-	set_variable = { var = corporate_tax_rate value = 20 }
-	set_variable = { var = population_tax_rate value = 19 }
+	set_variable = { var = debt value = 135.766 }
+	set_variable = { var = treasury value = 20 }
+	set_variable = { var = corporate_tax_rate value = 44 }
+	set_variable = { var = population_tax_rate value = 24 }
 	set_variable = { var = int_investments value = 12 }
 	set_variable = { inflation_rate_var = 0.215 }
 	set_variable = { cb_policy_rate = 20 }
 	set_variable = { var = npp_completed value = 0 }
 	set_variable = { var = from_center_completed value = 0 }
-	set_variable = { overall_productivity = 570 }
+	set_variable = { overall_productivity = 723 }
 
 	add_to_array = { global.enrichment_countries = THIS.id }
 	set_variable = { var_reactor_material_stockpile = 15000 }
@@ -7002,4 +7004,60 @@ capital = 652
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists }
 	add_opinion_modifier = { target = TAL modifier = Taliban_Are_Terrorists_Trade }
 	reverse_add_opinion_modifier = { target = SOV modifier = RUS_OIL }
+	every_controlled_state = {
+		set_variable = { productivity_state_var = 658 }
+	}
+	644 = { set_variable = { productivity_state_var = 1020 } }
+	652 = { set_variable = { productivity_state_var = 1140 } }
+	1189 = { set_variable = { productivity_state_var = 989 } }
+	671 = { set_variable = { productivity_state_var = 451 } }
+	1126 = { set_variable = { productivity_state_var = 451 } }
+	673 = { set_variable = { productivity_state_var = 451 } }
+	674 = { set_variable = { productivity_state_var = 451 } }
+	1125 = { set_variable = { productivity_state_var = 451 } }
+	1127 = { set_variable = { productivity_state_var = 451 } }
+	1107 = { set_variable = { productivity_state_var = 421 } }
+	666 = { set_variable = { productivity_state_var = 623 } }
+	670 = { set_variable = { productivity_state_var = 623 } }
+	663 = { set_variable = { productivity_state_var = 876 } }
+	676 = { set_variable = { productivity_state_var = 876 } }
+	661 = { set_variable = { productivity_state_var = 876 } }
+	664 = { set_variable = { productivity_state_var = 876 } }
+	651 = { set_variable = { productivity_state_var = 876 } }
+	660 = { set_variable = { productivity_state_var = 876 } }
+	1132 = { set_variable = { productivity_state_var = 623 } }
+	1134 = { set_variable = { productivity_state_var = 623 } }
+	1135 = { set_variable = { productivity_state_var = 623 } }
+	1133 = { set_variable = { productivity_state_var = 623 } }
+	648 = { set_variable = { productivity_state_var = 623 } }
+	1128 = { set_variable = { productivity_state_var = 623 } }
+	679 = { set_variable = { productivity_state_var = 563 } }
+	678 = { set_variable = { productivity_state_var = 563 } }
+	1064 = { set_variable = { productivity_state_var = 480 } }
+	1065 = { set_variable = { productivity_state_var = 480 } }
+	684 = { set_variable = { productivity_state_var = 480 } }
+	1011 = { set_variable = { productivity_state_var = 480 } }
+	686 = { set_variable = { productivity_state_var = 480 } }
+	688 = { set_variable = { productivity_state_var = 530 } }
+	1068 = { set_variable = { productivity_state_var = 380 } }
+	692 = { set_variable = { productivity_state_var = 880 } }
+	687 = { set_variable = { productivity_state_var = 820 } }
+	1136 = { set_variable = { productivity_state_var = 480 } }
+	689 = { set_variable = { productivity_state_var = 350 } }
+	1137 = { set_variable = { productivity_state_var = 600 } }
+	690 = { set_variable = { productivity_state_var = 350 } }
+	691 = { set_variable = { productivity_state_var = 563 } }
+	1168 = { set_variable = { productivity_state_var = 350 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }

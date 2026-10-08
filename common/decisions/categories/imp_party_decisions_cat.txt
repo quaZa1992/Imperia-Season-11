@@ -1,0 +1,7 @@
+imp_ger_party_decisions = {	
+	priority = 2000	
+	visible = {
+		is_ai = no
+        tag = GER
+	}
+}

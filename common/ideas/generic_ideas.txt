@@ -221,7 +221,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			modifier = {
 				buildings_worker_requirement_modifier = -0.10
-				productivity_growth_modifier = 0.50
+				# productivity_growth_modifier = 0.50 # Imperia: removed
 			}
 		}
 		idea_focus_energy_preferred_fossil = {

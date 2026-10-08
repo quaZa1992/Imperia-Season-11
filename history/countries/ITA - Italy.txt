@@ -16,7 +16,6 @@ capital = 81
 
 
 	set_technology = {
-		microchip_production_2 = 1
 
 		GNSS1 = 1
 		GNSS2 = 1
@@ -1169,6 +1168,7 @@ capital = 81
 		ITA_migrants_from_africa
 		ITA_small_medium_business
 		ITA_world_renown_cuisine
+		imp_italian_companies
 		at_member
 		un_aid_esco_member
 
@@ -1342,7 +1342,7 @@ capital = 81
 	set_variable = { ITA_mafia_event_cd_days = 0 }
 	set_variable = { var = corporate_tax_rate value = 25 }
 	set_variable = { var = population_tax_rate value = 40 }
-	set_variable = { var = overall_productivity value = 1218 }
+	set_variable = {    overall_productivity = 1244 }
 	set_variable = { gdp_per_capita = 43.191 }
 	set_variable = { mio_catalog_tokens = 1 }
 
@@ -1994,4 +1994,32 @@ capital = 81
 	set_variable = { undercover_agents_calabria = 0 }
 	set_variable = { undercover_agents_puglia = 0 }
 	set_variable = { undercover_agents_sicily = 0 }
+	77 = { set_variable = { productivity_state_var = 1289 } }
+	78 = { set_variable = { productivity_state_var = 1289 } }
+	80 = { set_variable = { productivity_state_var = 1289 } }
+	265 = { set_variable = { productivity_state_var = 1289 } }
+	285 = { set_variable = { productivity_state_var = 1289 } }
+	1059 = { set_variable = { productivity_state_var = 1289 } }
+	1060 = { set_variable = { productivity_state_var = 1289 } }
+	1061 = { set_variable = { productivity_state_var = 1289 } }
+	79 = { set_variable = { productivity_state_var = 1078 } }
+	81 = { set_variable = { productivity_state_var = 1078 } }
+	960 = { set_variable = { productivity_state_var = 1078 } }
+	82 = { set_variable = { productivity_state_var = 890 } }
+	83 = { set_variable = { productivity_state_var = 890 } }
+	84 = { set_variable = { productivity_state_var = 890 } }
+	956 = { set_variable = { productivity_state_var = 890 } }
+	957 = { set_variable = { productivity_state_var = 890 } }
+	set_variable = { civilian_factory_employment_var = 1 }
+	set_variable = { naval_factory_employment_var = 1 }
+	set_variable = { military_factory_employment_var = 1 }
+	set_variable = { office_employment_var = 1 }
+	set_variable = { microchip_plant_employment_var = 1 }
+	set_variable = { composite_plant_employment_var = 1 }
+	set_variable = { agriculture_district_employment_var = 1 }
+	set_variable = { synthetic_refinery_employment_var = 1 }
+	set_variable = { nuclear_reactor_employment_var = 1 }
+	set_variable = { fossil_powerplant_employment_var = 1 }
+	set_variable = { renewable_energy_employment_var = 1 }
+	set_variable = { internet_station_employment_var = 1 }
 }
