@@ -1,76 +1,21 @@
-# Millennium Dawn: A Modern Day Mod
+# Imperia Roleplay Season 11 – Millennium Dawn 2.0.2
 
-![Millennium Dawn Header](https://i.imgur.com/hpEdk0J.png)
-![Millennium Dawn Features](https://i.imgur.com/MYaznE7.png)
+Dieser Branch (`imperia-md202`) enthält die **komplette, spielfertige Mod**: Millennium Dawn 2.0.2 als Basis, darauf alle Imperia-Roleplay-Systeme, angepasst an MD 2.0.2.
 
-Millennium Dawn is a multi-mod project set in 2000 and continues to the modern day and beyond.
-The mod boasts new and unique tech trees, focus trees, events, and decisions to immerse you in the intricacies of the modern era.
+* Hearts of Iron IV: **1.19.3** (`supported_version="1.19.*"`)
+* Basis: Millennium Dawn 2.0.2 (Steam Workshop 2777392649) – © Millennium Dawn Team, Lizenz CC BY-SA 4.0 (siehe `LICENSE`)
+* Imperia-Änderungen: siehe `IMPERIA_MD202_LIESMICH.txt` (Deutsch) und `IMPERIA_MD202_PORTLOG.txt` (technisches Protokoll, Englisch)
 
-This repo is the source code for [Millennium Dawn: A Modern Day Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2777392649)
+## Installation
 
-## Quick Links
+1. Oben auf **Code → Download ZIP** klicken (Branch `imperia-md202`) und entpacken.
+2. Den entpackten Ordner nach `Dokumente\Paradox Interactive\Hearts of Iron IV\mod\` verschieben und z. B. in `Imperia_MD202` umbenennen.
+3. Im Ordner `mod\` eine Datei `Imperia_MD202.mod` anlegen: Inhalt von `descriptor.mod` kopieren und eine Zeile ergänzen:
+   `path="C:/Users/<DEIN_NAME>/Documents/Paradox Interactive/Hearts of Iron IV/mod/Imperia_MD202"`
+4. Launcher neu starten, ein Playset **nur** mit „Imperia Roleplay Season 10 (MD 2.0.2)“ anlegen (nicht zusätzlich MD oder das alte Imperia aktivieren) und ein neues Spiel starten.
 
-- [Discord](http://discord.gg/millenniumdawn) - Community and support
-- [Reddit](https://www.reddit.com/r/MillenniumDawn/)
-- [Git Setup Guide](https://docs.google.com/document/d/1V8DLowqEOSmlgazlHeC-hLZzLki5e6cWhQO_ZK6HVYs) - Repository setup
-- [Contribution Guide](./CONTRIBUTING.md) - Contribution policies
-
-## Features
-
-- **Economic Systems**: Taxation, debt management, international investment
-- **Political Mechanics**: Internal factions, influence, party systems
-- **Rich Content**: Focus trees, events, decisions for 150+ nations
-- **Modern Era**: Realistic geopolitical organizations (EU, NATO, etc.)
-
-## Contributing
-
-Available issues can be found in our [GitHub Issues](https://github.com/MillenniumDawn/Millennium-Dawn/issues)
-
-We also take open source contributions of any form whether they be localization, code, additions, content, or more.
-
-1. Fork the repository
-2. Create a feature branch
-3. Make changes following style guidelines
-4. Run pre-commit hooks
-5. Update [Changelog.txt](./Changelog.txt)
-6. Add yourself to [AUTHORS.md](./docs/src/content/misc/authors.md)
-7. Submit a pull request
-
-See [Contributing](./CONTRIBUTING.md) for more details including stylization, pre-commit information and more.
-
-**NOTE**: Millennium Dawn's development team allows for AI assisted coding if and only if the developer is capable and is able to review the code it produces.
-More details can be found in the team's [Contribution Policy](./CONTRIBUTING.md#ai-policy)
-
-## Project Structure
-
-```
-common/          - Game data (focuses, ideas, events, decisions)
-localisation/    - Language files
-events/          - Event chains
-history/         - Historical country data
-map/             - Terrain, states
-interface/       - UI definitions
-gfx/             - Graphics assets
-tools/           - Scripts for supporting development such as validators, standardizations, and other utilities
-docs/            - Development documentation
-```
-
-## Documentation
-
-| Topic               | Location                                                                                                    |
-| ------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Code Style          | [docs/src/content/resources/code-stylization-guide.md](./docs/src/content/resources/code-stylization-guide.md) |
-| Modifiers & Effects | [docs/src/content/resources/code-resource.md](./docs/src/content/resources/code-resource.md)                   |
-| Game Rules          | [docs/src/content/tutorials/game-rules.md](./docs/src/content/tutorials/game-rules.md)                         |
-
-## License
-
-See [LICENSE](./LICENSE) file for details.
-
-## Security
-
-See [SECURITY](./SECURITY.md) file for security details.
+Die Ordner `.claude`, `.github`, `tools`, `docs` usw. stammen aus dem MD-Entwicklerrepository und werden vom Spiel ignoriert.
 
 ---
 
-_Created by the Millennium Dawn Development Team_
+**English:** Complete, ready-to-play mod: Millennium Dawn 2.0.2 plus the Imperia Roleplay systems ported to MD 2.0.2, for HoI4 1.19.3. Download the branch as ZIP, place it in your HoI4 `mod` folder, create a `.mod` file with a `path=` line pointing to it, and enable only this mod.
