@@ -14,7 +14,6 @@ Dieser Branch (`imperia-md202`) enthält die **komplette, spielfertige Mod**: Mi
    `path="C:/Users/<DEIN_NAME>/Documents/Paradox Interactive/Hearts of Iron IV/mod/Imperia_MD202"`
 4. Launcher neu starten, ein Playset **nur** mit „Imperia Roleplay Season 10 (MD 2.0.2)“ anlegen (nicht zusätzlich MD oder das alte Imperia aktivieren) und ein neues Spiel starten.
 
-Die Ordner `.claude`, `.github`, `tools`, `docs` usw. stammen aus dem MD-Entwicklerrepository und werden vom Spiel ignoriert.
 
 ---
 
